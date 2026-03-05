@@ -1,13 +1,13 @@
 'use client'
 
 import { Fragment, useEffect, useState } from 'react'
-import { Menu, MenuButton, MenuItem, MenuItems, Transition, Radio, RadioGroup } from '@headlessui/react'
+import { Menu, MenuButton, MenuItem, MenuItems, Radio, RadioGroup, Transition } from '@headlessui/react'
 import { useTheme } from 'next-themes'
 import { Monitor, Moon, Sun } from 'lucide-react'
 
 /**
- * A tiny placeholder to keep layout stable before client mount.
- * Must be deterministic across SSR/CSR.
+ * Deterministic placeholder to keep header layout stable before mount.
+ * Must render the same on SSR and the initial client render.
  */
 function Blank() {
   return <span className="inline-block h-[18px] w-[18px]" aria-hidden="true" />
@@ -17,12 +17,11 @@ const ThemeSwitch = () => {
   const { theme, setTheme, resolvedTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
-  // Only render the real UI after the component mounts on the client.
   useEffect(() => {
     setMounted(true)
   }, [])
 
-  // Keep layout stable, but avoid rendering HeadlessUI portal/transition on SSR.
+  // IMPORTANT: Avoid rendering Headless UI portal/transition markup on SSR.
   if (!mounted) {
     return (
       <div className="flex items-center">
