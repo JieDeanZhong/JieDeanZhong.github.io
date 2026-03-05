@@ -1,75 +1,40 @@
-'use client'
+'use client';
 
-<div className="flex items-center">
-  <button
-    aria-label="Theme switcher"
-    className="hover:text-primary-500 dark:hover:text-primary-400 flex items-center justify-center"
-    type="button"
-  >
-    <Blank />
-  </button>
-</div>
+import * as React from 'react';
+import { useTheme } from 'next-themes';
 
-return (
-  <div className="flex items-center">
-    <Menu as="div" className="relative inline-block text-left">
-      <MenuButton
+export default function ThemeSwitch() {
+  const { theme, setTheme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // 避免 SSR/CSR 主题不一致导致 hydration 问题
+  if (!mounted) {
+    return <div className="flex items-center" />;
+  }
+
+  const current = (resolvedTheme ?? theme ?? 'system') as 'light' | 'dark' | 'system';
+
+  return (
+    <div className="flex items-center">
+      <label className="sr-only" htmlFor="theme-switch">
+        Theme switcher
+      </label>
+
+      <select
+        id="theme-switch"
         aria-label="Theme switcher"
-        className="hover:text-primary-500 dark:hover:text-primary-400 flex items-center justify-center"
+        className="rounded-md border border-gray-200 bg-white px-2 py-1 text-sm text-gray-900 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-100"
+        value={current}
+        onChange={(e) => setTheme(e.target.value)}
       >
-        {isDark ? <Moon size={18} /> : <Sun size={18} />}
-      </MenuButton>
-
-      <Transition ...>
-        <MenuItems className="absolute right-0 z-10 mt-2 w-44 origin-top-right rounded-md bg-white p-1 shadow-lg ring-1 ring-black/5 focus:outline-none dark:bg-gray-800 dark:ring-white/10">
-          <RadioGroup value={resolvedTheme ?? theme} onChange={setTheme}>
-            <MenuItem>
-              {({ active }) => (
-                <Radio
-                  className={[
-                    active ? 'bg-gray-100 dark:bg-gray-700' : '',
-                    'flex cursor-pointer items-center gap-2 rounded-md px-2 py-2 text-sm text-gray-900 dark:text-gray-100',
-                  ].join(' ')}
-                  value="light"
-                >
-                  <Sun size={16} />
-                  Light
-                </Radio>
-              )}
-            </MenuItem>
-
-            <MenuItem>
-              {({ active }) => (
-                <Radio
-                  className={[
-                    active ? 'bg-gray-100 dark:bg-gray-700' : '',
-                    'flex cursor-pointer items-center gap-2 rounded-md px-2 py-2 text-sm text-gray-900 dark:text-gray-100',
-                  ].join(' ')}
-                  value="dark"
-                >
-                  <Moon size={16} />
-                  Dark
-                </Radio>
-              )}
-            </MenuItem>
-
-            <MenuItem>
-              {({ active }) => (
-                <Radio
-                  className={[
-                    active ? 'bg-gray-100 dark:bg-gray-700' : '',
-                    'flex cursor-pointer items-center gap-2 rounded-md px-2 py-2 text-sm text-gray-900 dark:text-gray-100',
-                  ].join(' ')}
-                  value="system"
-                >
-                  <Monitor size={16} />
-                  System
-                </Radio>
-              )}
-            </MenuItem>
-          </RadioGroup>
-        </MenuItems>
-      </Transition>
-    </Menu>
-  </div>
-)
+        <option value="system">System</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </div>
+  );
+}
