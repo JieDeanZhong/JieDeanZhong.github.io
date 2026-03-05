@@ -13,7 +13,7 @@ export default function ThemeSwitch() {
 
   // 避免 SSR/CSR 主题不一致导致 hydration 问题
   if (!mounted) {
-    return <div className="flex items-center" />
+    return null
   }
 
   const current = (resolvedTheme ?? theme ?? 'system') as 'light' | 'dark' | 'system'
