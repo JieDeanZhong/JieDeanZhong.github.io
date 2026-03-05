@@ -26,6 +26,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: "yarn"
 
       # Corepack 最先启用
       - name: Enable Corepack (Yarn 3)
@@ -38,6 +39,9 @@ jobs:
         run: yarn install --immutable
 
       - name: Build project
+        env:
+          EXPORT: "true"
+          UNOPTIMIZED: "true"
         run: yarn build
 
       - name: Configure GitHub Pages
