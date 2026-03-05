@@ -1,4 +1,5 @@
 {% raw %}
+
 ```tsx
 'use client'
 import { KBarSearchProvider } from 'pliny/search/KBar'
@@ -48,3 +49,4 @@ export const SearchProvider = ({ children }) => {
   )
 }
 {% endraw %}
+```
