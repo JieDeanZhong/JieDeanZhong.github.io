@@ -36,5 +36,5 @@ export default function ThemeSwitch() {
         <option value="dark">Dark</option>
       </select>
     </div>
-  );
+  )
 }
