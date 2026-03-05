@@ -1,22 +1,22 @@
-'use client';
+'use client'
 
-import * as React from 'react';
-import { useTheme } from 'next-themes';
+import * as React from 'react'
+import { useTheme } from 'next-themes'
 
 export default function ThemeSwitch() {
-  const { theme, setTheme, resolvedTheme } = useTheme();
-  const [mounted, setMounted] = React.useState(false);
+  const { theme, setTheme, resolvedTheme } = useTheme()
+  const [mounted, setMounted] = React.useState(false)
 
   React.useEffect(() => {
-    setMounted(true);
-  }, []);
+    setMounted(true)
+  }, [])
 
   // 避免 SSR/CSR 主题不一致导致 hydration 问题
   if (!mounted) {
-    return <div className="flex items-center" />;
+    return <div className="flex items-center" />
   }
 
-  const current = (resolvedTheme ?? theme ?? 'system') as 'light' | 'dark' | 'system';
+  const current = (resolvedTheme ?? theme ?? 'system') as 'light' | 'dark' | 'system'
 
   return (
     <div className="flex items-center">
