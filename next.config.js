@@ -88,6 +88,7 @@ module.exports = () => {
       unoptimized,
     },
     async headers() {
+      if (output === 'export') return []
       return [
         {
           source: '/(.*)',
