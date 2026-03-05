@@ -1,40 +1,42 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import { Fragment, useEffect, useState } from 'react'
+import {
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuItems,
+  Radio,
+  RadioGroup,
+  Transition,
+} from '@headlessui/react'
 import { useTheme } from 'next-themes'
 import { Monitor, Moon, Sun } from 'lucide-react'
 
-function IconPlaceholder() {
-  return <span className="inline-block h-[18px] w-[18px]" aria-hidden="true" />
+function Blank() {
+  return <span aria-hidden="true" className="inline-block h-[18px] w-[18px]" />
 }
 
 export default function ThemeSwitch() {
-  const { setTheme, resolvedTheme } = useTheme()
+  const { setTheme, resolvedTheme, theme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
     setMounted(true)
   }, [])
 
-  const icon = useMemo(() => {
-    if (!mounted) return <IconPlaceholder />
+  const isDark = (resolvedTheme ?? theme) === 'dark'
 
-    if (resolvedTheme === 'dark') return <Moon size={18} />
-    if (resolvedTheme === 'light') return <Sun size={18} />
-    return <Monitor size={18} />
-  }, [mounted, resolvedTheme])
-
-  // SSR/first client render: render a stable, non-portal button to avoid hydration mismatch
+  // SSR/首次 hydration：避免 theme 未解析导致的抖动
   if (!mounted) {
     return (
       <div className="flex items-center">
         <button
-          type="button"
           aria-label="Theme switcher"
-          className="flex items-center justify-center hover:text-primary-500 dark:hover:text-primary-400"
+          className="hover:text-primary-500 dark:hover:text-primary-400 flex items-center justify-center"
+          type="button"
         >
-          {icon}
+          <Blank />
         </button>
       </div>
     )
@@ -45,60 +47,69 @@ export default function ThemeSwitch() {
       <Menu as="div" className="relative inline-block text-left">
         <MenuButton
           aria-label="Theme switcher"
-          className="flex items-center justify-center hover:text-primary-500 dark:hover:text-primary-400"
+          className="hover:text-primary-500 dark:hover:text-primary-400 flex items-center justify-center"
         >
-          {icon}
+          {isDark ? <Moon size={18} /> : <Sun size={18} />}
         </MenuButton>
 
-        <MenuItems
-          anchor="bottom end"
-          className="z-50 mt-2 w-36 origin-top-right rounded-md bg-white p-1 text-sm shadow-lg ring-1 ring-black/5 focus:outline-none dark:bg-gray-800"
+        <Transition
+          as={Fragment}
+          enter="transition ease-out duration-100"
+          enterFrom="transform opacity-0 scale-95"
+          enterTo="transform opacity-100 scale-100"
+          leave="transition ease-in duration-75"
+          leaveFrom="transform opacity-100 scale-100"
+          leaveTo="transform opacity-0 scale-95"
         >
-          <MenuItem>
-            {({ focus }) => (
-              <button
-                type="button"
-                onClick={() => setTheme('light')}
-                className={`flex w-full items-center rounded-md px-2 py-2 ${
-                  focus ? 'bg-gray-100 dark:bg-gray-700' : ''
-                }`}
-              >
-                <Sun size={16} />
-                <span className="ml-2">Light</span>
-              </button>
-            )}
-          </MenuItem>
+          <MenuItems className="bg-white dark:bg-gray-800 ring-black/5 dark:ring-white/10 absolute right-0 z-10 mt-2 w-44 origin-top-right rounded-md p-1 shadow-lg ring-1 focus:outline-none">
+            <RadioGroup value={resolvedTheme ?? theme} onChange={setTheme}>
+              <MenuItem>
+                {({ active }) => (
+                  <Radio
+                    className={[
+                      active ? 'bg-gray-100 dark:bg-gray-700' : '',
+                      'text-gray-900 dark:text-gray-100 flex cursor-pointer items-center gap-2 rounded-md px-2 py-2 text-sm',
+                    ].join(' ')}
+                    value="light"
+                  >
+                    <Sun size={16} />
+                    Light
+                  </Radio>
+                )}
+              </MenuItem>
 
-          <MenuItem>
-            {({ focus }) => (
-              <button
-                type="button"
-                onClick={() => setTheme('dark')}
-                className={`flex w-full items-center rounded-md px-2 py-2 ${
-                  focus ? 'bg-gray-100 dark:bg-gray-700' : ''
-                }`}
-              >
-                <Moon size={16} />
-                <span className="ml-2">Dark</span>
-              </button>
-            )}
-          </MenuItem>
+              <MenuItem>
+                {({ active }) => (
+                  <Radio
+                    className={[
+                      active ? 'bg-gray-100 dark:bg-gray-700' : '',
+                      'text-gray-900 dark:text-gray-100 flex cursor-pointer items-center gap-2 rounded-md px-2 py-2 text-sm',
+                    ].join(' ')}
+                    value="dark"
+                  >
+                    <Moon size={16} />
+                    Dark
+                  </Radio>
+                )}
+              </MenuItem>
 
-          <MenuItem>
-            {({ focus }) => (
-              <button
-                type="button"
-                onClick={() => setTheme('system')}
-                className={`flex w-full items-center rounded-md px-2 py-2 ${
-                  focus ? 'bg-gray-100 dark:bg-gray-700' : ''
-                }`}
-              >
-                <Monitor size={16} />
-                <span className="ml-2">System</span>
-              </button>
-            )}
-          </MenuItem>
-        </MenuItems>
+              <MenuItem>
+                {({ active }) => (
+                  <Radio
+                    className={[
+                      active ? 'bg-gray-100 dark:bg-gray-700' : '',
+                      'text-gray-900 dark:text-gray-100 flex cursor-pointer items-center gap-2 rounded-md px-2 py-2 text-sm',
+                    ].join(' ')}
+                    value="system"
+                  >
+                    <Monitor size={16} />
+                    System
+                  </Radio>
+                )}
+              </MenuItem>
+            </RadioGroup>
+          </MenuItems>
+        </Transition>
       </Menu>
     </div>
   )
