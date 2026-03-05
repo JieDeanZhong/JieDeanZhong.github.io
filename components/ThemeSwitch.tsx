@@ -1,19 +1,17 @@
 'use client'
 
-import { Fragment, useEffect, useState } from 'react'
+import { Fragment, useEffect, useMemo, useState } from 'react'
 import { Menu, MenuButton, MenuItem, MenuItems, Radio, RadioGroup, Transition } from '@headlessui/react'
 import { useTheme } from 'next-themes'
 import { Monitor, Moon, Sun } from 'lucide-react'
 
-/**
- * Deterministic placeholder to keep header layout stable before mount.
- * Must render the same on SSR and the initial client render.
- */
+type ThemeChoice = 'light' | 'dark' | 'system'
+
 function Blank() {
   return <span className="inline-block h-[18px] w-[18px]" aria-hidden="true" />
 }
 
-const ThemeSwitch = () => {
+export default function ThemeSwitch() {
   const { theme, setTheme, resolvedTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
@@ -21,7 +19,7 @@ const ThemeSwitch = () => {
     setMounted(true)
   }, [])
 
-  // IMPORTANT: Avoid rendering Headless UI portal/transition markup on SSR.
+  // ✅ SSR/首屏 hydration：不渲染 HeadlessUI portal/transition
   if (!mounted) {
     return (
       <div className="flex items-center">
@@ -36,15 +34,23 @@ const ThemeSwitch = () => {
     )
   }
 
-  const isDark = (resolvedTheme ?? theme) === 'dark'
+  // ✅ 收敛 theme，避免 TS 严格模式：string | undefined → union
+  const currentChoice: ThemeChoice = useMemo(() => {
+    const t = theme ?? 'system'
+    return t === 'light' || t === 'dark' || t === 'system' ? t : 'system'
+  }, [theme])
+
+  const isDark = (resolvedTheme ?? 'light') === 'dark'
+
+  const handleChange = (value: ThemeChoice) => {
+    setTheme(value)
+  }
 
   return (
     <div className="flex items-center">
       <Menu as="div" className="relative inline-block text-left">
         <div className="hover:text-primary-500 dark:hover:text-primary-400 flex items-center justify-center">
-          <MenuButton aria-label="Theme switcher">
-            {isDark ? <Moon size={18} /> : <Sun size={18} />}
-          </MenuButton>
+          <MenuButton aria-label="Theme switcher">{isDark ? <Moon size={18} /> : <Sun size={18} />}</MenuButton>
         </div>
 
         <Transition
@@ -57,18 +63,20 @@ const ThemeSwitch = () => {
           leaveTo="transform opacity-0 scale-95"
         >
           <MenuItems className="ring-opacity-5 absolute right-0 z-50 mt-2 w-32 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black focus:outline-hidden dark:bg-gray-800">
-            <RadioGroup value={theme} onChange={setTheme}>
+            <RadioGroup value={currentChoice} onChange={handleChange}>
               <div className="p-1">
                 <Radio value="light">
                   <MenuItem>
                     {({ focus }) => (
                       <button
                         type="button"
-                        className={`${focus ? 'bg-primary-600 text-white' : ''} group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        className={`${
+                          focus ? 'bg-primary-600 text-white' : ''
+                        } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                       >
-                        <div className="mr-2">
+                        <span className="mr-2">
                           <Sun size={18} />
-                        </div>
+                        </span>
                         Light
                       </button>
                     )}
@@ -80,11 +88,13 @@ const ThemeSwitch = () => {
                     {({ focus }) => (
                       <button
                         type="button"
-                        className={`${focus ? 'bg-primary-600 text-white' : ''} group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        className={`${
+                          focus ? 'bg-primary-600 text-white' : ''
+                        } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                       >
-                        <div className="mr-2">
+                        <span className="mr-2">
                           <Moon size={18} />
-                        </div>
+                        </span>
                         Dark
                       </button>
                     )}
@@ -96,11 +106,13 @@ const ThemeSwitch = () => {
                     {({ focus }) => (
                       <button
                         type="button"
-                        className={`${focus ? 'bg-primary-600 text-white' : ''} group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        className={`${
+                          focus ? 'bg-primary-600 text-white' : ''
+                        } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                       >
-                        <div className="mr-2">
+                        <span className="mr-2">
                           <Monitor size={18} />
-                        </div>
+                        </span>
                         System
                       </button>
                     )}
