@@ -29,7 +29,7 @@ const Header = () => {
               width={220}
               height={70}
               priority
-              className="h-auto w-auto object-contain"
+              className="h-15 w-auto object-contain"
             />
           </div>
         </div>
