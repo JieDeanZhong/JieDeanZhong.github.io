@@ -11,10 +11,7 @@ export default function ThemeSwitch() {
     setMounted(true)
   }, [])
 
-  // 避免 SSR/CSR 主题不一致导致 hydration 问题
-  if (!mounted) {
-    return null
-  }
+  if (!mounted) return null
 
   const current = (resolvedTheme ?? theme ?? 'system') as 'light' | 'dark' | 'system'
 

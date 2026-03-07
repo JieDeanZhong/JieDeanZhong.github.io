@@ -1,8 +1,11 @@
+'use client'
+
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 import Logo from '@/data/logo.svg'
 import Link from './Link'
-import MobileNav from './MobileNav'
+import dynamic from 'next/dynamic'
+const MobileNav = dynamic(() => import('./MobileNav'), { ssr: false })
 import ThemeSwitch from './ThemeSwitch'
 import SearchButton from './SearchButton'
 
