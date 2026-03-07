@@ -24,7 +24,7 @@ const Header = () => {
         <div className="flex items-center">
           <div className="flex items-center">
             <Image
-              src="/static/images/signature-jdz.png"
+              src="/static/images/signature-icon.png"
               alt="Jie Dean Zhong signature"
               width={220}
               height={70}
