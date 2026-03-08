@@ -35,11 +35,11 @@ export default function AboutPage() {
             {/* Portrait */}
             <div className="relative flex min-h-[260px] items-end justify-center md:min-h-[300px] lg:min-h-[320px]">
               <Image
-                src="/static/images/profile-cut.png"
+                src="/static/images/profile2.png"
                 alt="Portrait of Jie Dean Zhong"
                 width={620}
                 height={760}
-                className="absolute bottom-0 h-auto max-h-[500px] w-auto object-contain"
+                className="absolute bottom-0 h-auto max-h-[320px] w-auto object-contain"
                 priority
               />
             </div>

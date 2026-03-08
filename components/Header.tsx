@@ -6,7 +6,6 @@ import Link from './Link'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
 const MobileNav = dynamic(() => import('./MobileNav'), { ssr: false })
-import ThemeSwitch from './ThemeSwitch'
 import SearchButton from './SearchButton'
 
 const Header = () => {
@@ -50,7 +49,6 @@ const Header = () => {
             ))}
         </div>
         <SearchButton />
-        <ThemeSwitch />
         <MobileNav />
       </div>
     </header>
