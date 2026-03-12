@@ -9,8 +9,15 @@ export default function AboutPage() {
       <div className="mx-auto max-w-[1200px] px-6 pb-20 md:px-10 lg:px-12">
         {/* Hero */}
         <section className="relative isolate">
-          {/* full width grey background */}
-          <div className="absolute inset-y-0 left-1/2 z-0 w-screen -translate-x-1/2 bg-gray-50" />
+          {/* full width pattern background */}
+          <div
+            className="absolute inset-y-0 left-1/2 z-0 w-screen -translate-x-1/2"
+            style={{
+              backgroundImage: 'url(/static/images/spikes.png)',
+              backgroundRepeat: 'repeat',
+              backgroundSize: '280px',
+            }}
+          />
 
           <div className="relative z-10 grid grid-cols-1 items-end gap-8 px-8 pt-6 pb-0 md:grid-cols-2 md:px-12 md:pt-8 md:pb-0 lg:min-h-[320px]">
             {/* Left text */}
