@@ -56,7 +56,7 @@ export default function AboutPage() {
         {/* Bio */}
         <section className="bg-white px-8 py-12 md:px-12 md:py-14">
           <div className="grid grid-cols-1 gap-x-14 gap-y-10 md:grid-cols-2">
-            <div className="space-y-8 text-[18px] leading-[1.65] tracking-[-0.01em] text-gray-800 md:text-[19px]">
+            <div className="space-y-8 text-justify text-[18px] leading-[1.65] tracking-[-0.01em] text-gray-800 md:text-[19px]">
               <p>
                 Jie Dean Zhong is an undergraduate student in Biological Sciences at Xi’an
                 Jiaotong-Liverpool University. His academic interests focus on synthetic biology,
@@ -71,7 +71,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="space-y-8 text-[18px] leading-[1.65] tracking-[-0.01em] text-gray-800 md:text-[19px]">
+            <div className="space-y-8 text-justify text-[18px] leading-[1.65] tracking-[-0.01em] text-gray-800 md:text-[19px]">
               <p>
                 Beyond laboratory research, Jie Dean is interested in scientific communication,
                 interdisciplinary collaboration, and the long-term development of research-driven
