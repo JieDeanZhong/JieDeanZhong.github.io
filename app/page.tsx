@@ -6,7 +6,7 @@ export const metadata = genPageMetadata({ title: 'About' })
 export default function AboutPage() {
   return (
     <div className="bg-white text-black dark:bg-white dark:text-black">
-      <div className="mx-auto max-w-[1200px] px-6 pb-20 md:px-10 lg:px-12">
+      <div className="mx-auto max-w-[1200px] px-0 pb-20 md:px-10 lg:px-12">
         {/* Hero */}
         <section className="relative isolate">
           {/* full width pattern background */}
@@ -19,34 +19,34 @@ export default function AboutPage() {
             }}
           />
 
-          <div className="relative z-10 grid grid-cols-1 items-end gap-8 px-8 pt-6 pb-0 md:grid-cols-2 md:px-12 md:pt-8 md:pb-0 lg:min-h-[320px]">
+          <div className="relative z-10 grid grid-cols-1 items-end gap-5 px-5 pt-7 pb-0 sm:px-8 md:grid-cols-2 md:gap-8 md:px-12 md:pt-8 md:pb-0 lg:min-h-[320px]">
             {/* Left text */}
             <div className="self-center">
-              <h2 className="text-[32px] leading-[1.05] font-semibold tracking-[-0.03em] text-black md:text-[40px]">
+              <h2 className="text-[32px] leading-[1.05] font-semibold tracking-normal text-black md:text-[40px]">
                 Jie Dean Zhong
               </h2>
 
-              <p className="text-[32px] leading-[1.1] font-semibold tracking-[-0.03em] text-black md:text-[40px]">
+              <p className="text-[32px] leading-[1.1] font-semibold tracking-normal text-black md:text-[40px]">
                 钟杰
               </p>
 
-              <p className="mt-3 text-[18px] leading-[1.15] font-normal tracking-[-0.02em] text-gray-700 md:text-[15px]">
+              <p className="mt-3 text-[17px] leading-[1.2] font-normal tracking-normal text-gray-700 md:text-[15px]">
                 Undergraduate Researcher in Biological Sciences
               </p>
 
-              <p className="mt-3 text-[18px] leading-[1.15] font-normal tracking-[-0.02em] text-gray-700 md:text-[15px]">
+              <p className="mt-3 text-[17px] leading-[1.2] font-normal tracking-normal text-gray-700 md:text-[15px]">
                 Oncology, Immunology & Microbial Systems
               </p>
             </div>
 
             {/* Portrait */}
-            <div className="relative flex min-h-[260px] items-end justify-center md:min-h-[300px] lg:min-h-[320px]">
+            <div className="relative flex min-h-[190px] items-end justify-center sm:min-h-[240px] md:min-h-[300px] lg:min-h-[320px]">
               <Image
                 src="/static/images/upper-body-trans.png"
                 alt="Portrait of Jie Dean Zhong"
-                width={620}
-                height={760}
-                className="absolute bottom-0 h-auto max-h-[500px] w-auto object-contain"
+                width={1024}
+                height={889}
+                className="h-auto w-full max-w-[288px] object-contain sm:max-w-[360px] md:absolute md:bottom-0 md:max-w-[420px] lg:max-w-[460px]"
                 priority
               />
             </div>
@@ -54,9 +54,9 @@ export default function AboutPage() {
         </section>
 
         {/* Bio */}
-        <section className="bg-white px-8 py-12 md:px-12 md:py-14">
+        <section className="bg-white px-5 py-10 sm:px-8 md:px-12 md:py-14">
           <div className="grid grid-cols-1 gap-x-14 gap-y-10 md:grid-cols-2">
-            <div className="space-y-8 text-justify text-[18px] leading-[1.65] tracking-[-0.01em] text-gray-800 md:text-[19px]">
+            <div className="space-y-8 text-left text-[18px] leading-[1.65] tracking-normal text-gray-800 md:text-justify md:text-[19px]">
               <p>
                 Jie Dean Zhong is an undergraduate student in Biological Sciences at Xi’an
                 Jiaotong-Liverpool University. His academic interests focus on synthetic biology,
@@ -71,7 +71,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="space-y-8 text-justify text-[18px] leading-[1.65] tracking-[-0.01em] text-gray-800 md:text-[19px]">
+            <div className="space-y-8 text-left text-[18px] leading-[1.65] tracking-normal text-gray-800 md:text-justify md:text-[19px]">
               <p>
                 Beyond laboratory research, Jie Dean is interested in scientific communication,
                 interdisciplinary collaboration, and the long-term development of research-driven

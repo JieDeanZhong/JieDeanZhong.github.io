@@ -33,7 +33,7 @@ const MobileNav = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className="hover:text-primary-500 dark:hover:text-primary-400 h-8 w-8 text-gray-900 dark:text-gray-100"
+          className="h-8 w-8 text-gray-300 hover:text-white"
         >
           <path
             fillRule="evenodd"
