@@ -83,10 +83,10 @@ export default function ScholarPopover({ scholar }: { scholar: ScholarProfile })
         >
           <Popover.Popup
             ref={popupRef}
-            className="w-[360px] max-w-[calc(100vw-2rem)] origin-[var(--transform-origin)] overflow-y-auto rounded-xl border border-gray-200 bg-white p-5 text-sm leading-6 text-gray-700 shadow-lg transition-[opacity,transform] duration-150 outline-none data-[ending-style]:opacity-0 data-[starting-style]:translate-y-1 data-[starting-style]:opacity-0 motion-reduce:transition-none"
+            className="w-max max-w-[calc(100vw-2rem)] min-w-[min(360px,calc(100vw-2rem))] origin-[var(--transform-origin)] overflow-y-auto rounded-xl border border-gray-200 bg-white p-5 text-sm leading-6 text-gray-700 shadow-lg transition-[opacity,transform] duration-150 outline-none data-[ending-style]:opacity-0 data-[starting-style]:translate-y-1 data-[starting-style]:opacity-0 motion-reduce:transition-none"
             style={{ maxHeight: 'var(--available-height)' }}
           >
-            <div className="flex items-center gap-3">
+            <div className="flex items-start gap-3">
               {scholar.photo && (
                 <Image
                   src={scholar.photo.src}
@@ -99,20 +99,19 @@ export default function ScholarPopover({ scholar }: { scholar: ScholarProfile })
                   style={{ objectPosition: scholar.photo.objectPosition ?? 'center' }}
                 />
               )}
-              <Popover.Title className="min-w-0 text-base leading-6 font-semibold text-gray-900">
-                {label}
-              </Popover.Title>
+              <div className="min-w-0">
+                <Popover.Title className="text-base leading-6 font-semibold text-gray-900">
+                  {label}
+                </Popover.Title>
+                <Popover.Description className="mt-1 text-sm leading-5 font-normal text-gray-500">
+                  {scholar.institutions.map((institution) => (
+                    <span key={institution} className="block">
+                      {institution}
+                    </span>
+                  ))}
+                </Popover.Description>
+              </div>
             </div>
-
-            <Popover.Description className="mt-4">
-              <Link href={scholar.institutionalProfileUrl} className={linkStyle}>
-                {scholar.institutions.map((institution) => (
-                  <span key={institution} className="block">
-                    {institution}
-                  </span>
-                ))}
-              </Link>
-            </Popover.Description>
 
             <ul aria-label="Email addresses" className="mt-4 space-y-2">
               {scholar.emails.map((email) => (
@@ -124,7 +123,7 @@ export default function ScholarPopover({ scholar }: { scholar: ScholarProfile })
                 Google Scholar
               </Link>
               <Link href={scholar.institutionalProfileUrl} className={linkStyle}>
-                Institutional profile
+                Profile
               </Link>
             </div>
           </Popover.Popup>

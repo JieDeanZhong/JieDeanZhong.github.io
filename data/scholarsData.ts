@@ -1,4 +1,4 @@
-export type ScholarId = 'lianjun-zhang' | 'yongtao-zhu'
+export type ScholarId = 'lianjun-zhang' | 'yongtao-zhu' | 'kevin-chan'
 
 export interface ScholarProfile {
   id: ScholarId
@@ -45,6 +45,19 @@ const scholarsData: Record<ScholarId, ScholarProfile> = {
       src: '/static/images/people/yongtao-zhu.png',
       alt: 'Portrait of Yongtao Zhu',
       objectPosition: '50% 40%',
+    },
+  },
+  'kevin-chan': {
+    id: 'kevin-chan',
+    name: 'Kevin Chun Chan',
+    degree: 'PhD',
+    institutions: ['Xi’an Jiaotong-Liverpool University'],
+    emails: ['Chun.Chan@xjtlu.edu.cn'],
+    googleScholarUrl: 'https://scholar.google.com/citations?hl=en&user=rSZrshkAAAAJ',
+    institutionalProfileUrl: 'https://scholar.xjtlu.edu.cn/en/persons/ChunChan/',
+    photo: {
+      src: '/static/images/people/kevin-chan.png',
+      alt: 'Portrait of Kevin Chun Chan',
     },
   },
 }

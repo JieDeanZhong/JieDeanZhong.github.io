@@ -9,6 +9,7 @@ import scholarsData from '@/data/scholarsData'
 
 <ScholarPopover scholar={scholarsData['lianjun-zhang']} />
 <ScholarPopover scholar={scholarsData['yongtao-zhu']} />
+<ScholarPopover scholar={scholarsData['kevin-chan']} />
 ```
 
 The trigger renders a button. Do not wrap it in a link. Profiles, institutions,
@@ -25,12 +26,14 @@ so the component works with the site's static export configuration.
 
 ## Current integration status
 
-In this checkout, `app/research/page.tsx` still renders the template cards from
-`data/projectsData.ts` (TroGen with sample copy, plus The Time Machine).
-Neither professor nor either old institutional biography URL appears in the current
-Research sources. There is consequently no existing name or personal-profile link
-to replace. The component, both profiles, and photographs are ready for integration
-when the intended Research content is brought into this checkout. No project–PI
-relationship or research content has been added.
+`app/research/page.tsx` renders `ResearchList`, which uses each PI's `scholarId`
+from `data/researchData.ts` to display the shared popover. The five triggers cover
+TroGen (Yongtao Zhu and Kevin Chun Chan), FJ Gliding (Yongtao Zhu), and both
+CXCL13–Fc and Spotlight (Lianjun Zhang).
+
+All three profiles include local portraits. The card places plain institution
+text below the name beside the portrait; the separate Profile link opens the
+institutional biography. Cards adapt to the institution text on desktop and wrap
+within the viewport on small screens.
 
 Official API: https://base-ui.com/react/components/popover
