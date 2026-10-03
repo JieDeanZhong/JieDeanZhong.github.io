@@ -1406,6 +1406,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.29.7":
+  version: 7.29.7
+  resolution: "@babel/runtime@npm:7.29.7"
+  checksum: bc311855c6dbf5356030979584ca0f8b6cee39fe058175b02e85a73e246fc76ae30248b0d40e70c2652101faeb43279468ed2d086a670673eb9783c1fee1df2b
+  languageName: node
+  linkType: hard
+
 "@babel/template@npm:^7.28.6":
   version: 7.28.6
   resolution: "@babel/template@npm:7.28.6"
@@ -1439,6 +1446,51 @@ __metadata:
     "@babel/helper-string-parser": ^7.27.1
     "@babel/helper-validator-identifier": ^7.28.5
   checksum: 83f190438e94c22b2574aaeef7501830311ef266eaabfb06523409f64e2fe855e522951607085d71cad286719adef14e1ba37b671f334a7cd25b0f8506a01e0b
+  languageName: node
+  linkType: hard
+
+"@base-ui/react@npm:1.8.0":
+  version: 1.8.0
+  resolution: "@base-ui/react@npm:1.8.0"
+  dependencies:
+    "@babel/runtime": ^7.29.7
+    "@base-ui/utils": 0.4.0
+    "@floating-ui/react-dom": ^2.1.9
+    "@floating-ui/utils": ^0.2.12
+    use-sync-external-store: ^1.6.0
+  peerDependencies:
+    "@date-fns/tz": ^1.2.0
+    "@types/react": ^17 || ^18 || ^19
+    date-fns: ^4.0.0
+    react: ^17 || ^18 || ^19
+    react-dom: ^17 || ^18 || ^19
+  peerDependenciesMeta:
+    "@date-fns/tz":
+      optional: true
+    "@types/react":
+      optional: true
+    date-fns:
+      optional: true
+  checksum: 5c73c9d8e82e26492904ff82e396b7b77be54bdcbfefbc64f836dd5b21662e33e2574cc17e6b096b704d8e2ea4d8294753b98aeaa94c0316eb7fe1248b881df3
+  languageName: node
+  linkType: hard
+
+"@base-ui/utils@npm:0.4.0":
+  version: 0.4.0
+  resolution: "@base-ui/utils@npm:0.4.0"
+  dependencies:
+    "@babel/runtime": ^7.29.7
+    "@floating-ui/utils": ^0.2.12
+    reselect: ^5.2.0
+    use-sync-external-store: ^1.6.0
+  peerDependencies:
+    "@types/react": ^17 || ^18 || ^19
+    react: ^17 || ^18 || ^19
+    react-dom: ^17 || ^18 || ^19
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: b1835463345d6654392cde9dab3a3bde6968d00f832c148f3a77e56f282e389d8647f5c723092758df332874b29f7e1bc32dee9c027ad9d6776c8381037776eb
   languageName: node
   linkType: hard
 
@@ -2036,6 +2088,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@floating-ui/core@npm:^1.8.0":
+  version: 1.8.0
+  resolution: "@floating-ui/core@npm:1.8.0"
+  dependencies:
+    "@floating-ui/utils": ^0.2.12
+  checksum: 491c7573ba88242a2814f7461080abac59c63322b336ad5386b40c66a4633c115b4da1e2b9d3ffd4c64081cdf81c5f23a47aac1afa6ff1e58c17cff1595b6dd5
+  languageName: node
+  linkType: hard
+
 "@floating-ui/dom@npm:^1.7.6":
   version: 1.7.6
   resolution: "@floating-ui/dom@npm:1.7.6"
@@ -2043,6 +2104,16 @@ __metadata:
     "@floating-ui/core": ^1.7.5
     "@floating-ui/utils": ^0.2.11
   checksum: 0c1ba371a2e5b8cdbd6a88daafd8bb22cc415a5b50dbf23d829842c1551efe8e74fed5d34c89644fa8ee5dcf9b0470f9b2e9a3f82f91622abe6e1284b272d1c1
+  languageName: node
+  linkType: hard
+
+"@floating-ui/dom@npm:^1.8.0":
+  version: 1.8.0
+  resolution: "@floating-ui/dom@npm:1.8.0"
+  dependencies:
+    "@floating-ui/core": ^1.8.0
+    "@floating-ui/utils": ^0.2.12
+  checksum: 6c9676b040a7bd358e6b2cf4bcf661efc08e51118856ac17955c247c88ea164e1741f061e848b9ca1eacd5591709e013b46bd35bbfe6f80acca276a2a0bd41d2
   languageName: node
   linkType: hard
 
@@ -2055,6 +2126,18 @@ __metadata:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
   checksum: f81777f92bfbdc3bdb852f3c15d2609ffcd207e15db7cd2b58680ea9bd0574ba37a472475dfb71dbfcbfbdef40792ab8120f327df2050d52193bafff8db9aa71
+  languageName: node
+  linkType: hard
+
+"@floating-ui/react-dom@npm:^2.1.9":
+  version: 2.1.9
+  resolution: "@floating-ui/react-dom@npm:2.1.9"
+  dependencies:
+    "@floating-ui/dom": ^1.8.0
+  peerDependencies:
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: f57c3274321f118ab16e9a0333097876e3d3851e7bc9d25eb70bfaf49c28aba33cfa0a64f33b8dbd997150a40fe293b14d66188887573921c8e1fb98435a0f7f
   languageName: node
   linkType: hard
 
@@ -2076,6 +2159,13 @@ __metadata:
   version: 0.2.11
   resolution: "@floating-ui/utils@npm:0.2.11"
   checksum: e98a2da3e36bd476460b0b85c3ba37c254516790d8c5eafa79ecf67bae7f2230c46d5fabce196aaf08bcd31586828e2df718cd2ccd1d333f18120f8adef66828
+  languageName: node
+  linkType: hard
+
+"@floating-ui/utils@npm:^0.2.12":
+  version: 0.2.12
+  resolution: "@floating-ui/utils@npm:0.2.12"
+  checksum: c2cf16da4f755c025d12802a923a80aefe076e5686afb60a431970c7a4402cc9fb6723d20f6da0d431d6b01395d1a8cdd4e16da920cca18a1e07c06ad98c0593
   languageName: node
   linkType: hard
 
@@ -10707,6 +10797,13 @@ next@latest:
   languageName: node
   linkType: hard
 
+"reselect@npm:^5.2.0":
+  version: 5.3.0
+  resolution: "reselect@npm:5.3.0"
+  checksum: ebe24b04f118302858e6e3086ec5200b27bc190b55fc1499feb8aecd8ddd0e75aeb0e744babc185d42252695846edaf5add0b3bb60aae7091afbbf04ccbbaf5d
+  languageName: node
+  linkType: hard
+
 "resolve-from@npm:^4.0.0":
   version: 4.0.0
   resolution: "resolve-from@npm:4.0.0"
@@ -11563,6 +11660,7 @@ next@latest:
   version: 0.0.0-use.local
   resolution: "tailwind-nextjs-starter-blog@workspace:."
   dependencies:
+    "@base-ui/react": 1.8.0
     "@eslint/eslintrc": ^3.3.3
     "@eslint/js": ^9.18.0
     "@headlessui/react": 2.2.9
@@ -12155,6 +12253,15 @@ next@latest:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
   checksum: 61a62e910713adfaf91bdb72ff2cd30e5ba83687accaf3b6e75a903b45bf635f5722e3694af30d83a03e92cb533c0a5c699298d2fef639a03ffc86b469f4eee2
+  languageName: node
+  linkType: hard
+
+"use-sync-external-store@npm:^1.6.0":
+  version: 1.7.0
+  resolution: "use-sync-external-store@npm:1.7.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  checksum: 55e36d54531a778ec8521123ced6cec974dae28585bf2544429245025e989b3d63822f61a1fadc537d10976c0042f54f66c28de8216c2cde0edcbbe8abdf972f
   languageName: node
   linkType: hard
 

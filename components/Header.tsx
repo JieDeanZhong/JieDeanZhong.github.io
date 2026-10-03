@@ -9,7 +9,8 @@ const MobileNav = dynamic(() => import('./MobileNav'), { ssr: false })
 import SearchButton from './SearchButton'
 
 const Header = () => {
-  let headerClass = 'relative flex items-center w-full justify-between py-6'
+  let headerClass =
+    'relative flex items-center w-full justify-between py-6 [&_a:focus-visible]:outline-primary-300 [&_button:focus-visible]:outline-primary-300'
   if (siteMetadata.stickyNav) {
     headerClass += ' sticky top-0 z-50'
   }

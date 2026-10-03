@@ -12,18 +12,19 @@
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
   /* Colors */
-  /* Copied from https://tailwindcss.com/docs/theme#default-theme-variable-reference */
-  --color-primary-50: oklch(0.971 0.014 343.198);
-  --color-primary-100: oklch(0.948 0.028 342.258);
-  --color-primary-200: oklch(0.899 0.061 343.231);
-  --color-primary-300: oklch(0.823 0.12 346.018);
-  --color-primary-400: oklch(0.718 0.202 349.761);
-  --color-primary-500: oklch(0.656 0.241 354.308);
-  --color-primary-600: oklch(0.592 0.249 0.584);
-  --color-primary-700: oklch(0.525 0.223 3.958);
-  --color-primary-800: oklch(0.459 0.187 3.815);
-  --color-primary-900: oklch(0.408 0.153 2.432);
-  --color-primary-950: oklch(0.284 0.109 3.907);
+  /* Color_Matrix blue: 50–200 surfaces, 300–400 accents on dark surfaces,
+     500 default emphasis, 600 hover, 700 pressed, 800–950 deep shades. */
+  --color-primary-50: #f4f5f9;
+  --color-primary-100: #e8eaf4;
+  --color-primary-200: #d2d5e8;
+  --color-primary-300: #a5abd2;
+  --color-primary-400: #616cb0;
+  --color-primary-500: #1d2d8e;
+  --color-primary-600: #192679;
+  --color-primary-700: #141f63;
+  --color-primary-800: #10194e;
+  --color-primary-900: #0c1239;
+  --color-primary-950: #070b24;
 
   --color-gray-50: oklch(0.985 0.002 247.839);
   --color-gray-100: oklch(0.967 0.003 264.542);
@@ -58,6 +59,15 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  ::selection {
+    color: var(--color-primary-700);
+    background-color: var(--color-primary-100);
+  }
+
   *,
   ::after,
   ::before,
@@ -69,6 +79,7 @@
   a,
   button {
     outline-color: var(--color-primary-500);
+    outline-offset: 3px;
   }
 
   a:focus-visible,
@@ -80,14 +91,25 @@
 }
 
 @layer utilities {
+  /* Override the forms plugin's default blue with the shared theme. */
+  input:focus,
+  textarea:focus,
+  select:focus {
+    --tw-ring-color: var(--color-primary-500);
+    border-color: var(--color-primary-500);
+  }
+
   .prose {
     & a {
       color: var(--color-primary-500);
       &:hover {
         color: var(--color-primary-600);
       }
+      &:active {
+        color: var(--color-primary-700);
+      }
       & code {
-        color: var(--color-primary-400);
+        color: inherit;
       }
     }
     & :where(h1, h2) {
@@ -115,6 +137,15 @@
     & :where(h1, h2, h3, h4, h5, h6) {
       color: var(--color-gray-100);
     }
+  }
+
+  /* Pliny's newsletter buttons share the site's interaction colors. */
+  button.bg-primary-500:enabled:hover {
+    background-color: var(--color-primary-600);
+  }
+
+  button.bg-primary-500:enabled:active {
+    background-color: var(--color-primary-700);
   }
 }
 
