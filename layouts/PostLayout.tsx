@@ -26,10 +26,18 @@ interface LayoutProps {
   authorDetails: CoreContent<Authors>[]
   next?: { path: string; title: string }
   prev?: { path: string; title: string }
+  backLink?: { href: string; label: string }
   children: ReactNode
 }
 
-export default function PostLayout({ content, authorDetails, next, prev, children }: LayoutProps) {
+export default function PostLayout({
+  content,
+  authorDetails,
+  next,
+  prev,
+  backLink,
+  children,
+}: LayoutProps) {
   const { filePath, path, slug, date, title, tags } = content
   const basePath = path.split('/')[0]
 
@@ -152,11 +160,11 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
               </div>
               <div className="pt-4 xl:pt-8">
                 <Link
-                  href={`/${basePath}`}
+                  href={backLink?.href || `/${basePath}`}
                   className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                  aria-label="Back to the blog"
+                  aria-label={backLink?.label || 'Back to the blog'}
                 >
-                  &larr; Back to the blog
+                  &larr; {backLink?.label || 'Back to the blog'}
                 </Link>
               </div>
             </footer>
