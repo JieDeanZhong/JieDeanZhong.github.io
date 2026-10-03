@@ -1,0 +1,703 @@
+{
+  "project_name": "Jie Dean Zhong personal site",
+  "project_type": "Next.js App Router personal academic portfolio and MDX blog",
+  "summary": "A partially customized Tailwind Next.js Starter Blog site for Jie Dean Zhong, with a custom profile homepage, research/news/blog routes, Contentlayer MDX content, and GitHub Pages static export.",
+  "current_status": "Partial customization; source inspected only. Local build, lint, and deployment are unverified. Working tree had a pre-existing modified next-env.d.ts before this transfer package.",
+  "main_goals": [
+    "Present Jie Dean Zhong's academic profile and research interests",
+    "Publish research/project cards and news updates",
+    "Host MDX blog posts with tags, search, RSS, and static assets",
+    "Deploy a static export to GitHub Pages"
+  ],
+  "inferred_goals": [
+    {
+      "goal": "Move from a generic blog starter toward a personal academic portfolio",
+      "evidence": [
+        "app/page.tsx contains profile homepage copy and biological-sciences research interests",
+        "data/headerNavLinks.ts exposes Research and News",
+        "git log includes 2026-03-07 navigation restructuring and March 2026 profile/header updates"
+      ],
+      "confidence": "high"
+    },
+    {
+      "goal": "Use GitHub Pages as the main deployment target",
+      "evidence": [
+        ".github/workflows/pages.yml is named Deploy site to GitHub Pages",
+        "Workflow builds with EXPORT=true UNOPTIMIZED=true and uploads ./out",
+        "Repository remote is git@github.com:JieDeanZhong/JieDeanZhong.github.io.git"
+      ],
+      "confidence": "high"
+    },
+    {
+      "goal": "Reduce or remove dark mode",
+      "evidence": [
+        "Commit 5d560d5 is titled deleting dark mode",
+        "app/theme-providers.tsx is a no-op",
+        "ThemeSwitch.tsx and many dark: classes still remain"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "key_files": [
+    {
+      "path": "AGENTS.md",
+      "role": "Repository-specific guidelines and validation commands",
+      "importance": "critical",
+      "transfer_to_new_machine": true,
+      "notes": "Defines Yarn 3.6.1, coding style, minimum pre-PR checks, and content conventions."
+    },
+    {
+      "path": "package.json",
+      "role": "Scripts, dependencies, package manager declaration",
+      "importance": "critical",
+      "transfer_to_new_machine": true,
+      "notes": "Scripts include dev, build, analyze, lint; packageManager is yarn@3.6.1; next is declared as latest."
+    },
+    {
+      "path": "yarn.lock",
+      "role": "Dependency lockfile",
+      "importance": "critical",
+      "transfer_to_new_machine": true,
+      "notes": "Use with yarn install --immutable; lockfile currently resolves next@npm:16.1.6."
+    },
+    {
+      "path": ".yarn/releases/yarn-3.6.1.cjs",
+      "role": "Tracked Yarn release",
+      "importance": "high",
+      "transfer_to_new_machine": true,
+      "notes": "Required for reproducible Yarn Berry usage."
+    },
+    {
+      "path": ".yarn/cache",
+      "role": "Ignored local Yarn package cache",
+      "importance": "low",
+      "transfer_to_new_machine": false,
+      "notes": "About 171 MB locally; regenerate through install."
+    },
+    {
+      "path": "next.config.js",
+      "role": "Next configuration",
+      "importance": "critical",
+      "transfer_to_new_machine": true,
+      "notes": "Configures Contentlayer, static export via EXPORT, unoptimized images via UNOPTIMIZED, SVG loader, trailingSlash, and export-safe header omission."
+    },
+    {
+      "path": "contentlayer.config.ts",
+      "role": "MDX schema and generated tag/search logic",
+      "importance": "critical",
+      "transfer_to_new_machine": true,
+      "notes": "Reads data/blog and data/authors; writes app/tag-data.json and public/search.json on success."
+    },
+    {
+      "path": "data/siteMetadata.js",
+      "role": "Site identity, SEO, integrations, search",
+      "importance": "critical",
+      "transfer_to_new_machine": true,
+      "notes": "Contains real title/description but starter siteUrl/siteRepo/social/email defaults."
+    },
+    {
+      "path": "app/layout.tsx",
+      "role": "Root App Router layout and metadata",
+      "importance": "critical",
+      "transfer_to_new_machine": true,
+      "notes": "Wraps Header, SearchProvider, Footer, and global CSS."
+    },
+    {
+      "path": "app/page.tsx",
+      "role": "Current homepage/profile route",
+      "importance": "critical",
+      "transfer_to_new_machine": true,
+      "notes": "Custom profile page with portrait, biological-sciences copy, and spikes background; metadata title is About."
+    },
+    {
+      "path": "data/blog",
+      "role": "MDX blog content",
+      "importance": "high",
+      "transfer_to_new_machine": true,
+      "notes": "12 blog MDX files; many are starter/sample posts; one draft post exists."
+    },
+    {
+      "path": "data/authors",
+      "role": "Author profiles",
+      "importance": "high",
+      "transfer_to_new_machine": true,
+      "notes": "Default author has Jie Dean Zhong metadata but body contains a test line."
+    },
+    {
+      "path": "public/static/images",
+      "role": "Static image assets",
+      "importance": "high",
+      "transfer_to_new_machine": true,
+      "notes": "20 tracked images including profile, signature, blog placeholders, and starter images."
+    },
+    {
+      "path": "app/tag-data.json",
+      "role": "Generated/committed tag counts for tag routes",
+      "importance": "high",
+      "transfer_to_new_machine": true,
+      "notes": "Contains 19 tags including draft-derived hello; regenerate in intended environment."
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "role": "GitHub Pages deployment workflow",
+      "importance": "critical",
+      "transfer_to_new_machine": true,
+      "notes": "Uses Node 20, Yarn 3.6.1, immutable install, EXPORT=true, UNOPTIMIZED=true, and uploads ./out."
+    },
+    {
+      "path": "public/feed.xml",
+      "role": "Generated RSS feed",
+      "importance": "low",
+      "transfer_to_new_machine": false,
+      "notes": "Ignored generated artifact; regenerate by build/postbuild."
+    },
+    {
+      "path": "public/search.json",
+      "role": "Generated KBar search index",
+      "importance": "low",
+      "transfer_to_new_machine": false,
+      "notes": "Ignored generated artifact; regenerate through Contentlayer."
+    },
+    {
+      "path": "node_modules",
+      "role": "Installed dependencies",
+      "importance": "low",
+      "transfer_to_new_machine": false,
+      "notes": "About 726 MB locally; regenerate with yarn install --immutable."
+    }
+  ],
+  "pipelines": [
+    {
+      "name": "Setup and install",
+      "purpose": "Reproduce dependencies",
+      "entrypoints": [
+        "package.json",
+        "yarn.lock",
+        ".yarnrc.yml",
+        ".yarn/releases/yarn-3.6.1.cjs"
+      ],
+      "inputs": [
+        "Tracked source tree",
+        "Node 20",
+        "Corepack",
+        "Yarn 3.6.1"
+      ],
+      "outputs": [
+        "node_modules",
+        ".yarn/install-state.gz"
+      ],
+      "commands": [
+        "corepack enable",
+        "corepack prepare yarn@3.6.1 --activate",
+        "yarn install --immutable"
+      ],
+      "configs": [
+        ".yarnrc.yml",
+        "package.json",
+        "yarn.lock"
+      ],
+      "key_parameters": {
+        "node_version": "20",
+        "yarn_version": "3.6.1",
+        "node_linker": "node-modules"
+      },
+      "status": "unknown",
+      "failure_modes": [
+        "Wrong Yarn version",
+        "Lockfile drift",
+        "Node version mismatch",
+        "Copying stale node_modules instead of reinstalling"
+      ]
+    },
+    {
+      "name": "Local development",
+      "purpose": "Run interactive local Next.js preview",
+      "entrypoints": [
+        "package.json",
+        "app/layout.tsx",
+        "app/page.tsx",
+        "contentlayer.config.ts"
+      ],
+      "inputs": [
+        "Source files",
+        "MDX content",
+        "Static assets",
+        "Optional .env.local"
+      ],
+      "outputs": [
+        "http://localhost:3000",
+        ".contentlayer/generated",
+        "app/tag-data.json",
+        "public/search.json"
+      ],
+      "commands": [
+        "yarn dev"
+      ],
+      "configs": [
+        "next.config.js",
+        "contentlayer.config.ts",
+        "data/siteMetadata.js"
+      ],
+      "key_parameters": {
+        "dev_command": "cross-env INIT_CWD=$PWD next dev --webpack",
+        "port": "3000"
+      },
+      "status": "unknown",
+      "failure_modes": [
+        "Contentlayer generation failure",
+        "Missing node_modules",
+        "Draft posts visible in development",
+        "next-env.d.ts references generated .next types before dev/build"
+      ]
+    },
+    {
+      "name": "Contentlayer MDX generation",
+      "purpose": "Generate typed MDX content, tag counts, and search index",
+      "entrypoints": [
+        "contentlayer.config.ts"
+      ],
+      "inputs": [
+        "data/blog/**/*.mdx",
+        "data/authors/**/*.mdx",
+        "data/references-data.bib"
+      ],
+      "outputs": [
+        ".contentlayer/generated",
+        "app/tag-data.json",
+        "public/search.json"
+      ],
+      "commands": [
+        "yarn dev",
+        "yarn build"
+      ],
+      "configs": [
+        "contentlayer.config.ts",
+        "data/siteMetadata.js"
+      ],
+      "key_parameters": {
+        "contentDirPath": "data",
+        "blog_pattern": "blog/**/*.mdx",
+        "author_pattern": "authors/**/*.mdx",
+        "search_provider": "kbar"
+      },
+      "status": "unknown",
+      "failure_modes": [
+        "Malformed frontmatter",
+        "Missing images",
+        "Stale tag-data including draft tags",
+        "Missing bibliography file"
+      ]
+    },
+    {
+      "name": "Blog and tag rendering",
+      "purpose": "Render blog list, posts, tag list, tag pages, and pagination",
+      "entrypoints": [
+        "app/blog/page.tsx",
+        "app/blog/page/[page]/page.tsx",
+        "app/blog/[...slug]/page.tsx",
+        "app/tags/page.tsx",
+        "app/tags/[tag]/page.tsx",
+        "app/tags/[tag]/page/[page]/page.tsx",
+        "layouts/ListLayoutWithTags.tsx"
+      ],
+      "inputs": [
+        "contentlayer/generated allBlogs",
+        "contentlayer/generated allAuthors",
+        "app/tag-data.json"
+      ],
+      "outputs": [
+        "/blog",
+        "/blog/page/N",
+        "/blog/<slug>",
+        "/tags",
+        "/tags/<tag>",
+        "/tags/<tag>/page/N"
+      ],
+      "commands": [
+        "yarn dev",
+        "yarn build"
+      ],
+      "configs": [
+        "contentlayer.config.ts",
+        "data/siteMetadata.js"
+      ],
+      "key_parameters": {
+        "posts_per_page": "5",
+        "default_layout": "PostLayout",
+        "layouts": "PostSimple, PostLayout, PostBanner"
+      },
+      "status": "unknown",
+      "failure_modes": [
+        "Stale app/tag-data.json",
+        "Draft filtering differs between dev and production",
+        "Invalid page numbers return notFound",
+        "Starter siteUrl leaks into structured data"
+      ]
+    },
+    {
+      "name": "Production build and RSS",
+      "purpose": "Build production Next output and generate RSS/tag feeds",
+      "entrypoints": [
+        "package.json",
+        "scripts/postbuild.mjs",
+        "scripts/rss.mjs"
+      ],
+      "inputs": [
+        "Source files",
+        "Generated Contentlayer data",
+        "app/tag-data.json",
+        "data/siteMetadata.js"
+      ],
+      "outputs": [
+        ".next or out",
+        "feed.xml",
+        "tags/*/feed.xml"
+      ],
+      "commands": [
+        "yarn build",
+        "EXPORT=true UNOPTIMIZED=true yarn build"
+      ],
+      "configs": [
+        "next.config.js",
+        "scripts/rss.mjs",
+        "data/siteMetadata.js"
+      ],
+      "key_parameters": {
+        "postbuild_node_options": "--experimental-json-modules",
+        "rss_output_without_export": "public",
+        "rss_output_with_export": "out",
+        "export_flag": "EXPORT=true",
+        "unoptimized_images_flag": "UNOPTIMIZED=true"
+      },
+      "status": "unknown",
+      "failure_modes": [
+        "Build failure from dependency incompatibility",
+        "Wrong siteUrl in RSS",
+        "No published posts for RSS lastBuildDate",
+        "Missing output directory"
+      ]
+    },
+    {
+      "name": "GitHub Pages deployment",
+      "purpose": "Publish static export to GitHub Pages",
+      "entrypoints": [
+        ".github/workflows/pages.yml"
+      ],
+      "inputs": [
+        "GitHub repository",
+        "main branch",
+        "GitHub Pages permissions",
+        "Tracked source tree"
+      ],
+      "outputs": [
+        "GitHub Pages deployment",
+        "page_url"
+      ],
+      "commands": [
+        "yarn install --immutable",
+        "EXPORT=true UNOPTIMIZED=true yarn build"
+      ],
+      "configs": [
+        ".github/workflows/pages.yml",
+        "next.config.js"
+      ],
+      "key_parameters": {
+        "trigger_branch": "main",
+        "node_version": "20",
+        "artifact_path": "./out"
+      },
+      "status": "unknown",
+      "failure_modes": [
+        "GitHub Pages not configured",
+        "Build failure",
+        "Wrong base path or site URL",
+        "Missing assets in out"
+      ]
+    },
+    {
+      "name": "Lint and formatting",
+      "purpose": "Apply ESLint and Prettier fixes",
+      "entrypoints": [
+        "package.json",
+        "eslint.config.mjs",
+        "prettier.config.js",
+        ".husky/pre-commit"
+      ],
+      "inputs": [
+        "JS/TS/TSX/JSON/CSS/MD/MDX files"
+      ],
+      "outputs": [
+        "Modified source files when fixes apply"
+      ],
+      "commands": [
+        "yarn lint",
+        "npx --no-install lint-staged"
+      ],
+      "configs": [
+        "eslint.config.mjs",
+        "prettier.config.js",
+        "package.json"
+      ],
+      "key_parameters": {
+        "prettier_print_width": "100",
+        "prettier_semicolons": "false",
+        "prettier_single_quote": "true",
+        "lint_command_uses_fix": "true"
+      },
+      "status": "unknown",
+      "failure_modes": [
+        "next lint incompatibility with installed Next version",
+        "Auto-fixes touching unrelated files",
+        "Missing referenced pages or lib directories"
+      ]
+    }
+  ],
+  "key_numbers": [
+    {
+      "name": "tracked_files",
+      "value": "125",
+      "unit": "files",
+      "source": "git ls-files | wc -l",
+      "notes": "Count before adding _transfer files."
+    },
+    {
+      "name": "blog_mdx_files",
+      "value": "12",
+      "unit": "files",
+      "source": "find data/blog -name '*.mdx' -type f | wc -l",
+      "notes": "Includes one draft post."
+    },
+    {
+      "name": "draft_posts",
+      "value": "1",
+      "unit": "post",
+      "source": "data/blog/my-fancy-title.mdx",
+      "notes": "draft: true."
+    },
+    {
+      "name": "author_mdx_files",
+      "value": "2",
+      "unit": "files",
+      "source": "find data/authors -name '*.mdx' -type f | wc -l",
+      "notes": "default and sparrowhawk."
+    },
+    {
+      "name": "static_images",
+      "value": "20",
+      "unit": "files",
+      "source": "find public/static/images -type f | wc -l",
+      "notes": "Tracked images under public/static/images."
+    },
+    {
+      "name": "favicons",
+      "value": "9",
+      "unit": "files",
+      "source": "find public/static/favicons -type f | wc -l",
+      "notes": "Tracked favicon/manifest/browserconfig assets."
+    },
+    {
+      "name": "tag_keys",
+      "value": "19",
+      "unit": "tags",
+      "source": "app/tag-data.json",
+      "notes": "Includes hello from a draft post, suggesting dev-generated tag data."
+    },
+    {
+      "name": "posts_per_page",
+      "value": "5",
+      "unit": "posts",
+      "source": "app/blog/page.tsx and tag pagination routes",
+      "notes": "Used for blog and tag pagination."
+    },
+    {
+      "name": "current_head",
+      "value": "82528d8",
+      "unit": "commit",
+      "source": "git log --oneline -n 1",
+      "notes": "Commit message: responsive updates and preview blog."
+    },
+    {
+      "name": "node_version_ci",
+      "value": "20",
+      "unit": "major version",
+      "source": ".github/workflows/pages.yml",
+      "notes": "Also used by devcontainer image."
+    },
+    {
+      "name": "yarn_version",
+      "value": "3.6.1",
+      "unit": "version",
+      "source": "package.json and .yarn/releases/yarn-3.6.1.cjs",
+      "notes": "Use Corepack to activate."
+    },
+    {
+      "name": "lockfile_next_version",
+      "value": "16.1.6",
+      "unit": "version",
+      "source": "yarn.lock",
+      "notes": "package.json declares next as latest; use immutable install."
+    },
+    {
+      "name": "react_version",
+      "value": "19.2.4",
+      "unit": "version",
+      "source": "package.json",
+      "notes": "react and react-dom."
+    },
+    {
+      "name": "node_modules_size_local",
+      "value": "726",
+      "unit": "MB",
+      "source": "du -sh node_modules",
+      "notes": "Ignored; do not transfer."
+    },
+    {
+      "name": "yarn_cache_size_local",
+      "value": "171",
+      "unit": "MB",
+      "source": "du -sh .yarn/cache",
+      "notes": "Ignored; do not transfer unless deliberately using offline mirror."
+    }
+  ],
+  "environment": {
+    "languages": [
+      "TypeScript",
+      "JavaScript",
+      "MDX",
+      "CSS"
+    ],
+    "package_managers": [
+      "Yarn 3.6.1 via Corepack"
+    ],
+    "dependency_files": [
+      "package.json",
+      "yarn.lock",
+      ".yarnrc.yml",
+      ".yarn/releases/yarn-3.6.1.cjs"
+    ],
+    "external_tools": [
+      "Node 20",
+      "Corepack",
+      "Git",
+      "GitHub Actions",
+      "GitHub Pages"
+    ],
+    "hardware_assumptions": [
+      ".devcontainer/devcontainer.json requests 8 GB memory",
+      "No GPU requirement"
+    ],
+    "environment_variables": [
+      "EXPORT",
+      "UNOPTIMIZED",
+      "BASE_PATH",
+      "ANALYZE",
+      "NEXT_UMAMI_ID",
+      "NEXT_PUBLIC_GISCUS_REPO",
+      "NEXT_PUBLIC_GISCUS_REPOSITORY_ID",
+      "NEXT_PUBLIC_GISCUS_CATEGORY",
+      "NEXT_PUBLIC_GISCUS_CATEGORY_ID",
+      "BUTTONDOWN_API_KEY",
+      "MAILCHIMP_API_KEY",
+      "MAILCHIMP_API_SERVER",
+      "MAILCHIMP_AUDIENCE_ID",
+      "CONVERTKIT_API_KEY",
+      "CONVERTKIT_FORM_ID",
+      "KLAVIYO_API_KEY",
+      "KLAVIYO_LIST_ID",
+      "REVUE_API_KEY",
+      "EMAILOCTOPUS_API_KEY",
+      "EMAILOCTOPUS_LIST_ID",
+      "BEEHIIV_API_KEY",
+      "BEEHIIV_PUBLICATION_ID"
+    ]
+  },
+  "history": [
+    {
+      "date_or_commit": "85b1f75, 2026-03-04",
+      "change": "Initial commit imported the starter with App Router, Contentlayer, MDX posts, layouts, assets, Yarn release, and GitHub Pages workflow.",
+      "why_it_matters": "Baseline is a starter template; many current files still retain starter content.",
+      "evidence": "git show --stat 85b1f75"
+    },
+    {
+      "date_or_commit": "b8b8a7e, 2026-03-05",
+      "change": "Updated next.config.js.",
+      "why_it_matters": "Current static export behavior and header omission for export mode come from this setup period.",
+      "evidence": "git show --stat b8b8a7e; next.config.js"
+    },
+    {
+      "date_or_commit": "31a79c2, 2026-03-07",
+      "change": "Restructured navigation and added research and news pages.",
+      "why_it_matters": "Moved site from starter blog toward personal academic site sections.",
+      "evidence": "git show --stat 31a79c2; data/headerNavLinks.ts"
+    },
+    {
+      "date_or_commit": "0cbc533, 2026-03-08",
+      "change": "Apple style home page and font.",
+      "why_it_matters": "Major homepage/layout customization.",
+      "evidence": "git show --stat 0cbc533"
+    },
+    {
+      "date_or_commit": "5d560d5, 2026-03-08",
+      "change": "Deleting dark mode.",
+      "why_it_matters": "ThemeProvider is now no-op, but leftover dark classes and ThemeSwitch remain.",
+      "evidence": "git show --stat 5d560d5; app/theme-providers.tsx; components/ThemeSwitch.tsx"
+    },
+    {
+      "date_or_commit": "710b524, 2026-03-08",
+      "change": "New profile pic update.",
+      "why_it_matters": "Current homepage portrait asset was introduced.",
+      "evidence": "git show --stat 710b524; app/page.tsx"
+    },
+    {
+      "date_or_commit": "5dd49e9, 2026-03-12",
+      "change": "Background edit by colin.",
+      "why_it_matters": "Current homepage uses spikes.png background.",
+      "evidence": "git show --stat 5dd49e9; app/page.tsx"
+    },
+    {
+      "date_or_commit": "82528d8, 2026-06-05",
+      "change": "Responsive updates and preview blog.",
+      "why_it_matters": "Current HEAD; added placeholder blog preview and large placeholder images.",
+      "evidence": "git show --stat 82528d8"
+    }
+  ],
+  "risks": [
+    "siteUrl, siteRepo, README, social links, issue templates, and funding metadata still contain starter/default values",
+    "Build and lint were not run during transfer scan",
+    "next-env.d.ts has a pre-existing uncommitted generated type-reference change",
+    "app/tag-data.json includes draft-derived hello tag",
+    "Draft filtering differs between development and production",
+    "Many sample/starter posts remain public",
+    "data/authors/default.mdx body contains a test line",
+    "app/Main.tsx appears unused and may confuse maintainers",
+    "Theme/dark-mode state is partial and inconsistent",
+    "package.json declares next as latest; reproducibility depends on yarn.lock",
+    "yarn lint uses next lint --fix and may need verification with the installed Next version",
+    "Generated RSS/search/tag feed artifacts are ignored and may be stale",
+    "GitHub Pages static export omits Next headers by design"
+  ],
+  "open_questions": [
+    "What is the intended production domain and siteUrl?",
+    "Should siteRepo point to the JieDeanZhong GitHub repository?",
+    "Which starter/sample posts should remain public?",
+    "Should /about use Contentlayer author content or the custom homepage profile content?",
+    "Are comments, analytics, search, and newsletter intended to be enabled?",
+    "Should dark mode be fully removed or restored?",
+    "Should next be pinned to an explicit version?",
+    "Does the current GitHub Pages workflow pass?",
+    "Should app/tag-data.json be regenerated in production mode?",
+    "Are placeholder blog images and post intended to ship?"
+  ],
+  "recommended_next_actions": [
+    "Install with Corepack/Yarn 3.6.1 and yarn install --immutable",
+    "Run yarn dev and visually verify key routes",
+    "Update data/siteMetadata.js with real URL, repo, social links, email, and integration decisions",
+    "Decide whether to keep starter posts, placeholder post, and /about test content",
+    "Run EXPORT=true UNOPTIMIZED=true yarn build for GitHub Pages parity",
+    "Regenerate tag/search/RSS artifacts in the intended environment",
+    "Recreate env vars manually from .env.example",
+    "Clean unused starter files after build verification",
+    "Pin next to a known-good version if reproducibility matters",
+    "Replace README with project-specific docs"
+  ]
+}
