@@ -1,134 +1,110 @@
 'use client'
 
-import { useRef, useState } from 'react'
+import { useRef, type CSSProperties, type ReactNode } from 'react'
 import { Popover } from '@base-ui/react/popover'
 import Image from 'next/image'
 import Link from '@/components/Link'
 import type { ScholarProfile } from '@/data/scholarsData'
+import styles from './ScholarPopover.module.css'
 
-const linkStyle =
-  'underline decoration-gray-400 underline-offset-4 hover:text-gray-900 focus-visible:outline-offset-4'
-
-function ScholarEmail({ email }: { email: string }) {
-  const [status, setStatus] = useState<'idle' | 'copied' | 'error'>('idle')
-
-  async function copyEmail() {
-    try {
-      await navigator.clipboard.writeText(email)
-      setStatus('copied')
-    } catch {
-      setStatus('error')
-    }
-  }
-
-  return (
-    <li>
-      <div className="flex items-start justify-between gap-3">
-        <a href={`mailto:${email}`} className={`${linkStyle} min-w-0 [overflow-wrap:anywhere]`}>
-          {email}
-        </a>
-        <button
-          type="button"
-          onClick={copyEmail}
-          aria-label={`Copy ${email}`}
-          className="shrink-0 rounded px-1 text-xs leading-6 text-gray-600 hover:text-gray-900 focus-visible:outline-offset-2"
-        >
-          {status === 'copied' ? 'Copied' : 'Copy'}
-        </button>
-      </div>
-      <span
-        role="status"
-        className={status === 'error' ? 'block text-xs text-gray-600' : 'sr-only'}
-      >
-        {status === 'copied' && `Copied ${email}`}
-        {status === 'error' && 'Could not copy. Select the email address to copy it manually.'}
-      </span>
-    </li>
-  )
-}
-
-export default function ScholarPopover({ scholar }: { scholar: ScholarProfile }) {
+// One popup for the group avoids overlapping cards when switching names.
+// Server-rendered page content passes through as children.
+export function ScholarPopoverGroup({ children }: { children: ReactNode }) {
   const popupRef = useRef<HTMLDivElement>(null)
-  const label = `${scholar.name}, ${scholar.degree}`
+  const pressedTriggerRef = useRef<Element | null>(null)
 
   function handleOpenChange(open: boolean, details: Popover.Root.ChangeEventDetails) {
-    // Leaving with the pointer must not dismiss a card still being used with the keyboard.
+    if (details.reason === 'trigger-press') {
+      // Hover can change the active trigger just before a click. The first click
+      // on that new name should keep its card open, rather than toggle it closed.
+      const isNewTrigger = pressedTriggerRef.current !== details.trigger
+      pressedTriggerRef.current = details.trigger ?? null
+      if (!open && isNewTrigger) {
+        details.cancel()
+        return
+      }
+    }
     if (
       !open &&
       details.reason === 'trigger-hover' &&
       popupRef.current?.contains(document.activeElement)
     ) {
       details.cancel()
+      return
     }
+    if (!open) pressedTriggerRef.current = null
   }
 
   return (
-    <Popover.Root modal={false} onOpenChange={handleOpenChange}>
-      <Popover.Trigger
-        openOnHover
-        delay={250}
-        closeDelay={180}
-        className="max-w-full cursor-pointer rounded-sm p-0 text-left text-inherit underline decoration-gray-400 decoration-dotted underline-offset-4 hover:decoration-solid focus-visible:outline-offset-4"
-      >
-        {label}
-      </Popover.Trigger>
-      <Popover.Portal>
-        <Popover.Positioner
-          side="bottom"
-          align="start"
-          sideOffset={8}
-          collisionPadding={16}
-          positionMethod="fixed"
-          className="z-60"
-        >
-          <Popover.Popup
-            ref={popupRef}
-            className="w-max max-w-[calc(100vw-2rem)] min-w-[min(360px,calc(100vw-2rem))] origin-[var(--transform-origin)] overflow-y-auto rounded-xl border border-gray-200 bg-white p-5 text-sm leading-6 text-gray-700 shadow-lg transition-[opacity,transform] duration-150 outline-none data-[ending-style]:opacity-0 data-[starting-style]:translate-y-1 data-[starting-style]:opacity-0 motion-reduce:transition-none"
-            style={{ maxHeight: 'var(--available-height)' }}
-          >
-            <div className="flex items-start gap-3">
-              {scholar.photo && (
-                <Image
-                  src={scholar.photo.src}
-                  alt={scholar.photo.alt}
-                  width={56}
-                  height={56}
-                  sizes="56px"
-                  unoptimized
-                  className="h-14 w-14 shrink-0 rounded-md object-cover"
-                  style={{ objectPosition: scholar.photo.objectPosition ?? 'center' }}
-                />
+    <Popover.Root<ScholarProfile> modal={false} onOpenChange={handleOpenChange}>
+      {({ payload: scholar }) => (
+        <>
+          {children}
+          <Popover.Portal>
+            <Popover.Positioner
+              side="bottom"
+              align="start"
+              sideOffset={10}
+              collisionPadding={16}
+              positionMethod="fixed"
+              className={styles.positioner}
+            >
+              {scholar && (
+                <Popover.Popup
+                  ref={popupRef}
+                  className={styles.card}
+                  data-scholar={scholar.id}
+                  style={
+                    {
+                      '--card-background': scholar.card.background,
+                      '--card-foreground': scholar.card.foreground,
+                    } as CSSProperties
+                  }
+                >
+                  <div className={styles.copy}>
+                    <Popover.Title className={styles.name}>{scholar.name}</Popover.Title>
+                    <Popover.Description className={styles.details}>
+                      <span className={styles.role}>{scholar.title}</span>
+                      <span className={styles.institution}>{scholar.card.institution}</span>
+                    </Popover.Description>
+                    <div className={styles.links}>
+                      <Link href={scholar.googleScholarUrl}>Google Scholar</Link>
+                      <Link href={scholar.institutionalProfileUrl}>Profile</Link>
+                    </div>
+                  </div>
+                  {scholar.photo && (
+                    <div className={styles.portrait}>
+                      <Image
+                        src={scholar.photo.src}
+                        alt={scholar.photo.alt}
+                        width={scholar.photo.width}
+                        height={scholar.photo.height}
+                        sizes="(max-width: 599px) 160px, 310px"
+                        unoptimized
+                        className={styles.photo}
+                      />
+                    </div>
+                  )}
+                </Popover.Popup>
               )}
-              <div className="min-w-0">
-                <Popover.Title className="text-base leading-6 font-semibold text-gray-900">
-                  {label}
-                </Popover.Title>
-                <Popover.Description className="mt-1 text-sm leading-5 font-normal text-gray-500">
-                  {scholar.institutions.map((institution) => (
-                    <span key={institution} className="block">
-                      {institution}
-                    </span>
-                  ))}
-                </Popover.Description>
-              </div>
-            </div>
-
-            <ul aria-label="Email addresses" className="mt-4 space-y-2">
-              {scholar.emails.map((email) => (
-                <ScholarEmail key={email} email={email} />
-              ))}
-            </ul>
-            <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
-              <Link href={scholar.googleScholarUrl} className={linkStyle}>
-                Google Scholar
-              </Link>
-              <Link href={scholar.institutionalProfileUrl} className={linkStyle}>
-                Profile
-              </Link>
-            </div>
-          </Popover.Popup>
-        </Popover.Positioner>
-      </Popover.Portal>
+            </Popover.Positioner>
+          </Popover.Portal>
+        </>
+      )}
     </Popover.Root>
+  )
+}
+
+export default function ScholarPopover({ scholar }: { scholar: ScholarProfile }) {
+  return (
+    <Popover.Trigger
+      payload={scholar}
+      openOnHover
+      delay={180}
+      closeDelay={220}
+      className="max-w-full cursor-pointer rounded-sm p-0 text-left text-inherit underline decoration-gray-400 decoration-dotted underline-offset-4 hover:decoration-solid focus-visible:outline-offset-4"
+    >
+      {scholar.name}, {scholar.degree}
+    </Popover.Trigger>
   )
 }

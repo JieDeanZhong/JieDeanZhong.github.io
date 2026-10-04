@@ -1,5 +1,6 @@
 import researchData from '@/data/researchData'
 import ResearchList from '@/components/ResearchList'
+import { ScholarPopoverGroup } from '@/components/ScholarPopover'
 import { genPageMetadata } from 'app/seo'
 
 export const metadata = genPageMetadata({ title: 'Research' })
@@ -13,7 +14,9 @@ export default function Research() {
         </h1>
       </div>
 
-      <ResearchList entries={researchData} />
+      <ScholarPopoverGroup>
+        <ResearchList entries={researchData} />
+      </ScholarPopoverGroup>
     </div>
   )
 }

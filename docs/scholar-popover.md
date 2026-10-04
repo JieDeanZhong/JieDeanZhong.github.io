@@ -1,39 +1,67 @@
 # Scholar popover integration
 
-`ScholarPopover` is a client component; import it from an existing server component
-without moving page metadata or the rest of the Research page into a client boundary.
+`ScholarPopover` renders a name button. Put related names inside one
+`ScholarPopoverGroup`; the group owns a single Base UI popover and renders the
+active trigger's profile payload. This prevents overlapping cards when switching
+people. Do not wrap the name button in a link.
 
 ```tsx
-import ScholarPopover from '@/components/ScholarPopover'
+import ScholarPopover, { ScholarPopoverGroup } from '@/components/ScholarPopover'
 import scholarsData from '@/data/scholarsData'
 
-<ScholarPopover scholar={scholarsData['lianjun-zhang']} />
-<ScholarPopover scholar={scholarsData['yongtao-zhu']} />
-<ScholarPopover scholar={scholarsData['kevin-chan']} />
+export default function People() {
+  return (
+    <ScholarPopoverGroup>
+      <ScholarPopover scholar={scholarsData['lianjun-zhang']} />
+      <ScholarPopover scholar={scholarsData['yongtao-zhu']} />
+      <ScholarPopover scholar={scholarsData['kevin-chan']} />
+    </ScholarPopoverGroup>
+  )
+}
 ```
 
-The trigger renders a button. Do not wrap it in a link. Profiles, institutions,
-email addresses and optional portraits live in `data/scholarsData.ts`.
-Use each profile's `institutionalProfileUrl` for existing links to that person's
-institutional biography; retain project wiki and organization homepage links for
-their original purposes. Missing photos render no image or placeholder.
+The Research route stays a server component and passes its server-rendered
+`ResearchList` as children to the client group. The five name buttons come from
+`data/researchData.ts`: TroGen (Yongtao and Kevin), FJ Gliding (Yongtao), CXCL13–Fc
+and Spotlight (Lianjun).
 
-The component uses Base UI's native hover support (`openOnHover`, `delay={250}`,
-`closeDelay={180}`), Portal positioning and nonmodal focus management. It also
-supports click/touch, keyboard activation, Escape, outside dismissal, and copying
-individual email addresses. Portraits use local, unoptimized `next/image` sources
-so the component works with the site's static export configuration.
+## Content and appearance
 
-## Current integration status
+`data/scholarsData.ts` holds names, degrees, academic titles, full institutions,
+original email data and individually verified external links. `card` holds the
+short display institution and colors sampled from the embedded Keynote photos.
+The card intentionally hides degrees, emails and copy controls; the inline name
+button retains its original degree label. External links retain the shared
+`Link` component's `_blank` / `noopener noreferrer` behavior.
 
-`app/research/page.tsx` renders `ResearchList`, which uses each PI's `scholarId`
-from `data/researchData.ts` to display the shared popover. The five triggers cover
-TroGen (Yongtao Zhu and Kevin Chun Chan), FJ Gliding (Yongtao Zhu), and both
-CXCL13–Fc and Spotlight (Lianjun Zhang).
+`ScholarPopover.module.css` defines the horizontal layout, restrained shadow and
+thin edge. Each portrait is a transparent image, positioned separately from the
+solid background and real HTML text. Narrow viewports move the name above the
+text/portrait area. The original, uncropped Keynote photos and transparent PNG
+masters live in `design/scholar-cards-2026-10-04/`; runtime images are full-resolution,
+lossless transparent WebP files in `public/static/images/people/`.
 
-All three profiles include local portraits. The card places plain institution
-text below the name beside the portrait; the separate Profile link opens the
-institutional biography. Cards adapt to the institution text on desktop and wrap
-within the viewport on small screens.
+## Interaction
+
+Base UI provides mouse hover (180ms open / 220ms close delay), click, touch,
+keyboard activation, focus management, Escape and outside dismissal. The hover
+bridge keeps links reachable; pointer exit does not close a popup whose contents
+still have keyboard focus. The first click on another name keeps that person's
+card open, including when pointer hover changed the active name immediately
+before the click. A repeated click closes it.
+
+The popup is portalled to the document body, uses fixed positioning and 16px
+collision padding, and can flip above or shift sideways near viewport edges.
+It does not change the text layout. Entry combines a 4px offset, 3% horizontal
+scale and fade over 160–200ms; exit lasts 110ms. Person switching skips transitions.
+`prefers-reduced-motion` disables transitions and transforms. No new runtime
+dependencies are required. `next/image` remains unoptimized for static exports.
+
+## Validation
+
+See `design/scholar-cards-2026-10-04/acceptance.md`, `browser-results.json`,
+`asset-manifest.json` and the `screenshots/` folder for the 2026-10-04 acceptance.
+The browser script covers actual mouse/keyboard/touch interactions and link
+opening in Chromium, including narrow viewports and repeated name entries.
 
 Official API: https://base-ui.com/react/components/popover

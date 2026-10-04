@@ -1,0 +1,104 @@
+[
+  {
+    "test": "all five Research triggers are present",
+    "result": "pass"
+  },
+  {
+    "test": "lianjun-zhang desktop hover, pointer bridge, links, click, outside/Esc close, focus return",
+    "result": "pass",
+    "detail": {
+      "x": 228,
+      "y": 522,
+      "width": 700,
+      "height": 230,
+      "top": 522,
+      "right": 928,
+      "bottom": 752,
+      "left": 228
+    }
+  },
+  {
+    "test": "yongtao-zhu desktop hover, pointer bridge, links, click, outside/Esc close, focus return",
+    "result": "pass",
+    "detail": {
+      "x": 235.5,
+      "y": 515,
+      "width": 590,
+      "height": 230,
+      "top": 515,
+      "right": 825.5,
+      "bottom": 745,
+      "left": 235.5
+    }
+  },
+  {
+    "test": "kevin-chan desktop hover, pointer bridge, links, click, outside/Esc close, focus return",
+    "result": "pass",
+    "detail": {
+      "x": 383.5,
+      "y": 515,
+      "width": 640,
+      "height": 230,
+      "top": 515,
+      "right": 1023.5,
+      "bottom": 745,
+      "left": 383.5
+    }
+  },
+  {
+    "test": "click directly from Yongtao to Kevin",
+    "result": "pass"
+  },
+  {
+    "test": "rapid pointer entry/exit and hover switching",
+    "result": "pass"
+  },
+  {
+    "test": "keyboard Enter, Space, Tab link order, hover/focus retention and Tab dismissal",
+    "result": "pass"
+  },
+  {
+    "test": "all five triggers and viewport top/bottom collision positioning",
+    "result": "pass"
+  },
+  {
+    "test": "right edge shifts the entire card inside the viewport",
+    "result": "pass"
+  },
+  {
+    "test": "all six links open their configured destinations in a new tab",
+    "result": "pass"
+  },
+  {
+    "test": "reduced motion disables card transitions",
+    "result": "pass"
+  },
+  {
+    "test": "touch open/close, image loading and bounds at 320px",
+    "result": "pass"
+  },
+  {
+    "test": "touch open/close, image loading and bounds at 360px",
+    "result": "pass"
+  },
+  {
+    "test": "touch open/close, image loading and bounds at 390px",
+    "result": "pass"
+  },
+  {
+    "test": "touch open/close, image loading and bounds at 600px",
+    "result": "pass"
+  },
+  {
+    "test": "touch open/close, image loading and bounds at 768px",
+    "result": "pass"
+  },
+  {
+    "test": "no browser runtime errors",
+    "result": "pass"
+  },
+  {
+    "test": "home, MDX article, tags and Research detail routes render",
+    "result": "pass"
+  }
+]

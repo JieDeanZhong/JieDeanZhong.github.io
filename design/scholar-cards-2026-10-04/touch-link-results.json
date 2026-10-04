@@ -1,0 +1,36 @@
+[
+  {
+    "test": "390px touch directly switches Yongtao to Kevin",
+    "result": "pass"
+  },
+  {
+    "test": "lianjun-zhang touch Google Scholar new tab",
+    "result": "pass",
+    "url": "https://scholar.google.com/citations?hl=en&user=LioEwqwAAAAJ"
+  },
+  {
+    "test": "lianjun-zhang touch Profile new tab",
+    "result": "pass",
+    "url": "https://www.ismsz.cn/Web/KXYJKYTDPage?Id=20&PageId=292"
+  },
+  {
+    "test": "yongtao-zhu touch Google Scholar new tab",
+    "result": "pass",
+    "url": "https://scholar.google.com/citations?hl=en&user=9r8TXE8AAAAJ"
+  },
+  {
+    "test": "yongtao-zhu touch Profile new tab",
+    "result": "pass",
+    "url": "https://scholar.xjtlu.edu.cn/en/persons/YongtaoZhu/"
+  },
+  {
+    "test": "kevin-chan touch Google Scholar new tab",
+    "result": "pass",
+    "url": "https://scholar.google.com/citations?hl=en&user=rSZrshkAAAAJ"
+  },
+  {
+    "test": "kevin-chan touch Profile new tab",
+    "result": "pass",
+    "url": "https://scholar.xjtlu.edu.cn/en/persons/ChunChan/"
+  }
+]

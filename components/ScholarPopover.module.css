@@ -1,0 +1,217 @@
+.positioner {
+  z-index: 60;
+}
+
+.card {
+  --card-width: 640px;
+  position: relative;
+  isolation: isolate;
+  width: min(var(--card-width), calc(100vw - 32px));
+  max-height: var(--available-height);
+  overflow: auto;
+  overscroll-behavior: contain;
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: 3px;
+  background: var(--card-background);
+  color: var(--card-foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 22%),
+    0 2px 0 color-mix(in srgb, var(--card-background), #000 22%),
+    1px 3px 0 color-mix(in srgb, var(--card-background), #000 32%),
+    0 8px 18px -10px rgb(16 24 40 / 30%),
+    0 20px 42px -18px rgb(16 24 40 / 28%);
+  outline: none;
+  transform-origin: var(--transform-origin);
+  transition:
+    opacity 160ms ease-out,
+    transform 200ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.card[data-starting-style],
+.card[data-ending-style] {
+  opacity: 0;
+  transform: translateY(-4px) scale(0.97, 0.98);
+}
+
+.card[data-side='top'][data-starting-style],
+.card[data-side='top'][data-ending-style] {
+  transform: translateY(4px) scale(0.97, 0.98);
+}
+
+.card[data-ending-style] {
+  transition-duration: 110ms;
+}
+
+.card[data-instant='trigger-change'] {
+  transition: none;
+}
+
+.copy {
+  position: relative;
+  z-index: 1;
+  width: 69%;
+  min-height: 228px;
+  padding: 30px 0 22px 32px;
+}
+
+.name {
+  margin: 0;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+  text-wrap: balance;
+}
+
+.details {
+  margin: 24px 0 0 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.role,
+.institution {
+  display: block;
+}
+
+.institution {
+  margin-top: 4px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 22px;
+  margin: 15px 0 0 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.links a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.links a:focus-visible {
+  border-radius: 1px;
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.portrait {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.photo {
+  position: absolute;
+  right: 0;
+  bottom: -38px;
+  width: 210px;
+  max-width: none;
+  height: auto;
+}
+
+.card[data-scholar='lianjun-zhang'] {
+  --card-width: 700px;
+}
+
+.card[data-scholar='lianjun-zhang'] .photo {
+  top: -20px;
+  right: -32px;
+  bottom: auto;
+  width: 310px;
+}
+
+.card[data-scholar='lianjun-zhang'] .copy {
+  width: 70%;
+}
+
+.card[data-scholar='yongtao-zhu'] {
+  --card-width: 590px;
+}
+
+.card[data-scholar='yongtao-zhu'] .photo {
+  width: 226px;
+  bottom: -25px;
+}
+
+@media (max-width: 599px) {
+  .copy,
+  .card[data-scholar='lianjun-zhang'] .copy {
+    width: 100%;
+    min-height: 264px;
+    padding: 22px 18px 16px;
+  }
+
+  .name {
+    font-size: clamp(27px, 7.7vw, 36px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+    text-wrap: initial;
+  }
+
+  .details {
+    width: 58%;
+    margin: 20px 0 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .institution {
+    margin-top: 7px;
+  }
+
+  .links {
+    width: 58%;
+    gap: 0 16px;
+    margin: 12px 0 0;
+    font-size: 13px;
+  }
+
+  .links a {
+    min-height: 44px;
+  }
+
+  .photo,
+  .card[data-scholar='yongtao-zhu'] .photo {
+    width: 44%;
+    bottom: -28px;
+  }
+
+  .card[data-scholar='yongtao-zhu'] .photo {
+    bottom: -20px;
+  }
+
+  .card[data-scholar='lianjun-zhang'] .photo {
+    top: auto;
+    right: -38px;
+    bottom: -104px;
+    width: 220px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+
+  .card[data-side][data-starting-style],
+  .card[data-side][data-ending-style] {
+    transform: none;
+  }
+}

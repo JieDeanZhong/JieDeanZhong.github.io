@@ -1,0 +1,59 @@
+[
+  {
+    "name": "lianjun-zhang",
+    "keynoteEntry": "Data/Lianjun_portrait-9084.png",
+    "sourceFile": "design/scholar-cards-2026-10-04/originals/lianjun-zhang.png",
+    "width": 1600,
+    "height": 2172,
+    "sourceSha256": "9edc96840b402ca3efbcea72f089d0eaf045a7e190778c8314884b8be60e56cb",
+    "background": {
+      "color": "#5e5e60",
+      "sampleBox": [256, 608, 368, 868],
+      "method": "per-channel median from original background"
+    },
+    "output": "public/static/images/people/lianjun-zhang-cutout.webp",
+    "outputBytes": 765114,
+    "transparentPixels": 1933880,
+    "partialAlphaPixels": 30094,
+    "changedOpaqueRGBChannels": 0,
+    "method": "Vision accurate person segmentation; alpha-only edge refinement; original RGB copied; lossless WebP encoding; no generated facial or clothing pixels"
+  },
+  {
+    "name": "yongtao-zhu",
+    "keynoteEntry": "Data/Yongtao_portrait-9108.png",
+    "sourceFile": "design/scholar-cards-2026-10-04/originals/yongtao-zhu.png",
+    "width": 1000,
+    "height": 1075,
+    "sourceSha256": "93f978ee68c069988fc2b7a957fe5f56a9b90bf892ce77a3827cc3d5adac8d73",
+    "background": {
+      "color": "#bbbcbd",
+      "sampleBox": [850, 301, 970, 537],
+      "method": "per-channel median from original background"
+    },
+    "output": "public/static/images/people/yongtao-zhu-cutout.webp",
+    "outputBytes": 409702,
+    "transparentPixels": 495332,
+    "partialAlphaPixels": 17115,
+    "changedOpaqueRGBChannels": 0,
+    "method": "Vision accurate person segmentation; alpha-only edge refinement; original RGB copied; lossless WebP encoding; no generated facial or clothing pixels"
+  },
+  {
+    "name": "kevin-chan",
+    "keynoteEntry": "Data/Kevin_portrait-9124.png",
+    "sourceFile": "design/scholar-cards-2026-10-04/originals/kevin-chan.png",
+    "width": 1521,
+    "height": 1863,
+    "sourceSha256": "7be58d13826598468e1d51212de144b9272da44f76c7b8f21c60b27ecc31a919",
+    "background": {
+      "color": "#a4a6a9",
+      "sampleBox": [60, 707, 228, 931],
+      "method": "per-channel median from original background"
+    },
+    "output": "public/static/images/people/kevin-chan-cutout.webp",
+    "outputBytes": 823104,
+    "transparentPixels": 1216440,
+    "partialAlphaPixels": 44784,
+    "changedOpaqueRGBChannels": 0,
+    "method": "Vision accurate person segmentation; alpha-only edge refinement; original RGB copied; lossless WebP encoding; no generated facial or clothing pixels"
+  }
+]

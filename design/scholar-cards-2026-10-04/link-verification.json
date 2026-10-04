@@ -1,0 +1,36 @@
+{
+  "checkedOn": "2026-10-04",
+  "method": "Read target-page identity and affiliation, not just HTTP status. Initial search-tool restrictions were resolved using the target pages and the official same-site content API.",
+  "links": [
+    {
+      "name": "Lianjun Zhang",
+      "scholarUrl": "https://scholar.google.com/citations?hl=en&user=LioEwqwAAAAJ",
+      "scholarIdentity": "Lianjun Zhang; Suzhou Institute of Systems Medicine; verified ism.cams.cn domain",
+      "profileUrl": "https://www.ismsz.cn/Web/KXYJKYTDPage?Id=20&PageId=292",
+      "profileIdentity": "张连军; 苏州系统医学研究所研究员、独立PI; 中国医学科学院/北京协和医学院博士生导师",
+      "profileVerification": "Official page dynamically loads its content. Read the same-site /MenuNew/GetMenuNewWebById endpoint with Id=292; verified the returned title, affiliation and biography.",
+      "result": "verified",
+      "repositoryUrlsUnchanged": true
+    },
+    {
+      "name": "Yongtao Zhu",
+      "scholarUrl": "https://scholar.google.com/citations?hl=en&user=9r8TXE8AAAAJ",
+      "scholarIdentity": "Yongtao Zhu; Associate Professor, Xi’an Jiaotong-Liverpool University; verified xjtlu.edu.cn domain",
+      "profileUrl": "https://scholar.xjtlu.edu.cn/en/persons/YongtaoZhu/",
+      "profileIdentity": "Yongtao Zhu; Associate Professor; Xi’an Jiaotong-Liverpool University",
+      "profileVerification": "Read the institutional profile. Cross-checked both links against the official lab page at https://connect.xjtlu.edu.cn/user/zhulab.",
+      "result": "verified",
+      "repositoryUrlsUnchanged": true
+    },
+    {
+      "name": "Kevin Chun Chan",
+      "scholarUrl": "https://scholar.google.com/citations?hl=en&user=rSZrshkAAAAJ",
+      "scholarIdentity": "Kevin Chun Chan; Department of Biosciences and Bioinformatics, School of Science, Xi’an Jiaotong-Liverpool University; verified xjtlu.edu.cn domain",
+      "profileUrl": "https://scholar.xjtlu.edu.cn/en/persons/ChunChan/",
+      "profileIdentity": "Chun Chan; Assistant Professor; Xi’an Jiaotong-Liverpool University",
+      "profileVerification": "Read the institutional profile. The biography identifies Kevin as the preferred name, resolving the Chun Chan / Kevin Chun Chan naming difference.",
+      "result": "verified",
+      "repositoryUrlsUnchanged": true
+    }
+  ]
+}
