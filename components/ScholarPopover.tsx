@@ -62,7 +62,9 @@ export function ScholarPopoverGroup({ children }: { children: ReactNode }) {
                   }
                 >
                   <div className={styles.copy}>
-                    <Popover.Title className={styles.name}>{scholar.name}</Popover.Title>
+                    <Popover.Title className={styles.name}>
+                      {scholar.name}, <span className={styles.degree}>{scholar.degree}</span>
+                    </Popover.Title>
                     <Popover.Description className={styles.details}>
                       <span className={styles.role}>{scholar.title}</span>
                       <span className={styles.institution}>{scholar.card.institution}</span>

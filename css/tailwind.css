@@ -8,8 +8,8 @@
 @theme {
   /* Font families */
   --font-sans:
-    var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
 
   /* Colors */
   /* Color_Matrix blue: 50–200 surfaces, 300–400 accents on dark surfaces,
