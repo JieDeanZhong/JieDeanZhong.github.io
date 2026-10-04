@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+<title>04 / 生长 / Branching</title>
+<g data-name="04 / 生长 / Branching">
+<path d="M 45 8 L 55 8 L 55 25 L 86 25 L 86 33 L 55 33 C 58 46 68 55 88 63 L 84 72 C 69 67 60 60 54 51 L 54 72 L 46 72 L 46 51 C 40 61 29 68 15 72 L 11 63 C 31 57 41 47 45 33 L 14 33 L 14 25 L 45 25 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Wood / elastic junction</title></path>
+<path d="M 21 84 L 18 91" fill="none" stroke="#1D1D1F" stroke-width="8.0" stroke-linecap="round" stroke-linejoin="round"><title>Rounded point 1</title></path>
+<path d="M 41 84 L 42 92" fill="none" stroke="#1D1D1F" stroke-width="8.0" stroke-linecap="round" stroke-linejoin="round"><title>Rounded point 2</title></path>
+<path d="M 61 84 L 63 92" fill="none" stroke="#1D1D1F" stroke-width="8.0" stroke-linecap="round" stroke-linejoin="round"><title>Rounded point 3</title></path>
+<path d="M 80 82 L 84 90" fill="none" stroke="#1D1D1F" stroke-width="8.0" stroke-linecap="round" stroke-linejoin="round"><title>Rounded point 4</title></path>
+</g>
+</svg>

@@ -1,0 +1,163 @@
+{
+  "checks": [
+    {
+      "check": "Research list → CXCL13–Fc project",
+      "pass": true
+    },
+    {
+      "check": "Responsive 1280",
+      "pass": true,
+      "width": 1280,
+      "scrollWidth": 1280,
+      "image": {
+        "x": 0,
+        "width": 1280,
+        "height": 720,
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image/?url=%2Fstatic%2Fimages%2Fresearch%2Fcxcl13-fc%2Fice.webp&w=1920&q=75"
+      },
+      "title": {
+        "text": "CXCL13–Fc and CXCR5-Engineered CD8⁺ T Cells",
+        "x": 216,
+        "width": 848,
+        "fontSize": "53.76px",
+        "color": "rgb(255, 255, 255)"
+      },
+      "ogImage": "https://tailwind-nextjs-starter-blog.vercel.app/static/images/research/cxcl13-fc/ice.webp",
+      "errorOverlay": false
+    },
+    {
+      "check": "PI popover and Esc at 1280",
+      "pass": true
+    },
+    {
+      "check": "Back to Research 1280",
+      "pass": true
+    },
+    {
+      "check": "Responsive 768",
+      "pass": true,
+      "width": 768,
+      "scrollWidth": 768,
+      "image": {
+        "x": 0,
+        "width": 768,
+        "height": 432.21875,
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image/?url=%2Fstatic%2Fimages%2Fresearch%2Fcxcl13-fc%2Fice.webp&w=828&q=75"
+      },
+      "title": {
+        "text": "CXCL13–Fc and CXCR5-Engineered CD8⁺ T Cells",
+        "x": 24,
+        "width": 720,
+        "fontSize": "32.256px",
+        "color": "rgb(255, 255, 255)"
+      },
+      "ogImage": "https://tailwind-nextjs-starter-blog.vercel.app/static/images/research/cxcl13-fc/ice.webp",
+      "errorOverlay": false
+    },
+    {
+      "check": "Back to Research 768",
+      "pass": true
+    },
+    {
+      "check": "Responsive 640",
+      "pass": true,
+      "width": 640,
+      "scrollWidth": 640,
+      "image": {
+        "x": 0,
+        "width": 640,
+        "height": 360,
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image/?url=%2Fstatic%2Fimages%2Fresearch%2Fcxcl13-fc%2Fice.webp&w=640&q=75"
+      },
+      "title": {
+        "text": "CXCL13–Fc and CXCR5-Engineered CD8⁺ T Cells",
+        "x": 24,
+        "width": 592,
+        "fontSize": "26.88px",
+        "color": "rgb(255, 255, 255)"
+      },
+      "ogImage": "https://tailwind-nextjs-starter-blog.vercel.app/static/images/research/cxcl13-fc/ice.webp",
+      "errorOverlay": false
+    },
+    {
+      "check": "Back to Research 640",
+      "pass": true
+    },
+    {
+      "check": "Responsive 390",
+      "pass": true,
+      "width": 390,
+      "scrollWidth": 390,
+      "image": {
+        "x": 0,
+        "width": 390,
+        "height": 219.375,
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image/?url=%2Fstatic%2Fimages%2Fresearch%2Fcxcl13-fc%2Fice.webp&w=640&q=75"
+      },
+      "title": {
+        "text": "CXCL13–Fc and CXCR5-Engineered CD8⁺ T Cells",
+        "x": 16,
+        "width": 358,
+        "fontSize": "24px",
+        "color": "rgb(255, 255, 255)"
+      },
+      "ogImage": "https://tailwind-nextjs-starter-blog.vercel.app/static/images/research/cxcl13-fc/ice.webp",
+      "errorOverlay": false
+    },
+    {
+      "check": "PI popover and Esc at 390",
+      "pass": true
+    },
+    {
+      "check": "Back to Research 390",
+      "pass": true
+    },
+    {
+      "check": "Responsive 320",
+      "pass": true,
+      "width": 320,
+      "scrollWidth": 320,
+      "image": {
+        "x": 0,
+        "width": 320,
+        "height": 180,
+        "loaded": true,
+        "src": "http://localhost:3000/_next/image/?url=%2Fstatic%2Fimages%2Fresearch%2Fcxcl13-fc%2Fice.webp&w=640&q=75"
+      },
+      "title": {
+        "text": "CXCL13–Fc and CXCR5-Engineered CD8⁺ T Cells",
+        "x": 16,
+        "width": 288,
+        "fontSize": "24px",
+        "color": "rgb(255, 255, 255)"
+      },
+      "ogImage": "https://tailwind-nextjs-starter-blog.vercel.app/static/images/research/cxcl13-fc/ice.webp",
+      "errorOverlay": false
+    },
+    {
+      "check": "Back to Research 320",
+      "pass": true
+    },
+    {
+      "check": "Existing hero reference trogen",
+      "pass": true,
+      "title": "TroGen: A commensal bacterial platform for intracellular drug delivery in TNBC",
+      "width": 1280,
+      "gradient": "linear-gradient(rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0.65) 72%, rgba(0, 0, 0, 0.92) 90%, rgb(0, 0, 0) 100%)",
+      "titleFontSize": "53.76px"
+    },
+    {
+      "check": "Existing hero reference fj-gliding",
+      "pass": true,
+      "title": "SprB–polysaccharide interactions in Flavobacterium johnsoniae",
+      "width": 1280,
+      "gradient": "linear-gradient(rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0.65) 72%, rgba(0, 0, 0, 0.92) 90%, rgb(0, 0, 0) 100%)",
+      "titleFontSize": "53.76px"
+    }
+  ],
+  "errors": []
+}

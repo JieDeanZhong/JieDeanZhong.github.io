@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>四点页眉本地对照</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #f3f4f5;
+        color: #161719;
+        font-family: system-ui, sans-serif;
+      }
+      .page {
+        max-width: 1360px;
+        margin: auto;
+        padding: 32px 40px;
+      }
+      h1 {
+        font-size: 26px;
+        letter-spacing: -0.03em;
+        margin: 0 0 10px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0;
+      }
+      .intro {
+        color: #555;
+        max-width: 800px;
+      }
+      .toolbar {
+        display: flex;
+        gap: 8px;
+        margin: 24px 0;
+      }
+      button {
+        border: 1px solid #cdd0d5;
+        background: #fff;
+        padding: 10px 14px;
+        border-radius: 5px;
+        font: inherit;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      button[aria-pressed='true'] {
+        background: #1d1d1f;
+        color: white;
+        border-color: #1d1d1f;
+      }
+      .option {
+        margin: 0 0 24px;
+      }
+      h2 {
+        font-size: 17px;
+        margin: 0 0 5px;
+      }
+      .caption {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding: 0 0 12px;
+      }
+      .caption p {
+        font-size: 12px;
+        color: #4e5360;
+      }
+      .caption span {
+        color: #68707b;
+      }
+      .live {
+        color: #1d2d8e;
+        font-size: 13px;
+        white-space: nowrap;
+      }
+      .image-viewport {
+        overflow-x: auto;
+        background: #fff;
+        border-radius: 2px;
+      }
+      .image-viewport img {
+        display: block;
+        max-width: none;
+      }
+      .note {
+        font-size: 13px;
+        color: #525963;
+        margin-top: 8px;
+      }
+      .foot {
+        border-top: 1px solid #d7dbe0;
+        padding-top: 16px;
+        color: #545b65;
+        font-size: 13px;
+      }
+      .mobile .options {
+        display: grid;
+        grid-template-columns: repeat(3, 390px);
+        gap: 24px;
+        overflow: auto;
+      }
+      .mobile .caption {
+        display: block;
+      }
+      .mobile .live {
+        display: inline-block;
+        margin-top: 8px;
+      }
+      .mobile .note {
+        max-width: 390px;
+      }
+      .mobile .image-viewport {
+        width: 390px;
+      }
+      .mobile .page {
+        max-width: 1298px;
+      }
+      .foot a {
+        color: #1d2d8e;
+      }
+      @media (max-width: 600px) {
+        .page {
+          padding: 24px 16px;
+        }
+        .caption {
+          align-items: start;
+        }
+        .caption span {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <h1>四点 × Jie Dean Zhong · 第一轮对照</h1>
+<p class="intro">当前已更新为四点与 Jie 等高、页眉更紧凑的第二轮版本。<a href="http://localhost:3000/" target="_blank" rel="noopener">打开最新本地页面 ↗</a>。下方保留第一轮截图供回看。</p>
+      <p class="intro">
+        同一份原稿矢量、同一字体与字重、统一反白；三版只改变图形整体尺寸和图文间距。截图以 1 CSS px
+        = 1 图像像素显示，不缩放；窗口较窄时可横向滚动。点击“打开实际网站”可交互查看。
+      </p>
+      <div class="toolbar">
+        <button id="desktop" aria-pressed="true">桌面页眉 · 1280px</button
+        ><button id="mobile" aria-pressed="false">手机整页 · 390px</button>
+      </div>
+      <div class="options">
+        <section class="option" id="a">
+          <div class="caption">
+            <div>
+              <h2>A · 紧凑</h2>
+              <p>桌面 44px / 12px；手机 33px / 8px <span>（图形总宽 / 图文间距）</span></p>
+            </div>
+            <a
+              class="live"
+              href="http://localhost:3000/?logoPreview=a"
+              target="_blank"
+              rel="noopener"
+              >打开实际网站 ↗</a
+            >
+          </div>
+          <div class="image-viewport">
+            <img
+              src="screenshots/a-desktop-header.png"
+              data-variant="a"
+              width="1280"
+              height="108"
+              alt="A · 紧凑，实际网站页眉截图"
+            />
+          </div>
+          <p class="note">手机上方点约 6px，读得出四点，但存在感偏弱。</p>
+        </section>
+        <section class="option" id="b">
+          <div class="caption">
+            <div>
+              <h2>B · 均衡 · 推荐</h2>
+              <p>桌面 55px / 14px；手机 44px / 10px <span>（图形总宽 / 图文间距）</span></p>
+            </div>
+            <a
+              class="live"
+              href="http://localhost:3000/?logoPreview=b"
+              target="_blank"
+              rel="noopener"
+              >打开实际网站 ↗</a
+            >
+          </div>
+          <div class="image-viewport">
+            <img
+              src="screenshots/b-desktop-header.png"
+              data-variant="b"
+              width="1280"
+              height="108"
+              alt="B · 均衡 · 推荐，实际网站页眉截图"
+            />
+          </div>
+          <p class="note">桌面方点约 10px、手机约 8px，与姓名协调，缩小后仍清楚。</p>
+        </section>
+        <section class="option" id="c">
+          <div class="caption">
+            <div>
+              <h2>C · 醒目</h2>
+              <p>桌面 66px / 16px；手机 49.5px / 12px <span>（图形总宽 / 图文间距）</span></p>
+            </div>
+            <a
+              class="live"
+              href="http://localhost:3000/?logoPreview=c"
+              target="_blank"
+              rel="noopener"
+              >打开实际网站 ↗</a
+            >
+          </div>
+          <div class="image-viewport">
+            <img
+              src="screenshots/c-desktop-header.png"
+              data-variant="c"
+              width="1280"
+              height="108"
+              alt="C · 醒目，实际网站页眉截图"
+            />
+          </div>
+          <p class="note">方点更突出，桌面上开始与姓名争夺注意力。</p>
+        </section>
+      </div>
+      <p class="foot">
+        推荐
+        B，已作为本地网站默认值。四点仍是抽象符号，单独使用时容易被理解为状态标记；这里以固定位置、统一颜色、无动画和紧邻姓名的组合建立身份。横向比例约
+        5.5∶1，缩进 16px 方形 favicon 时每点不足 3px，不适合直接兼用作极小图标。<br /><a
+          href="http://localhost:3000/"
+          target="_blank"
+          rel="noopener"
+          >本地首页</a
+        >
+        · <a href="http://localhost:3000/research/" target="_blank" rel="noopener">Research 页面</a>
+      </p>
+    </main>
+    <script>
+      function show(view) {
+        const mobile = view === 'mobile'
+        document.body.classList.toggle('mobile', mobile)
+        document.querySelectorAll('.image-viewport img').forEach((img) => {
+          img.src = `screenshots/${img.dataset.variant}-${mobile ? 'mobile' : 'desktop-header'}.png`
+          img.width = mobile ? 390 : 1280
+          img.height = mobile ? 844 : 108
+        })
+        document.getElementById('desktop').setAttribute('aria-pressed', String(!mobile))
+        document.getElementById('mobile').setAttribute('aria-pressed', String(mobile))
+        history.replaceState(null, '', `?view=${view}`)
+      }
+      document.getElementById('desktop').onclick = () => show('desktop')
+      document.getElementById('mobile').onclick = () => show('mobile')
+      show(new URLSearchParams(location.search).get('view') === 'mobile' ? 'mobile' : 'desktop')
+    </script>
+  </body>
+</html>

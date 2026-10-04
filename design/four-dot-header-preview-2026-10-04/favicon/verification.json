@@ -1,0 +1,87 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "icons": [
+        "http://localhost:3000/static/favicons/favicon.ico?v=four-dot-black",
+        "http://localhost:3000/static/favicons/favicon-32x32.png?v=four-dot-black",
+        "http://localhost:3000/static/favicons/favicon-16x16.png?v=four-dot-black",
+        "http://localhost:3000/static/favicons/favicon.svg?v=four-dot-black"
+      ]
+    },
+    {
+      "route": "/about/",
+      "icons": [
+        "http://localhost:3000/static/favicons/favicon.ico?v=four-dot-black",
+        "http://localhost:3000/static/favicons/favicon-32x32.png?v=four-dot-black",
+        "http://localhost:3000/static/favicons/favicon-16x16.png?v=four-dot-black",
+        "http://localhost:3000/static/favicons/favicon.svg?v=four-dot-black"
+      ]
+    },
+    {
+      "route": "/research/",
+      "icons": [
+        "http://localhost:3000/static/favicons/favicon.ico?v=four-dot-black",
+        "http://localhost:3000/static/favicons/favicon-32x32.png?v=four-dot-black",
+        "http://localhost:3000/static/favicons/favicon-16x16.png?v=four-dot-black",
+        "http://localhost:3000/static/favicons/favicon.svg?v=four-dot-black"
+      ]
+    },
+    {
+      "route": "/blog/",
+      "icons": [
+        "http://localhost:3000/static/favicons/favicon.ico?v=four-dot-black",
+        "http://localhost:3000/static/favicons/favicon-32x32.png?v=four-dot-black",
+        "http://localhost:3000/static/favicons/favicon-16x16.png?v=four-dot-black",
+        "http://localhost:3000/static/favicons/favicon.svg?v=four-dot-black"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "name": "favicon.svg",
+      "status": 200
+    },
+    {
+      "name": "favicon-16x16.png",
+      "status": 200
+    },
+    {
+      "name": "favicon-32x32.png",
+      "status": 200
+    },
+    {
+      "name": "favicon.ico",
+      "status": 200
+    },
+    {
+      "name": "apple-touch-icon.png",
+      "status": 200
+    },
+    {
+      "name": "safari-pinned-tab.svg",
+      "status": 200
+    },
+    {
+      "name": "android-chrome-96x96.png",
+      "status": 200
+    },
+    {
+      "name": "mstile-150x150.png",
+      "status": 200
+    }
+  ],
+  "transparentPNG": {
+    "width": 16,
+    "height": 16,
+    "blackPixels": 56,
+    "transparentPixels": 200
+  },
+  "svgRectangles": 4,
+  "safari": "Verified pure black four-square favicon in native Safari tab bar; transparent source, no background plate. Screenshot: safari-tab.png.",
+  "checks": {
+    "build": "passed (Yarn 3.6.1)",
+    "lint": "repository script fails: unknown option --fix (Next 16)",
+    "equivalentESLint": "passed"
+  }
+}

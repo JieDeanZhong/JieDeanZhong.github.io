@@ -1,0 +1,68 @@
+.brand {
+  /* Match the rendered ink height of "Jie", rather than its line box. */
+  --mark-height: 13.35px;
+  --brand-gap: 8px;
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: var(--brand-gap);
+  min-height: 44px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.mark {
+  display: block;
+  flex: none;
+  width: auto;
+  height: var(--mark-height);
+  aspect-ratio: 200 / 36.364;
+}
+
+.name {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.brand[data-logo-preview='a'] {
+  --mark-height: 6px;
+  --brand-gap: 8px;
+}
+
+.brand[data-logo-preview='c'] {
+  --mark-height: 9px;
+  --brand-gap: 12px;
+}
+
+@media (min-width: 640px) {
+  .brand {
+    --mark-height: 15.5px;
+    --brand-gap: 14px;
+  }
+
+  .brand[data-logo-preview='a'] {
+    --mark-height: 8px;
+    --brand-gap: 12px;
+  }
+
+  .brand[data-logo-preview='c'] {
+    --mark-height: 12px;
+    --brand-gap: 16px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .brand {
+    --mark-height: 16.75px;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+}

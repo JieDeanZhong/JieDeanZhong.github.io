@@ -1,0 +1,47 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "bytes": 45976
+  },
+  {
+    "path": "/research/",
+    "status": 200,
+    "bytes": 71210
+  },
+  {
+    "path": "/research/cxcl13-fc/",
+    "status": 200,
+    "bytes": 49464
+  },
+  {
+    "path": "/research/trogen/",
+    "status": 200,
+    "bytes": 57908
+  },
+  {
+    "path": "/research/fj-gliding/",
+    "status": 200,
+    "bytes": 51087
+  },
+  {
+    "path": "/blog/code-sample/",
+    "status": 200,
+    "bytes": 70053
+  },
+  {
+    "path": "/tags/markdown/",
+    "status": 200,
+    "bytes": 48376
+  },
+  {
+    "path": "/static/images/research/cxcl13-fc/ice.webp",
+    "status": 200,
+    "bytes": 944212
+  },
+  {
+    "path": "/static/favicons/four-blocks.svg",
+    "status": 200,
+    "bytes": 162
+  }
+]

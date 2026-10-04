@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+<title>06 / 落笔 / Broad nib</title>
+<g data-name="06 / 落笔 / Broad nib">
+<path d="M 13 27 C 32 26 61 22 81 20 L 87 27 C 66 30 38 33 14 36 L 11 31 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>横 / lifted broad-nib beam</title></path>
+<path d="M 44 7 C 47 6 52 7 55 9 C 53 25 52 45 51 63 L 46 70 L 41 68 C 44 51 44 30 43 17 L 41 10 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>竖 / weighted descending stem</title></path>
+<path d="M 45 31 L 53 35 C 42 49 26 61 9 67 L 7 62 C 23 50 35 42 45 31 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>撇 / gathered leftward release</title></path>
+<path d="M 49 31 C 60 41 75 50 91 53 L 87 64 C 71 60 58 49 46 39 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>捺 / asymmetric broad rightward release</title></path>
+<path d="M 17 75 L 22 77 C 20 84 17 90 11 93 L 7 88 C 12 83 15 79 17 75 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>点一 / outward falling cut</title></path>
+<path d="M 34 77 L 39 75 C 42 80 44 85 44 90 L 37 92 C 37 86 36 81 34 77 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>点二 / short vertical pressure</title></path>
+<path d="M 55 76 L 60 74 C 64 78 67 84 68 89 L 61 91 C 60 85 58 80 55 76 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>点三 / sloping pressure</title></path>
+<path d="M 77 75 L 81 72 C 87 76 92 81 94 87 L 86 90 C 85 84 81 79 77 75 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>点四 / final outward release</title></path>
+</g>
+</svg>

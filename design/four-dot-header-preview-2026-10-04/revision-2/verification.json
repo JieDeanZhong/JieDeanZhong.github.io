@@ -1,0 +1,41 @@
+{
+  "result": "pass",
+  "checks": [
+    {
+      "width": 1280,
+      "headerHeight": 72,
+      "markHeight": 16.75,
+      "jieHeight": 16.726089477539062,
+      "navigationGap": 429.0625,
+      "controlsRight": 1152,
+      "overflow": false
+    },
+    {
+      "width": 640,
+      "headerHeight": 72,
+      "markHeight": 15.5,
+      "jieHeight": 15.478363037109375,
+      "navigationGap": 16.28125,
+      "controlsRight": 616,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "headerHeight": 64,
+      "markHeight": 13.34375,
+      "jieHeight": 13.344802856445312,
+      "navigationGap": 86.703125,
+      "controlsRight": 374,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "headerHeight": 64,
+      "markHeight": 13.34375,
+      "jieHeight": 13.344802856445312,
+      "navigationGap": 16.703125,
+      "controlsRight": 304,
+      "overflow": false
+    }
+  ]
+}

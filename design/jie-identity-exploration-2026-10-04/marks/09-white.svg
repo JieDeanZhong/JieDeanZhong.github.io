@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+<title>09 / 切口 / Stencil</title>
+<g data-name="09 / 切口 / Stencil">
+<path d="M 44 8 L 56 8 L 56 20 L 44 20 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Stem above</title></path>
+<path d="M 8 26 L 41 26 L 41 37 L 8 37 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Beam left</title></path>
+<path d="M 59 26 L 92 26 L 92 37 L 59 37 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Beam right</title></path>
+<path d="M 44 26 L 56 26 L 56 75 L 44 75 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Stem middle</title></path>
+<path d="M 39 42 L 43 54 L 17 75 L 8 75 L 8 66 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Cut left branch</title></path>
+<path d="M 61 42 L 92 66 L 92 75 L 83 75 L 57 54 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Cut right branch</title></path>
+<path d="M 8 84 L 20 84 L 20 96 L 8 96 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Datum 0</title></path>
+<path d="M 32 84 L 44 84 L 44 96 L 32 96 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Datum 1</title></path>
+<path d="M 56 84 L 68 84 L 68 96 L 56 96 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Datum 2</title></path>
+<path d="M 80 84 L 92 84 L 92 96 L 80 96 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Datum 3</title></path>
+</g>
+</svg>

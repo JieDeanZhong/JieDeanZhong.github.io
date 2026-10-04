@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" viewBox="0 0 1500 1000">
+<title>13 - Modules and a visual system</title>
+<g data-name="Backgrounds">
+<rect x="0" y="0" width="1500" height="1000" fill="#F7F6F1"/>
+</g>
+<g data-name="Typography">
+<text x="54" y="45" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="13" fill="#1D1D1F">JIE DEAN ZHONG</text>
+<text x="995" y="45" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="10" fill="#686E6A">PERSONAL IDENTITY / EXPLORATIONS / 04 OCT 2026</text>
+</g>
+<g data-name="Guides">
+<path d="M 54 70 L 1446 70" fill="none" stroke="#D8DDD6" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round"><title>Rule</title></path>
+</g>
+<g data-name="Typography">
+<text x="54" y="125" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="35" fill="#1D1D1F">让构件去变化，让主标保持稳定</text>
+<text x="56" y="163" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="15" fill="#686E6A">以 02 为例：四点可成为节律，横竖与斜画可成为版面图形。它们不必被固定解释成四个研究方向。</text>
+</g>
+<g data-name="Guides">
+<path d="M 54 940 L 1446 940" fill="none" stroke="#D8DDD6" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round"><title>Rule</title></path>
+</g>
+<g data-name="Typography">
+<text x="54" y="968" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="11" fill="#686E6A">杰 / 原创矢量草稿 · 供选方向，非最终品牌规范</text>
+<text x="1387" y="968" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="11" fill="#686E6A">13 / 15</text>
+<text x="54" y="225" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="12" fill="#686E6A">01 / FIXED IDENTITY</text>
+</g>
+<g data-name="02 / 构件 / Modular">
+<path d="M 184.2 278.4 L 214.8 278.4 L 214.8 314.1 L 306.6 314.1 L 306.6 342.15 L 214.8 342.15 L 214.8 360 L 306.6 426.3 L 306.6 446.7 L 281.1 446.7 L 214.8 398.25 L 214.8 446.7 L 184.2 446.7 L 184.2 398.25 L 117.9 446.7 L 92.4 446.7 L 92.4 426.3 L 184.2 360 L 184.2 342.15 L 92.4 342.15 L 92.4 314.1 L 184.2 314.1 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Wood / geometric outline</title></path>
+<path d="M 92.4 472.2 L 123 472.2 L 123 502.8 L 92.4 502.8 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Unit / square 1</title></path>
+<path d="M 153.6 472.2 L 184.2 472.2 L 184.2 502.8 L 153.6 502.8 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Unit / square 2</title></path>
+<path d="M 214.8 472.2 L 245.4 472.2 L 245.4 502.8 L 214.8 502.8 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Unit / square 3</title></path>
+<path d="M 276 472.2 L 306.6 472.2 L 306.6 502.8 L 276 502.8 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Unit / square 4</title></path>
+</g>
+<g data-name="Typography">
+<text x="76" y="556" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="18" fill="#1D1D1F">主标：固定构图</text>
+<text x="76" y="592" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="15" fill="#686E6A">“杰”承担身份识别；不要让主标每次访问都随</text>
+<text x="76" y="618" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="15" fill="#686E6A">机变形。</text>
+<text x="495" y="225" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="12" fill="#686E6A">02 / ELEMENTS</text>
+</g>
+<g data-name="Modules">
+<rect x="495" y="286" width="100" height="15" fill="#1D1D1F"/>
+<rect x="649" y="264" width="15" height="100" fill="#1D1D1F"/>
+<path d="M 730 280 L 748 268 L 814 337 L 796 350 Z" fill="#1D1D1F" stroke="none" stroke-width="0" stroke-linecap="butt" stroke-linejoin="round"><title>Diagonal module</title></path>
+<rect x="496" y="432" width="26" height="26" fill="#1D1D1F"/>
+<rect x="560" y="432" width="26" height="26" fill="#1D1D1F"/>
+<rect x="624" y="432" width="26" height="26" fill="#1D1D1F"/>
+<rect x="688" y="432" width="26" height="26" fill="#1D1D1F"/>
+</g>
+<g data-name="Typography">
+<text x="495" y="392" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="15" fill="#686E6A">横 / 竖 / 斜</text>
+<text x="495" y="500" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="15" fill="#686E6A">四点节律</text>
+<text x="938" y="225" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="12" fill="#686E6A">03 / IN USE</text>
+</g>
+<g data-name="Backgrounds">
+<rect x="936" y="259" width="506" height="317" fill="#E8EEE7"/>
+</g>
+<g data-name="Typography">
+<text x="963" y="299" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="12" fill="#416754">RESEARCH NOTES</text>
+<text x="963" y="385" font-family="Georgia, serif" font-weight="400" font-size="34" fill="#1D1D1F">Questions worth</text>
+<text x="963" y="427" font-family="Georgia, serif" font-weight="400" font-size="34" fill="#1D1D1F">following.</text>
+</g>
+<g data-name="System applications">
+<rect x="965" y="506" width="14" height="14" fill="#416754"/>
+<rect x="1002" y="506" width="14" height="14" fill="#416754"/>
+<rect x="1039" y="506" width="14" height="14" fill="#416754"/>
+<rect x="1076" y="506" width="14" height="14" fill="#416754"/>
+</g>
+<g data-name="Backgrounds">
+<rect x="54" y="676" width="1388" height="207" fill="#1D1D1F"/>
+</g>
+<g data-name="Footer lockup">
+<path d="M 124.88 728.16 L 137.12 728.16 L 137.12 742.44 L 173.84 742.44 L 173.84 753.66 L 137.12 753.66 L 137.12 760.8 L 173.84 787.32 L 173.84 795.48 L 163.64 795.48 L 137.12 776.1 L 137.12 795.48 L 124.88 795.48 L 124.88 776.1 L 98.36 795.48 L 88.16 795.48 L 88.16 787.32 L 124.88 760.8 L 124.88 753.66 L 88.16 753.66 L 88.16 742.44 L 124.88 742.44 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Wood / geometric outline</title></path>
+<path d="M 88.16 805.68 L 100.4 805.68 L 100.4 817.92 L 88.16 817.92 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Unit / square 1</title></path>
+<path d="M 112.64 805.68 L 124.88 805.68 L 124.88 817.92 L 112.64 817.92 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Unit / square 2</title></path>
+<path d="M 137.12 805.68 L 149.36 805.68 L 149.36 817.92 L 137.12 817.92 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Unit / square 3</title></path>
+<path d="M 161.6 805.68 L 173.84 805.68 L 173.84 817.92 L 161.6 817.92 Z" fill="#FFFFFF" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Unit / square 4</title></path>
+</g>
+<g data-name="Typography">
+<text x="210" y="758" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="34" fill="#FFFFFF">Jie Dean Zhong</text>
+<text x="212" y="801" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="17" fill="#C9D1CA">Exploring biological systems, one question at a time.</text>
+</g>
+<g data-name="System applications">
+<rect x="1165" y="728" width="24" height="24" fill="#8CA895"/>
+<rect x="1218" y="746" width="24" height="24" fill="#8CA895"/>
+<rect x="1271" y="764" width="24" height="24" fill="#8CA895"/>
+<rect x="1324" y="782" width="24" height="24" fill="#8CA895"/>
+</g>
+</svg>

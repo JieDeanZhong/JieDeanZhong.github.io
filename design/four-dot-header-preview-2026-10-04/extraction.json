@@ -1,0 +1,46 @@
+{
+  "source": "/Users/jie/Downloads/logos.ai",
+  "sha256": "5c1c81f889bf6b13e9520e1fab5a98e41fbfed04fe05d69510fe521c86ba2603",
+  "sourceCopy": "logos-original.ai",
+  "page": 1,
+  "selection": "bottom-left row of four square dots",
+  "originalBounds": [
+    47.884,
+    524.702,
+    247.88400000000001,
+    561.066
+  ],
+  "viewBox": [
+    0,
+    0,
+    200.0,
+    36.36400000000003
+  ],
+  "rectangles": [
+    {
+      "x": 0.0,
+      "y": 0.0,
+      "width": 36.364,
+      "height": 36.364
+    },
+    {
+      "x": 54.545,
+      "y": 0.0,
+      "width": 36.364,
+      "height": 36.364
+    },
+    {
+      "x": 110.732,
+      "y": 0.0,
+      "width": 36.364,
+      "height": 36.364
+    },
+    {
+      "x": 163.636,
+      "y": 0.0,
+      "width": 36.364,
+      "height": 36.364
+    }
+  ],
+  "changes": "Translated the selected rectangles to origin; changed fill to white. No changes to shape, spacing or relative proportions."
+}

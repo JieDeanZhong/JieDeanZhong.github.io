@@ -1,0 +1,57 @@
+杰 / Jie Dean Zhong — Logo exploration
+2026-10-04
+
+本轮任务
+以个人学术网站的实际功能为出发点，探索 12 个方向。01–10 是“杰”的造型，11–12 是替代符号。
+此轮交付用于选方向；不是已经完成访客测试、商标检索和生产校正的最终品牌规范。
+
+阅读顺序
+1. output/pdf/Jie-Identity-Explorations.pdf（位于仓库根目录下）
+   15 页：功能任务、12 款总览、6 页方案对照、两种首页情境、实际尺寸、光学校正、构件系统、参考与功能筛选。
+2. previews/board-02.png：十二款概览。
+3. previews/board-10.png：保留网站现有肖像的应用。
+4. previews/board-15.png：按用途比较的筛选表。
+
+Illustrator
+Open-in-Illustrator.jsx 是为此稿制作的本地导入脚本。
+在 Illustrator 中选择 File > Scripts > Other Script…（文件 > 脚本 > 其他脚本…），选择它。
+脚本会新建一个 RGB 文档，生成 15 张有名称的画板，并保存 Jie-Identity-Explorations.ai。
+它不会编辑当前文档。若同名 AI 已存在，会创建带时间戳的新文件。
+主标为可编辑贝塞尔路径；说明为可编辑文字；仅“现有首页”应用页嵌入原网站肖像。
+标志按方案、用途和尺寸分组。所有说明、背景、辅助线可单独选择。
+导入完成后请确认 illustrator-status.txt 结尾为 SUCCESS，且画板数为 15。
+截至此轮交付，脚本已通过语法检查；原生导入需要 Illustrator 的运行与授权验证。
+
+独立矢量
+marks/ 中有每款黑色、白色 SVG，另有 03、05、07 的 MICRO 小尺寸探索版。
+这些标志没有字体依赖，也没有嵌入的位图。
+08 印记方案目前以明暗图形叠放构造负字，使用与背景对应的黑／白版；定稿时可合为真正的复合路径。
+artboards/ 是 15 张独立 SVG 草稿板，也可直接在 Illustrator 中打开。
+
+功能判断
+01 与 02：先验证主标功能。前者清晰、平衡；后者更利于扩展系统。
+04 与 06：保留为气质对照。前者探索生物隐喻；后者探索文化与个人书写感。
+07：手写风格探索，不是用户本人真实签名。选定后应参考本人字迹定制。
+11：是抽象替代方案，不声称能读作“杰”。
+全册 16/24/32/48 px 标注均指 100×100 设计框缩放后的尺寸，含字形外围留白。
+实际尺寸页以 72 dpi 渲染，1 pt = 1 px；在 100% 查看，不应把缩放预览当成真实小尺寸验证。
+“分岔／生命／可能性”均为造型隐喻，不是汉字字源解释。
+图形不需要独自解释研究方向；姓名与研究内容负责传递具体身份。
+
+一手参考资料（设计原则，未复制其标志）
+Paul Rand, Logos, Flags, and Escutcheons (1991):
+https://www.paulrand.design/writing/articles/1991-logos-flags-and-escutcheons.html
+Google Design, Evolving the Google Identity:
+https://design.google/library/evolving-google-identity
+Pentagram, MIT Media Lab:
+https://www.pentagram.com/work/mit-media-lab
+Monotype, Tencent global identity:
+https://enterprise.monotype.com/resources/case-studies/tencent-expands-global-presence
+Monotype, Quentin Blake handwriting:
+https://www.monotype.com/resources/case-studies/a-bespoke-handwriting-typeface-for-sir-quentin-blake
+Nielsen Norman Group, Homepage Links Remain a Necessity:
+https://www.nngroup.com/articles/homepage-links/
+W3C WAI, Functional Images:
+https://www.w3.org/WAI/tutorials/images/functional/
+
+原网站程序与旧版 logo-drafts-2026-10-04 文件保持原样。

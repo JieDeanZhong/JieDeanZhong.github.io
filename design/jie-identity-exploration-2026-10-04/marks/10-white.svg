@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+<title>10 / 单元 / Cellular</title>
+<g data-name="10 / 单元 / Cellular">
+<path d="M 50 11 L 50 22" fill="none" stroke="#FFFFFF" stroke-width="10.0" stroke-linecap="round" stroke-linejoin="round"><title>Top capsule</title></path>
+<path d="M 16 33 L 36 33" fill="none" stroke="#FFFFFF" stroke-width="10.0" stroke-linecap="round" stroke-linejoin="round"><title>Beam capsule left</title></path>
+<path d="M 64 33 L 84 33" fill="none" stroke="#FFFFFF" stroke-width="10.0" stroke-linecap="round" stroke-linejoin="round"><title>Beam capsule right</title></path>
+<path d="M 50 37 L 50 69" fill="none" stroke="#FFFFFF" stroke-width="10.0" stroke-linecap="round" stroke-linejoin="round"><title>Central capsule</title></path>
+<path d="M 35 48 L 15 66" fill="none" stroke="#FFFFFF" stroke-width="10.0" stroke-linecap="round" stroke-linejoin="round"><title>Left capsule</title></path>
+<path d="M 65 48 L 85 66" fill="none" stroke="#FFFFFF" stroke-width="10.0" stroke-linecap="round" stroke-linejoin="round"><title>Right capsule</title></path>
+<path d="M 18 84 L 20 90" fill="none" stroke="#FFFFFF" stroke-width="8.0" stroke-linecap="round" stroke-linejoin="round"><title>Spore 0</title></path>
+<path d="M 39 84 L 41 90" fill="none" stroke="#FFFFFF" stroke-width="8.0" stroke-linecap="round" stroke-linejoin="round"><title>Spore 1</title></path>
+<path d="M 60 84 L 62 90" fill="none" stroke="#FFFFFF" stroke-width="8.0" stroke-linecap="round" stroke-linejoin="round"><title>Spore 2</title></path>
+<path d="M 81 84 L 83 90" fill="none" stroke="#FFFFFF" stroke-width="8.0" stroke-linecap="round" stroke-linejoin="round"><title>Spore 3</title></path>
+</g>
+</svg>

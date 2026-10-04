@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" viewBox="0 0 1500 1000">
+<title>12 - Optical size variants</title>
+<g data-name="Backgrounds">
+<rect x="0" y="0" width="1500" height="1000" fill="#F7F6F1"/>
+</g>
+<g data-name="Typography">
+<text x="54" y="45" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="13" fill="#1D1D1F">JIE DEAN ZHONG</text>
+<text x="995" y="45" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="10" fill="#686E6A">PERSONAL IDENTITY / EXPLORATIONS / 04 OCT 2026</text>
+</g>
+<g data-name="Guides">
+<path d="M 54 70 L 1446 70" fill="none" stroke="#D8DDD6" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round"><title>Rule</title></path>
+</g>
+<g data-name="Typography">
+<text x="54" y="125" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="35" fill="#1D1D1F">同一个身份，两套尺寸</text>
+<text x="56" y="163" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="15" fill="#686E6A">以 03、05、07 示范：放大版保留气质，小图标版加重细线、减少过细收笔。</text>
+</g>
+<g data-name="Guides">
+<path d="M 54 940 L 1446 940" fill="none" stroke="#D8DDD6" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round"><title>Rule</title></path>
+</g>
+<g data-name="Typography">
+<text x="54" y="968" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="11" fill="#686E6A">杰 / 原创矢量草稿 · 供选方向，非最终品牌规范</text>
+<text x="1387" y="968" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="11" fill="#686E6A">12 / 15</text>
+<text x="54" y="221" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="22" fill="#1D1D1F">03  圆线 / Monoline</text>
+<text x="54" y="264" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="11" fill="#686E6A">DISPLAY / 首页与大尺寸</text>
+</g>
+<g data-name="03 / Display comparison">
+<path d="M 162.86 366.24 L 333.14 366.24" fill="none" stroke="#1D1D1F" stroke-width="20.124" stroke-linecap="round" stroke-linejoin="round"><title>Crossbar</title></path>
+<path d="M 248 319.8 L 248 469.44" fill="none" stroke="#1D1D1F" stroke-width="20.124" stroke-linecap="round" stroke-linejoin="round"><title>Stem</title></path>
+<path d="M 240.26 386.88 C 219.62 415.26 186.08 443.64 152.54 461.7" fill="none" stroke="#1D1D1F" stroke-width="20.124" stroke-linecap="round" stroke-linejoin="round"><title>Left diagonal</title></path>
+<path d="M 255.74 386.88 C 276.38 415.26 309.92 446.22 343.46 461.7" fill="none" stroke="#1D1D1F" stroke-width="20.124" stroke-linecap="round" stroke-linejoin="round"><title>Right diagonal</title></path>
+<path d="M 181.694 515.88 C 181.694 523.432 175.572 529.554 168.02 529.554 C 160.468 529.554 154.346 523.432 154.346 515.88 C 154.346 508.328 160.468 502.206 168.02 502.206 C 175.572 502.206 181.694 508.328 181.694 515.88 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 1</title></path>
+<path d="M 235.874 515.88 C 235.874 523.432 229.752 529.554 222.2 529.554 C 214.648 529.554 208.526 523.432 208.526 515.88 C 208.526 508.328 214.648 502.206 222.2 502.206 C 229.752 502.206 235.874 508.328 235.874 515.88 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 2</title></path>
+<path d="M 290.054 515.88 C 290.054 523.432 283.932 529.554 276.38 529.554 C 268.828 529.554 262.706 523.432 262.706 515.88 C 262.706 508.328 268.828 502.206 276.38 502.206 C 283.932 502.206 290.054 508.328 290.054 515.88 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 3</title></path>
+<path d="M 344.234 515.88 C 344.234 523.432 338.112 529.554 330.56 529.554 C 323.008 529.554 316.886 523.432 316.886 515.88 C 316.886 508.328 323.008 502.206 330.56 502.206 C 338.112 502.206 344.234 508.328 344.234 515.88 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 4</title></path>
+</g>
+<g data-name="Guides">
+<path d="M 54 578 L 479 578" fill="none" stroke="#D8DDD6" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round"><title>Rule</title></path>
+</g>
+<g data-name="Typography">
+<text x="54" y="617" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="12" fill="#416754">MICRO / 16–24 px 候选</text>
+</g>
+<g data-name="03 / Micro 16">
+<path d="M 76.72 713.48 L 87.28 713.48" fill="none" stroke="#1D1D1F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><title>Crossbar</title></path>
+<path d="M 82 710.6 L 82 719.88" fill="none" stroke="#1D1D1F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><title>Stem</title></path>
+<path d="M 81.52 714.76 C 80.24 716.52 78.16 718.28 76.08 719.4" fill="none" stroke="#1D1D1F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><title>Left diagonal</title></path>
+<path d="M 82.48 714.76 C 83.76 716.52 85.84 718.44 87.92 719.4" fill="none" stroke="#1D1D1F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><title>Right diagonal</title></path>
+<path d="M 77.888 722.76 C 77.888 723.228 77.5083 723.608 77.04 723.608 C 76.5717 723.608 76.192 723.228 76.192 722.76 C 76.192 722.292 76.5717 721.912 77.04 721.912 C 77.5083 721.912 77.888 722.292 77.888 722.76 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 1</title></path>
+<path d="M 81.248 722.76 C 81.248 723.228 80.8683 723.608 80.4 723.608 C 79.9317 723.608 79.552 723.228 79.552 722.76 C 79.552 722.292 79.9317 721.912 80.4 721.912 C 80.8683 721.912 81.248 722.292 81.248 722.76 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 2</title></path>
+<path d="M 84.608 722.76 C 84.608 723.228 84.2283 723.608 83.76 723.608 C 83.2917 723.608 82.912 723.228 82.912 722.76 C 82.912 722.292 83.2917 721.912 83.76 721.912 C 84.2283 721.912 84.608 722.292 84.608 722.76 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 3</title></path>
+<path d="M 87.968 722.76 C 87.968 723.228 87.5883 723.608 87.12 723.608 C 86.6517 723.608 86.272 723.228 86.272 722.76 C 86.272 722.292 86.6517 721.912 87.12 721.912 C 87.5883 721.912 87.968 722.292 87.968 722.76 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 4</title></path>
+</g>
+<g data-name="Typography">
+<text x="74" y="759" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="11" fill="#686E6A">16 px</text>
+</g>
+<g data-name="03 / Micro 24">
+<path d="M 166.08 707.72 L 181.92 707.72" fill="none" stroke="#1D1D1F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><title>Crossbar</title></path>
+<path d="M 174 703.4 L 174 717.32" fill="none" stroke="#1D1D1F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><title>Stem</title></path>
+<path d="M 173.28 709.64 C 171.36 712.28 168.24 714.92 165.12 716.6" fill="none" stroke="#1D1D1F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><title>Left diagonal</title></path>
+<path d="M 174.72 709.64 C 176.64 712.28 179.76 715.16 182.88 716.6" fill="none" stroke="#1D1D1F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><title>Right diagonal</title></path>
+<path d="M 167.832 721.64 C 167.832 722.343 167.263 722.912 166.56 722.912 C 165.857 722.912 165.288 722.343 165.288 721.64 C 165.288 720.937 165.857 720.368 166.56 720.368 C 167.263 720.368 167.832 720.937 167.832 721.64 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 1</title></path>
+<path d="M 172.872 721.64 C 172.872 722.343 172.303 722.912 171.6 722.912 C 170.897 722.912 170.328 722.343 170.328 721.64 C 170.328 720.937 170.897 720.368 171.6 720.368 C 172.303 720.368 172.872 720.937 172.872 721.64 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 2</title></path>
+<path d="M 177.912 721.64 C 177.912 722.343 177.343 722.912 176.64 722.912 C 175.937 722.912 175.368 722.343 175.368 721.64 C 175.368 720.937 175.937 720.368 176.64 720.368 C 177.343 720.368 177.912 720.937 177.912 721.64 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 3</title></path>
+<path d="M 182.952 721.64 C 182.952 722.343 182.383 722.912 181.68 722.912 C 180.977 722.912 180.408 722.343 180.408 721.64 C 180.408 720.937 180.977 720.368 181.68 720.368 C 182.383 720.368 182.952 720.937 182.952 721.64 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 4</title></path>
+</g>
+<g data-name="Typography">
+<text x="162" y="759" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="11" fill="#686E6A">24 px</text>
+</g>
+<g data-name="03 / Micro 48">
+<path d="M 258.16 690.44 L 289.84 690.44" fill="none" stroke="#1D1D1F" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"><title>Crossbar</title></path>
+<path d="M 274 681.8 L 274 709.64" fill="none" stroke="#1D1D1F" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"><title>Stem</title></path>
+<path d="M 272.56 694.28 C 268.72 699.56 262.48 704.84 256.24 708.2" fill="none" stroke="#1D1D1F" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"><title>Left diagonal</title></path>
+<path d="M 275.44 694.28 C 279.28 699.56 285.52 705.32 291.76 708.2" fill="none" stroke="#1D1D1F" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"><title>Right diagonal</title></path>
+<path d="M 261.664 718.28 C 261.664 719.685 260.525 720.824 259.12 720.824 C 257.715 720.824 256.576 719.685 256.576 718.28 C 256.576 716.875 257.715 715.736 259.12 715.736 C 260.525 715.736 261.664 716.875 261.664 718.28 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 1</title></path>
+<path d="M 271.744 718.28 C 271.744 719.685 270.605 720.824 269.2 720.824 C 267.795 720.824 266.656 719.685 266.656 718.28 C 266.656 716.875 267.795 715.736 269.2 715.736 C 270.605 715.736 271.744 716.875 271.744 718.28 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 2</title></path>
+<path d="M 281.824 718.28 C 281.824 719.685 280.685 720.824 279.28 720.824 C 277.875 720.824 276.736 719.685 276.736 718.28 C 276.736 716.875 277.875 715.736 279.28 715.736 C 280.685 715.736 281.824 716.875 281.824 718.28 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 3</title></path>
+<path d="M 291.904 718.28 C 291.904 719.685 290.765 720.824 289.36 720.824 C 287.955 720.824 286.816 719.685 286.816 718.28 C 286.816 716.875 287.955 715.736 289.36 715.736 C 290.765 715.736 291.904 716.875 291.904 718.28 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 4</title></path>
+</g>
+<g data-name="Typography">
+<text x="250" y="759" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="11" fill="#686E6A">48 px</text>
+</g>
+<g data-name="03 / Micro enlarged">
+<path d="M 375.64 684.76 L 436.36 684.76" fill="none" stroke="#1D1D1F" stroke-width="9.2" stroke-linecap="round" stroke-linejoin="round"><title>Crossbar</title></path>
+<path d="M 406 668.2 L 406 721.56" fill="none" stroke="#1D1D1F" stroke-width="9.2" stroke-linecap="round" stroke-linejoin="round"><title>Stem</title></path>
+<path d="M 403.24 692.12 C 395.88 702.24 383.92 712.36 371.96 718.8" fill="none" stroke="#1D1D1F" stroke-width="9.2" stroke-linecap="round" stroke-linejoin="round"><title>Left diagonal</title></path>
+<path d="M 408.76 692.12 C 416.12 702.24 428.08 713.28 440.04 718.8" fill="none" stroke="#1D1D1F" stroke-width="9.2" stroke-linecap="round" stroke-linejoin="round"><title>Right diagonal</title></path>
+<path d="M 382.356 738.12 C 382.356 740.813 380.173 742.996 377.48 742.996 C 374.787 742.996 372.604 740.813 372.604 738.12 C 372.604 735.427 374.787 733.244 377.48 733.244 C 380.173 733.244 382.356 735.427 382.356 738.12 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 1</title></path>
+<path d="M 401.676 738.12 C 401.676 740.813 399.493 742.996 396.8 742.996 C 394.107 742.996 391.924 740.813 391.924 738.12 C 391.924 735.427 394.107 733.244 396.8 733.244 C 399.493 733.244 401.676 735.427 401.676 738.12 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 2</title></path>
+<path d="M 420.996 738.12 C 420.996 740.813 418.813 742.996 416.12 742.996 C 413.427 742.996 411.244 740.813 411.244 738.12 C 411.244 735.427 413.427 733.244 416.12 733.244 C 418.813 733.244 420.996 735.427 420.996 738.12 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 3</title></path>
+<path d="M 440.316 738.12 C 440.316 740.813 438.133 742.996 435.44 742.996 C 432.747 742.996 430.564 740.813 430.564 738.12 C 430.564 735.427 432.747 733.244 435.44 733.244 C 438.133 733.244 440.316 735.427 440.316 738.12 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Round point 4</title></path>
+</g>
+<g data-name="Typography">
+<text x="362" y="785" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="11" fill="#686E6A">放大观察</text>
+<text x="54" y="837" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="15" fill="#686E6A">线宽从 7.8 加至 10 单位，圆点保持独立。</text>
+<text x="528" y="221" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="22" fill="#1D1D1F">05  文脉 / Editorial</text>
+<text x="528" y="264" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="11" fill="#686E6A">DISPLAY / 首页与大尺寸</text>
+</g>
+<g data-name="05 / Display comparison">
+<path d="M 693.62 317.22 L 742.64 312.06 L 737.48 327.54 L 737.48 482.34 L 706.52 482.34 L 709.1 330.12 L 693.62 327.54 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Stem with restrained wedge</title></path>
+<path d="M 626.54 363.66 L 789.08 363.66 L 807.14 345.6 L 827.78 373.98 L 626.54 373.98 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Hairline and terminal</title></path>
+<path d="M 706.52 379.14 L 727.16 389.46 C 696.2 435.9 654.92 464.28 613.64 479.76 L 608.48 472.02 C 649.76 443.64 685.88 410.1 706.52 379.14 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Left branch</title></path>
+<path d="M 737.48 381.72 C 760.7 407.52 789.08 433.32 838.1 451.38 L 809.72 482.34 C 773.6 451.38 750.38 420.42 732.32 389.46 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Right branch</title></path>
+<path d="M 647.18 500.4 L 657.5 502.98 C 654.92 523.62 644.6 544.26 626.54 541.68 C 616.22 528.78 631.7 515.88 647.18 500.4 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Dot 1</title></path>
+<path d="M 693.62 502.98 C 709.1 508.14 724.58 526.2 711.68 544.26 C 693.62 546.84 698.78 526.2 688.46 505.56 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Dot 2</title></path>
+<path d="M 745.22 497.82 C 768.44 505.56 783.92 521.04 773.6 539.1 C 755.54 549.42 755.54 515.88 740.06 502.98 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Dot 3</title></path>
+<path d="M 794.24 490.08 C 822.62 495.24 843.26 510.72 835.52 528.78 C 817.46 546.84 807.14 508.14 791.66 497.82 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Dot 4</title></path>
+</g>
+<g data-name="Guides">
+<path d="M 528 578 L 953 578" fill="none" stroke="#D8DDD6" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round"><title>Rule</title></path>
+</g>
+<g data-name="Typography">
+<text x="528" y="617" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="12" fill="#416754">MICRO / 16–24 px 候选</text>
+</g>
+<g data-name="05 / Micro 16">
+<path d="M 554.4 710.28 L 557.28 710.28 L 557.12 711.4 L 557.12 720.68 L 554.88 720.68 L 555.04 711.4 L 554.4 711.4 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Stem with restrained wedge</title></path>
+<path d="M 549.92 713 L 560.32 713 L 561.28 712.2 L 562.72 714.28 L 549.92 714.28 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Hairline and terminal</title></path>
+<path d="M 555.04 714.28 L 556.32 714.92 C 554.4 717.8 551.84 719.56 549.28 720.52 L 548.96 720.04 C 551.52 718.28 553.76 716.2 555.04 714.28 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="0.24" stroke-linecap="round" stroke-linejoin="round"><title>Left branch</title></path>
+<path d="M 556.96 714.44 C 558.4 716.04 560.16 717.64 563.2 718.76 L 561.44 720.68 C 559.2 718.76 557.76 716.84 556.64 714.92 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="0.24" stroke-linecap="round" stroke-linejoin="round"><title>Right branch</title></path>
+<path d="M 551.36 721.8 L 552 721.96 C 551.84 723.24 551.2 724.52 550.08 724.36 C 549.44 723.56 550.4 722.76 551.36 721.8 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="0.24" stroke-linecap="round" stroke-linejoin="round"><title>Dot 1</title></path>
+<path d="M 554.24 721.96 C 555.2 722.28 556.16 723.4 555.36 724.52 C 554.24 724.68 554.56 723.4 553.92 722.12 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="0.24" stroke-linecap="round" stroke-linejoin="round"><title>Dot 2</title></path>
+<path d="M 557.44 721.64 C 558.88 722.12 559.84 723.08 559.2 724.2 C 558.08 724.84 558.08 722.76 557.12 721.96 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="0.24" stroke-linecap="round" stroke-linejoin="round"><title>Dot 3</title></path>
+<path d="M 560.48 721.16 C 562.24 721.48 563.52 722.44 563.04 723.56 C 561.92 724.68 561.28 722.28 560.32 721.64 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="0.24" stroke-linecap="round" stroke-linejoin="round"><title>Dot 4</title></path>
+</g>
+<g data-name="Typography">
+<text x="548" y="759" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="11" fill="#686E6A">16 px</text>
+</g>
+<g data-name="05 / Micro 24">
+<path d="M 645.6 702.92 L 649.92 702.92 L 649.68 704.6 L 649.68 718.52 L 646.32 718.52 L 646.56 704.6 L 645.6 704.6 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Stem with restrained wedge</title></path>
+<path d="M 638.88 707 L 654.48 707 L 655.92 705.8 L 658.08 708.92 L 638.88 708.92 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Hairline and terminal</title></path>
+<path d="M 646.56 708.92 L 648.48 709.88 C 645.6 714.2 641.76 716.84 637.92 718.28 L 637.44 717.56 C 641.28 714.92 644.64 711.8 646.56 708.92 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="0.36" stroke-linecap="round" stroke-linejoin="round"><title>Left branch</title></path>
+<path d="M 649.44 709.16 C 651.6 711.56 654.24 713.96 658.8 715.64 L 656.16 718.52 C 652.8 715.64 650.64 712.76 648.96 709.88 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="0.36" stroke-linecap="round" stroke-linejoin="round"><title>Right branch</title></path>
+<path d="M 641.04 720.2 L 642 720.44 C 641.76 722.36 640.8 724.28 639.12 724.04 C 638.16 722.84 639.6 721.64 641.04 720.2 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="0.36" stroke-linecap="round" stroke-linejoin="round"><title>Dot 1</title></path>
+<path d="M 645.36 720.44 C 646.8 720.92 648.24 722.6 647.04 724.28 C 645.36 724.52 645.84 722.6 644.88 720.68 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="0.36" stroke-linecap="round" stroke-linejoin="round"><title>Dot 2</title></path>
+<path d="M 650.16 719.96 C 652.32 720.68 653.76 722.12 652.8 723.8 C 651.12 724.76 651.12 721.64 649.68 720.44 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="0.36" stroke-linecap="round" stroke-linejoin="round"><title>Dot 3</title></path>
+<path d="M 654.72 719.24 C 657.36 719.72 659.28 721.16 658.56 722.84 C 656.88 724.52 655.92 720.92 654.48 719.96 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="0.36" stroke-linecap="round" stroke-linejoin="round"><title>Dot 4</title></path>
+</g>
+<g data-name="Typography">
+<text x="636" y="759" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="11" fill="#686E6A">24 px</text>
+</g>
+<g data-name="05 / Micro 48">
+<path d="M 743.2 680.84 L 751.84 680.84 L 751.36 684.2 L 751.36 712.04 L 744.64 712.04 L 745.12 684.2 L 743.2 684.2 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Stem with restrained wedge</title></path>
+<path d="M 729.76 689 L 760.96 689 L 763.84 686.6 L 768.16 692.84 L 729.76 692.84 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Hairline and terminal</title></path>
+<path d="M 745.12 692.84 L 748.96 694.76 C 743.2 703.4 735.52 708.68 727.84 711.56 L 726.88 710.12 C 734.56 704.84 741.28 698.6 745.12 692.84 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="0.72" stroke-linecap="round" stroke-linejoin="round"><title>Left branch</title></path>
+<path d="M 750.88 693.32 C 755.2 698.12 760.48 702.92 769.6 706.28 L 764.32 712.04 C 757.6 706.28 753.28 700.52 749.92 694.76 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="0.72" stroke-linecap="round" stroke-linejoin="round"><title>Right branch</title></path>
+<path d="M 734.08 715.4 L 736 715.88 C 735.52 719.72 733.6 723.56 730.24 723.08 C 728.32 720.68 731.2 718.28 734.08 715.4 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="0.72" stroke-linecap="round" stroke-linejoin="round"><title>Dot 1</title></path>
+<path d="M 742.72 715.88 C 745.6 716.84 748.48 720.2 746.08 723.56 C 742.72 724.04 743.68 720.2 741.76 716.36 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="0.72" stroke-linecap="round" stroke-linejoin="round"><title>Dot 2</title></path>
+<path d="M 752.32 714.92 C 756.64 716.36 759.52 719.24 757.6 722.6 C 754.24 724.52 754.24 718.28 751.36 715.88 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="0.72" stroke-linecap="round" stroke-linejoin="round"><title>Dot 3</title></path>
+<path d="M 761.44 713.48 C 766.72 714.44 770.56 717.32 769.12 720.68 C 765.76 724.04 763.84 716.84 760.96 714.92 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="0.72" stroke-linecap="round" stroke-linejoin="round"><title>Dot 4</title></path>
+</g>
+<g data-name="Typography">
+<text x="724" y="759" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="11" fill="#686E6A">48 px</text>
+</g>
+<g data-name="05 / Micro enlarged">
+<path d="M 870.8 666.36 L 887.36 666.36 L 886.44 672.8 L 886.44 726.16 L 873.56 726.16 L 874.48 672.8 L 870.8 672.8 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Stem with restrained wedge</title></path>
+<path d="M 845.04 682 L 904.84 682 L 910.36 677.4 L 918.64 689.36 L 845.04 689.36 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Hairline and terminal</title></path>
+<path d="M 874.48 689.36 L 881.84 693.04 C 870.8 709.6 856.08 719.72 841.36 725.24 L 839.52 722.48 C 854.24 712.36 867.12 700.4 874.48 689.36 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="1.38" stroke-linecap="round" stroke-linejoin="round"><title>Left branch</title></path>
+<path d="M 885.52 690.28 C 893.8 699.48 903.92 708.68 921.4 715.12 L 911.28 726.16 C 898.4 715.12 890.12 704.08 883.68 693.04 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="1.38" stroke-linecap="round" stroke-linejoin="round"><title>Right branch</title></path>
+<path d="M 853.32 732.6 L 857 733.52 C 856.08 740.88 852.4 748.24 845.96 747.32 C 842.28 742.72 847.8 738.12 853.32 732.6 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="1.38" stroke-linecap="round" stroke-linejoin="round"><title>Dot 1</title></path>
+<path d="M 869.88 733.52 C 875.4 735.36 880.92 741.8 876.32 748.24 C 869.88 749.16 871.72 741.8 868.04 734.44 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="1.38" stroke-linecap="round" stroke-linejoin="round"><title>Dot 2</title></path>
+<path d="M 888.28 731.68 C 896.56 734.44 902.08 739.96 898.4 746.4 C 891.96 750.08 891.96 738.12 886.44 733.52 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="1.38" stroke-linecap="round" stroke-linejoin="round"><title>Dot 3</title></path>
+<path d="M 905.76 728.92 C 915.88 730.76 923.24 736.28 920.48 742.72 C 914.04 749.16 910.36 735.36 904.84 731.68 Z" fill="#1D1D1F" stroke="#1D1D1F" stroke-width="1.38" stroke-linecap="round" stroke-linejoin="round"><title>Dot 4</title></path>
+</g>
+<g data-name="Typography">
+<text x="836" y="785" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="11" fill="#686E6A">放大观察</text>
+<text x="528" y="837" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="15" fill="#686E6A">增厚横画、简化楔形收笔，保留宋意的粗细关系。</text>
+<text x="1002" y="221" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="22" fill="#1D1D1F">07  随笔 / Personal pen</text>
+<text x="1002" y="264" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="11" fill="#686E6A">DISPLAY / 首页与大尺寸</text>
+</g>
+<g data-name="07 / Display comparison">
+<path d="M 1100.54 371.4 C 1149.56 366.24 1229.54 353.34 1283.72 355.92" fill="none" stroke="#1D1D1F" stroke-width="12.126000000000001" stroke-linecap="round" stroke-linejoin="round"><title>横 / relaxed rising pen stroke</title></path>
+<path d="M 1193.42 319.8 C 1190.84 358.5 1190.84 417.84 1185.68 469.44" fill="none" stroke="#1D1D1F" stroke-width="13.674" stroke-linecap="round" stroke-linejoin="round"><title>竖 / gently bowed pen stroke</title></path>
+<path d="M 1185.68 384.3 C 1162.46 415.26 1128.92 441.06 1092.8 456.54" fill="none" stroke="#1D1D1F" stroke-width="12.383999999999999" stroke-linecap="round" stroke-linejoin="round"><title>撇 / leftward pen sweep</title></path>
+<path d="M 1193.42 386.88 C 1221.8 417.84 1252.76 438.48 1299.2 451.38" fill="none" stroke="#1D1D1F" stroke-width="11.868" stroke-linecap="round" stroke-linejoin="round"><title>捺 / loose outward pen sweep</title></path>
+<path d="M 1113.44 492.66 C 1110.86 505.56 1103.12 515.88 1095.38 523.62" fill="none" stroke="#1D1D1F" stroke-width="11.61" stroke-linecap="round" stroke-linejoin="round"><title>点一 / quick outward pen dot</title></path>
+<path d="M 1159.88 495.24 C 1165.04 508.14 1165.04 515.88 1167.62 526.2" fill="none" stroke="#1D1D1F" stroke-width="12.383999999999999" stroke-linecap="round" stroke-linejoin="round"><title>点二 / upright pen dot</title></path>
+<path d="M 1214.06 492.66 C 1221.8 502.98 1224.38 513.3 1226.96 523.62" fill="none" stroke="#1D1D1F" stroke-width="11.868" stroke-linecap="round" stroke-linejoin="round"><title>点三 / tilted pen dot</title></path>
+<path d="M 1268.24 490.08 C 1281.14 500.4 1291.46 510.72 1299.2 521.04" fill="none" stroke="#1D1D1F" stroke-width="11.352" stroke-linecap="round" stroke-linejoin="round"><title>点四 / long closing pen dot</title></path>
+</g>
+<g data-name="Guides">
+<path d="M 1002 578 L 1427 578" fill="none" stroke="#D8DDD6" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round"><title>Rule</title></path>
+</g>
+<g data-name="Typography">
+<text x="1002" y="617" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="12" fill="#416754">MICRO / 16–24 px 候选</text>
+</g>
+<g data-name="07 / Micro 16">
+<path d="M 1024.08 713.8 C 1027.12 713.48 1032.08 712.68 1035.44 712.84" fill="none" stroke="#1D1D1F" stroke-width="1.28" stroke-linecap="round" stroke-linejoin="round"><title>横 / relaxed rising pen stroke</title></path>
+<path d="M 1029.84 710.6 C 1029.68 713 1029.68 716.68 1029.36 719.88" fill="none" stroke="#1D1D1F" stroke-width="1.28" stroke-linecap="round" stroke-linejoin="round"><title>竖 / gently bowed pen stroke</title></path>
+<path d="M 1029.36 714.6 C 1027.92 716.52 1025.84 718.12 1023.6 719.08" fill="none" stroke="#1D1D1F" stroke-width="1.28" stroke-linecap="round" stroke-linejoin="round"><title>撇 / leftward pen sweep</title></path>
+<path d="M 1029.84 714.76 C 1031.6 716.68 1033.52 717.96 1036.4 718.76" fill="none" stroke="#1D1D1F" stroke-width="1.28" stroke-linecap="round" stroke-linejoin="round"><title>捺 / loose outward pen sweep</title></path>
+<path d="M 1024.88 721.32 C 1024.72 722.12 1024.24 722.76 1023.76 723.24" fill="none" stroke="#1D1D1F" stroke-width="1.28" stroke-linecap="round" stroke-linejoin="round"><title>点一 / quick outward pen dot</title></path>
+<path d="M 1027.76 721.48 C 1028.08 722.28 1028.08 722.76 1028.24 723.4" fill="none" stroke="#1D1D1F" stroke-width="1.28" stroke-linecap="round" stroke-linejoin="round"><title>点二 / upright pen dot</title></path>
+<path d="M 1031.12 721.32 C 1031.6 721.96 1031.76 722.6 1031.92 723.24" fill="none" stroke="#1D1D1F" stroke-width="1.28" stroke-linecap="round" stroke-linejoin="round"><title>点三 / tilted pen dot</title></path>
+<path d="M 1034.48 721.16 C 1035.28 721.8 1035.92 722.44 1036.4 723.08" fill="none" stroke="#1D1D1F" stroke-width="1.28" stroke-linecap="round" stroke-linejoin="round"><title>点四 / long closing pen dot</title></path>
+</g>
+<g data-name="Typography">
+<text x="1022" y="759" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="11" fill="#686E6A">16 px</text>
+</g>
+<g data-name="07 / Micro 24">
+<path d="M 1113.12 708.2 C 1117.68 707.72 1125.12 706.52 1130.16 706.76" fill="none" stroke="#1D1D1F" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round"><title>横 / relaxed rising pen stroke</title></path>
+<path d="M 1121.76 703.4 C 1121.52 707 1121.52 712.52 1121.04 717.32" fill="none" stroke="#1D1D1F" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round"><title>竖 / gently bowed pen stroke</title></path>
+<path d="M 1121.04 709.4 C 1118.88 712.28 1115.76 714.68 1112.4 716.12" fill="none" stroke="#1D1D1F" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round"><title>撇 / leftward pen sweep</title></path>
+<path d="M 1121.76 709.64 C 1124.4 712.52 1127.28 714.44 1131.6 715.64" fill="none" stroke="#1D1D1F" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round"><title>捺 / loose outward pen sweep</title></path>
+<path d="M 1114.32 719.48 C 1114.08 720.68 1113.36 721.64 1112.64 722.36" fill="none" stroke="#1D1D1F" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round"><title>点一 / quick outward pen dot</title></path>
+<path d="M 1118.64 719.72 C 1119.12 720.92 1119.12 721.64 1119.36 722.6" fill="none" stroke="#1D1D1F" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round"><title>点二 / upright pen dot</title></path>
+<path d="M 1123.68 719.48 C 1124.4 720.44 1124.64 721.4 1124.88 722.36" fill="none" stroke="#1D1D1F" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round"><title>点三 / tilted pen dot</title></path>
+<path d="M 1128.72 719.24 C 1129.92 720.2 1130.88 721.16 1131.6 722.12" fill="none" stroke="#1D1D1F" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round"><title>点四 / long closing pen dot</title></path>
+</g>
+<g data-name="Typography">
+<text x="1110" y="759" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="11" fill="#686E6A">24 px</text>
+</g>
+<g data-name="07 / Micro 48">
+<path d="M 1204.24 691.4 C 1213.36 690.44 1228.24 688.04 1238.32 688.52" fill="none" stroke="#1D1D1F" stroke-width="3.84" stroke-linecap="round" stroke-linejoin="round"><title>横 / relaxed rising pen stroke</title></path>
+<path d="M 1221.52 681.8 C 1221.04 689 1221.04 700.04 1220.08 709.64" fill="none" stroke="#1D1D1F" stroke-width="3.84" stroke-linecap="round" stroke-linejoin="round"><title>竖 / gently bowed pen stroke</title></path>
+<path d="M 1220.08 693.8 C 1215.76 699.56 1209.52 704.36 1202.8 707.24" fill="none" stroke="#1D1D1F" stroke-width="3.84" stroke-linecap="round" stroke-linejoin="round"><title>撇 / leftward pen sweep</title></path>
+<path d="M 1221.52 694.28 C 1226.8 700.04 1232.56 703.88 1241.2 706.28" fill="none" stroke="#1D1D1F" stroke-width="3.84" stroke-linecap="round" stroke-linejoin="round"><title>捺 / loose outward pen sweep</title></path>
+<path d="M 1206.64 713.96 C 1206.16 716.36 1204.72 718.28 1203.28 719.72" fill="none" stroke="#1D1D1F" stroke-width="3.84" stroke-linecap="round" stroke-linejoin="round"><title>点一 / quick outward pen dot</title></path>
+<path d="M 1215.28 714.44 C 1216.24 716.84 1216.24 718.28 1216.72 720.2" fill="none" stroke="#1D1D1F" stroke-width="3.84" stroke-linecap="round" stroke-linejoin="round"><title>点二 / upright pen dot</title></path>
+<path d="M 1225.36 713.96 C 1226.8 715.88 1227.28 717.8 1227.76 719.72" fill="none" stroke="#1D1D1F" stroke-width="3.84" stroke-linecap="round" stroke-linejoin="round"><title>点三 / tilted pen dot</title></path>
+<path d="M 1235.44 713.48 C 1237.84 715.4 1239.76 717.32 1241.2 719.24" fill="none" stroke="#1D1D1F" stroke-width="3.84" stroke-linecap="round" stroke-linejoin="round"><title>点四 / long closing pen dot</title></path>
+</g>
+<g data-name="Typography">
+<text x="1198" y="759" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="11" fill="#686E6A">48 px</text>
+</g>
+<g data-name="07 / Micro enlarged">
+<path d="M 1319.96 686.6 C 1337.44 684.76 1365.96 680.16 1385.28 681.08" fill="none" stroke="#1D1D1F" stroke-width="7.36" stroke-linecap="round" stroke-linejoin="round"><title>横 / relaxed rising pen stroke</title></path>
+<path d="M 1353.08 668.2 C 1352.16 682 1352.16 703.16 1350.32 721.56" fill="none" stroke="#1D1D1F" stroke-width="7.36" stroke-linecap="round" stroke-linejoin="round"><title>竖 / gently bowed pen stroke</title></path>
+<path d="M 1350.32 691.2 C 1342.04 702.24 1330.08 711.44 1317.2 716.96" fill="none" stroke="#1D1D1F" stroke-width="7.36" stroke-linecap="round" stroke-linejoin="round"><title>撇 / leftward pen sweep</title></path>
+<path d="M 1353.08 692.12 C 1363.2 703.16 1374.24 710.52 1390.8 715.12" fill="none" stroke="#1D1D1F" stroke-width="7.36" stroke-linecap="round" stroke-linejoin="round"><title>捺 / loose outward pen sweep</title></path>
+<path d="M 1324.56 729.84 C 1323.64 734.44 1320.88 738.12 1318.12 740.88" fill="none" stroke="#1D1D1F" stroke-width="7.36" stroke-linecap="round" stroke-linejoin="round"><title>点一 / quick outward pen dot</title></path>
+<path d="M 1341.12 730.76 C 1342.96 735.36 1342.96 738.12 1343.88 741.8" fill="none" stroke="#1D1D1F" stroke-width="7.36" stroke-linecap="round" stroke-linejoin="round"><title>点二 / upright pen dot</title></path>
+<path d="M 1360.44 729.84 C 1363.2 733.52 1364.12 737.2 1365.04 740.88" fill="none" stroke="#1D1D1F" stroke-width="7.36" stroke-linecap="round" stroke-linejoin="round"><title>点三 / tilted pen dot</title></path>
+<path d="M 1379.76 728.92 C 1384.36 732.6 1388.04 736.28 1390.8 739.96" fill="none" stroke="#1D1D1F" stroke-width="7.36" stroke-linecap="round" stroke-linejoin="round"><title>点四 / long closing pen dot</title></path>
+</g>
+<g data-name="Typography">
+<text x="1310" y="785" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="11" fill="#686E6A">放大观察</text>
+<text x="1002" y="837" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="15" fill="#686E6A">扩大手写笔画的有效黑量；继续保留四个独立笔点。</text>
+</g>
+</svg>

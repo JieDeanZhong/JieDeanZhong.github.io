@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" viewBox="0 0 1500 1000">
+<title>14 - Selection and sources</title>
+<g data-name="Backgrounds">
+<rect x="0" y="0" width="1500" height="1000" fill="#F7F6F1"/>
+</g>
+<g data-name="Typography">
+<text x="54" y="45" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="13" fill="#1D1D1F">JIE DEAN ZHONG</text>
+<text x="995" y="45" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="10" fill="#686E6A">PERSONAL IDENTITY / EXPLORATIONS / 04 OCT 2026</text>
+</g>
+<g data-name="Guides">
+<path d="M 54 70 L 1446 70" fill="none" stroke="#D8DDD6" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round"><title>Rule</title></path>
+</g>
+<g data-name="Typography">
+<text x="54" y="125" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="35" fill="#1D1D1F">如何选择，以及为什么这样设计</text>
+<text x="56" y="163" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="15" fill="#686E6A">以下是设计判断，不是用户研究结果。所有“分岔、生命、可能性”均为造型隐喻，不是汉字字源解释。</text>
+</g>
+<g data-name="Guides">
+<path d="M 54 940 L 1446 940" fill="none" stroke="#D8DDD6" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round"><title>Rule</title></path>
+</g>
+<g data-name="Typography">
+<text x="54" y="968" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="11" fill="#686E6A">杰 / 原创矢量草稿 · 供选方向，非最终品牌规范</text>
+<text x="1387" y="968" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="11" fill="#686E6A">14 / 15</text>
+</g>
+<g data-name="01 / 知性 / Humanist">
+<path d="M 96.3 229.52 L 106.64 229.52 L 106.64 244.56 L 134.84 244.56 L 134.84 253.02 L 109.46 253.02 C 115.1 264.3 126.38 274.64 140.48 282.16 L 133.9 290.62 C 121.68 283.1 113.22 275.58 106.64 265.24 L 106.64 290.62 L 96.3 290.62 L 96.3 266.18 C 88.78 276.52 79.38 284.04 68.1 290.62 L 61.52 283.1 C 75.62 275.58 87.84 264.3 93.48 253.02 L 67.16 253.02 L 67.16 244.56 L 96.3 244.56 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Wood / single humanist outline</title></path>
+<path d="M 70.92 296.26 L 80.32 299.08 L 73.74 311.3 L 64.34 307.54 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Dot 1</title></path>
+<path d="M 88.78 298.14 L 97.24 297.2 L 99.12 310.36 L 89.72 311.3 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Dot 2</title></path>
+<path d="M 108.52 297.2 L 116.98 295.32 L 121.68 308.48 L 112.28 311.3 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Dot 3</title></path>
+<path d="M 129.2 294.38 L 136.72 290.62 L 144.24 303.78 L 135.78 309.42 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Dot 4</title></path>
+</g>
+<g data-name="Typography">
+<text x="176" y="248" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="21" fill="#1D1D1F">01 / 主标优先验证</text>
+<text x="176" y="283" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="15" fill="#686E6A">先验证小尺寸、记忆轮廓与姓名组合。</text>
+</g>
+<g data-name="02 / 构件 / Modular">
+<path d="M 825.36 229.52 L 836.64 229.52 L 836.64 242.68 L 870.48 242.68 L 870.48 253.02 L 836.64 253.02 L 836.64 259.6 L 870.48 284.04 L 870.48 291.56 L 861.08 291.56 L 836.64 273.7 L 836.64 291.56 L 825.36 291.56 L 825.36 273.7 L 800.92 291.56 L 791.52 291.56 L 791.52 284.04 L 825.36 259.6 L 825.36 253.02 L 791.52 253.02 L 791.52 242.68 L 825.36 242.68 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Wood / geometric outline</title></path>
+<path d="M 791.52 300.96 L 802.8 300.96 L 802.8 312.24 L 791.52 312.24 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Unit / square 1</title></path>
+<path d="M 814.08 300.96 L 825.36 300.96 L 825.36 312.24 L 814.08 312.24 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Unit / square 2</title></path>
+<path d="M 836.64 300.96 L 847.92 300.96 L 847.92 312.24 L 836.64 312.24 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Unit / square 3</title></path>
+<path d="M 859.2 300.96 L 870.48 300.96 L 870.48 312.24 L 859.2 312.24 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Unit / square 4</title></path>
+</g>
+<g data-name="Typography">
+<text x="906" y="248" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="21" fill="#1D1D1F">02 / 系统优先验证</text>
+<text x="906" y="283" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="15" fill="#686E6A">主标固定，构件可用于版面与辅助图形。</text>
+</g>
+<g data-name="04 / 生长 / Branching">
+<path d="M 96.3 409.52 L 105.7 409.52 L 105.7 425.5 L 134.84 425.5 L 134.84 433.02 L 105.7 433.02 C 108.52 445.24 117.92 453.7 136.72 461.22 L 132.96 469.68 C 118.86 464.98 110.4 458.4 104.76 449.94 L 104.76 469.68 L 97.24 469.68 L 97.24 449.94 C 91.6 459.34 81.26 465.92 68.1 469.68 L 64.34 461.22 C 83.14 455.58 92.54 446.18 96.3 433.02 L 67.16 433.02 L 67.16 425.5 L 96.3 425.5 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>Wood / elastic junction</title></path>
+<path d="M 73.74 480.96 L 70.92 487.54" fill="none" stroke="#1D1D1F" stroke-width="7.52" stroke-linecap="round" stroke-linejoin="round"><title>Rounded point 1</title></path>
+<path d="M 92.54 480.96 L 93.48 488.48" fill="none" stroke="#1D1D1F" stroke-width="7.52" stroke-linecap="round" stroke-linejoin="round"><title>Rounded point 2</title></path>
+<path d="M 111.34 480.96 L 113.22 488.48" fill="none" stroke="#1D1D1F" stroke-width="7.52" stroke-linecap="round" stroke-linejoin="round"><title>Rounded point 3</title></path>
+<path d="M 129.2 479.08 L 132.96 486.6" fill="none" stroke="#1D1D1F" stroke-width="7.52" stroke-linecap="round" stroke-linejoin="round"><title>Rounded point 4</title></path>
+</g>
+<g data-name="Typography">
+<text x="176" y="428" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="21" fill="#1D1D1F">04 / 生物隐喻探索</text>
+<text x="176" y="463" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="15" fill="#686E6A">弹性分岔为气质对照，继续检查小尺寸。</text>
+</g>
+<g data-name="06 / 落笔 / Broad nib">
+<path d="M 796.22 427.38 C 814.08 426.44 841.34 422.68 860.14 420.8 L 865.78 427.38 C 846.04 430.2 819.72 433.02 797.16 435.84 L 794.34 431.14 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>横 / lifted broad-nib beam</title></path>
+<path d="M 825.36 408.58 C 828.18 407.64 832.88 408.58 835.7 410.46 C 833.82 425.5 832.88 444.3 831.94 461.22 L 827.24 467.8 L 822.54 465.92 C 825.36 449.94 825.36 430.2 824.42 417.98 L 822.54 411.4 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>竖 / weighted descending stem</title></path>
+<path d="M 826.3 431.14 L 833.82 434.9 C 823.48 448.06 808.44 459.34 792.46 464.98 L 790.58 460.28 C 805.62 449 816.9 441.48 826.3 431.14 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>撇 / gathered leftward release</title></path>
+<path d="M 830.06 431.14 C 840.4 440.54 854.5 449 869.54 451.82 L 865.78 462.16 C 850.74 458.4 838.52 448.06 827.24 438.66 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>捺 / asymmetric broad rightward release</title></path>
+<path d="M 799.98 472.5 L 804.68 474.38 C 802.8 480.96 799.98 486.6 794.34 489.42 L 790.58 484.72 C 795.28 480.02 798.1 476.26 799.98 472.5 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>点一 / outward falling cut</title></path>
+<path d="M 815.96 474.38 L 820.66 472.5 C 823.48 477.2 825.36 481.9 825.36 486.6 L 818.78 488.48 C 818.78 482.84 817.84 478.14 815.96 474.38 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>点二 / short vertical pressure</title></path>
+<path d="M 835.7 473.44 L 840.4 471.56 C 844.16 475.32 846.98 480.96 847.92 485.66 L 841.34 487.54 C 840.4 481.9 838.52 477.2 835.7 473.44 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>点三 / sloping pressure</title></path>
+<path d="M 856.38 472.5 L 860.14 469.68 C 865.78 473.44 870.48 478.14 872.36 483.78 L 864.84 486.6 C 863.9 480.96 860.14 476.26 856.38 472.5 Z" fill="#1D1D1F" stroke="none" stroke-width="0.0" stroke-linecap="butt" stroke-linejoin="round"><title>点四 / final outward release</title></path>
+</g>
+<g data-name="Typography">
+<text x="906" y="428" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="21" fill="#1D1D1F">06 / 文化与个性探索</text>
+<text x="906" y="463" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="15" fill="#686E6A">宽笔风格形成个人感，细端尚需校正。</text>
+</g>
+<g data-name="Guides">
+<path d="M 54 593 L 1446 593" fill="none" stroke="#D8DDD6" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round"><title>Rule</title></path>
+</g>
+<g data-name="Typography">
+<text x="54" y="635" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="13" fill="#1D1D1F">一手参考 / PRINCIPLES, NOT TEMPLATES</text>
+<text x="54" y="672" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="13" fill="#1D1D1F">1  Paul Rand · Logos, Flags, and Escutcheons (1991)</text>
+<text x="54" y="695" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="12" fill="#686E6A">识别优先；单色、可见性、可复用。</text>
+<text x="54" y="715" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="8.3" fill="#686E6A">paulrand.design/writing/articles/1991-logos-flags-and-escutcheons.html</text>
+<text x="54" y="736" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="13" fill="#1D1D1F">2  Google Design · Evolving the Google Identity</text>
+<text x="54" y="759" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="12" fill="#686E6A">小尺寸单独调整重量与光学比例。</text>
+<text x="54" y="779" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="8.3" fill="#686E6A">design.google/library/evolving-google-identity</text>
+<text x="54" y="800" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="13" fill="#1D1D1F">3  Pentagram · MIT Media Lab</text>
+<text x="54" y="823" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="12" fill="#686E6A">共同构件可以形成稳定而灵活的系统。</text>
+<text x="54" y="843" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="8.3" fill="#686E6A">pentagram.com/work/mit-media-lab</text>
+<text x="54" y="864" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="13" fill="#1D1D1F">4  Monotype · Tencent global identity</text>
+<text x="54" y="887" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="12" fill="#686E6A">不同文字保留结构，以重量和笔画气质协调。</text>
+<text x="54" y="907" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="8.3" fill="#686E6A">enterprise.monotype.com/resources/case-studies/tencent-expands-global-presence</text>
+<text x="784" y="672" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="13" fill="#1D1D1F">5  Monotype · Quentin Blake handwriting</text>
+<text x="784" y="695" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="12" fill="#686E6A">手写个性来自有规律的不规则与实际笔迹。</text>
+<text x="784" y="715" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="8.3" fill="#686E6A">monotype.com/resources/case-studies/a-bespoke-handwriting-typeface-for-sir-quentin-blake</text>
+<text x="784" y="736" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="13" fill="#1D1D1F">6  Nielsen Norman Group · Homepage Links</text>
+<text x="784" y="759" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="12" fill="#686E6A">左上角归属标识与明确的返回首页入口。</text>
+<text x="784" y="779" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="8.3" fill="#686E6A">nngroup.com/articles/homepage-links/</text>
+<text x="784" y="800" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="13" fill="#1D1D1F">7  W3C WAI · Functional Images</text>
+<text x="784" y="823" font-family="Arial Unicode MS, Hiragino Sans GB, sans-serif" font-weight="400" font-size="12" fill="#686E6A">功能图像的文字替代应描述用途或目的地。</text>
+<text x="784" y="843" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="8.3" fill="#686E6A">w3.org/WAI/tutorials/images/functional/</text>
+</g>
+</svg>

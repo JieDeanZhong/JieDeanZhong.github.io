@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+<title>07 / 随笔 / Personal pen</title>
+<g data-name="07 / 随笔 / Personal pen">
+<path d="M 13 30 C 32 28 63 23 84 24" fill="none" stroke="#1D1D1F" stroke-width="4.7" stroke-linecap="round" stroke-linejoin="round"><title>横 / relaxed rising pen stroke</title></path>
+<path d="M 49 10 C 48 25 48 48 46 68" fill="none" stroke="#1D1D1F" stroke-width="5.3" stroke-linecap="round" stroke-linejoin="round"><title>竖 / gently bowed pen stroke</title></path>
+<path d="M 46 35 C 37 47 24 57 10 63" fill="none" stroke="#1D1D1F" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"><title>撇 / leftward pen sweep</title></path>
+<path d="M 49 36 C 60 48 72 56 90 61" fill="none" stroke="#1D1D1F" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"><title>捺 / loose outward pen sweep</title></path>
+<path d="M 18 77 C 17 82 14 86 11 89" fill="none" stroke="#1D1D1F" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><title>点一 / quick outward pen dot</title></path>
+<path d="M 36 78 C 38 83 38 86 39 90" fill="none" stroke="#1D1D1F" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"><title>点二 / upright pen dot</title></path>
+<path d="M 57 77 C 60 81 61 85 62 89" fill="none" stroke="#1D1D1F" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"><title>点三 / tilted pen dot</title></path>
+<path d="M 78 76 C 83 80 87 84 90 88" fill="none" stroke="#1D1D1F" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"><title>点四 / long closing pen dot</title></path>
+</g>
+</svg>
