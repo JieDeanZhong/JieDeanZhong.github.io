@@ -1,56 +1,37 @@
 'use client'
 
-import siteMetadata from '@/data/siteMetadata'
-import headerNavLinks from '@/data/headerNavLinks'
-import Link from './Link'
-import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import dynamic from 'next/dynamic'
-const MobileNav = dynamic(() => import('./MobileNav'), { ssr: false })
+import siteMetadata from '@/data/siteMetadata'
+import Link from './Link'
+import HeaderNavigation from './HeaderNavigation'
 import SearchButton from './SearchButton'
+import styles from './Header.module.css'
+
+const MobileNav = dynamic(() => import('./MobileNav'), { ssr: false })
 
 const Header = () => {
-  let headerClass =
-    'relative flex items-center w-full justify-between py-6 [&_a:focus-visible]:outline-primary-300 [&_button:focus-visible]:outline-primary-300'
-  if (siteMetadata.stickyNav) {
-    headerClass += ' sticky top-0 z-50'
-  }
+  const pathname = usePathname().replace(/\/$/, '') || '/'
 
   return (
-    <header className={headerClass}>
-      {/* Full-width background */}
-      <div className="absolute inset-y-0 left-1/2 -z-10 w-screen -translate-x-1/2 border-b border-gray-800 bg-[#1d1d1f]" />
+    <header className={`${styles.header} ${siteMetadata.stickyNav ? styles.sticky : ''}`}>
+      <div className={styles.background} aria-hidden="true" />
 
-      <Link href="/" aria-label={siteMetadata.headerTitle}>
-        <div className="flex items-center">
-          <div className="flex items-center">
-            <Image
-              src="/static/images/signature-latest.png"
-              alt="Jie Dean Zhong signature"
-              width={220}
-              height={70}
-              priority
-              className="h-15 w-auto object-contain"
-            />
-          </div>
-        </div>
+      <Link href="/" aria-label={`${siteMetadata.headerTitle} — Home`} className={styles.home}>
+        <svg viewBox="0 0 126 24" className={styles.logo} aria-hidden="true" focusable="false">
+          <path
+            fill="currentColor"
+            d="M0 0h24v24H0zM34 0h24v24H34zM68 0h24v24H68zM102 0h24v24h-24z"
+          />
+        </svg>
       </Link>
 
-      <div className="flex items-center space-x-4 leading-5 sm:-mr-6 sm:space-x-6">
-        <div className="no-scrollbar hidden max-w-40 items-center gap-x-4 overflow-x-auto sm:flex md:max-w-72 lg:max-w-96">
-          {headerNavLinks
-            .filter((link) => link.href !== '/')
-            .map((link) => (
-              <Link
-                key={link.title}
-                href={link.href}
-                className="m-1 font-medium text-gray-300 hover:text-white"
-              >
-                {link.title}
-              </Link>
-            ))}
+      <div className={styles.controls}>
+        <HeaderNavigation key={`desktop-${pathname}`} pathname={pathname} />
+        <div className={styles.search}>
+          <SearchButton />
         </div>
-        <SearchButton />
-        <MobileNav />
+        <MobileNav key={`mobile-${pathname}`} />
       </div>
     </header>
   )

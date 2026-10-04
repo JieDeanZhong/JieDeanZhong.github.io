@@ -2,9 +2,9 @@ import scholarsData from './scholarsData'
 import type { ScholarId } from './scholarsData'
 
 export const researchSections = [
-  { id: 'research-projects', title: 'Research Projects' },
+  { id: 'research-projects', title: 'Projects' },
   { id: 'perspectives', title: 'Perspectives' },
-  { id: 'research-software', title: 'Research Software' },
+  { id: 'research-software', title: 'Software' },
   { id: 'advisory', title: 'Advisory' },
 ] as const
 
