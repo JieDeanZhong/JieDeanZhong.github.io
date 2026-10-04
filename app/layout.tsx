@@ -60,6 +60,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const basePath = process.env.BASE_PATH || ''
+  const faviconPath = `${basePath}/static/favicons`
+  const faviconVersion = 'four-blocks-black-v1'
 
   return (
     <html
@@ -70,29 +72,35 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link
           rel="apple-touch-icon"
-          sizes="76x76"
-          href={`${basePath}/static/favicons/apple-touch-icon.png`}
+          sizes="180x180"
+          href={`${faviconPath}/apple-touch-icon.png?v=${faviconVersion}`}
         />
+        <link rel="icon" href={`${faviconPath}/favicon.ico?v=${faviconVersion}`} sizes="any" />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href={`${basePath}/static/favicons/favicon-32x32.png`}
+          href={`${faviconPath}/favicon-32x32.png?v=${faviconVersion}`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href={`${basePath}/static/favicons/favicon-16x16.png`}
+          href={`${faviconPath}/favicon-16x16.png?v=${faviconVersion}`}
         />
-        <link rel="manifest" href={`${basePath}/static/favicons/site.webmanifest`} />
+        <link
+          rel="icon"
+          type="image/svg+xml"
+          sizes="any"
+          href={`${faviconPath}/four-blocks.svg?v=${faviconVersion}`}
+        />
+        <link rel="manifest" href={`${faviconPath}/site.webmanifest?v=${faviconVersion}`} />
         <link
           rel="mask-icon"
-          href={`${basePath}/static/favicons/safari-pinned-tab.svg`}
-          color="#5bbad5"
+          href={`${faviconPath}/safari-pinned-tab.svg?v=${faviconVersion}`}
+          color="#000000"
         />
-        <meta name="msapplication-TileColor" content="#000000" />
-        <meta name="theme-color" content="#fff" />
+        <meta name="theme-color" content="#ffffff" />
         <link rel="alternate" type="application/rss+xml" href={`${basePath}/feed.xml`} />
       </head>
 
