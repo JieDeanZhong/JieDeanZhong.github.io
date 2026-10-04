@@ -27,6 +27,13 @@ export interface ResearchPI {
   scholarId?: ScholarId
 }
 
+export interface ResearchPhoto {
+  src: string
+  width: number
+  height: number
+  alt: string
+}
+
 export interface ResearchEntry {
   id: string
   section: ResearchSection
@@ -39,6 +46,7 @@ export interface ResearchEntry {
   italicTitleText?: string
   articleType?: string
   summary?: string
+  photo?: ResearchPhoto
   role?: string
   contribution?: string
   relatedResearch?: ResearchLink
@@ -115,6 +123,12 @@ const researchData: ResearchEntry[] = [
     section: 'research-projects',
     name: 'CXCL13–Fc fusion protein',
     listTitle: 'CXCL13–Fc and CXCR5-Engineered CD8⁺ T Cells',
+    photo: {
+      src: '/static/images/research/cxcl13-fc/ice.webp',
+      width: 3761,
+      height: 2115,
+      alt: 'Laboratory reagent tubes nestled in crushed ice.',
+    },
     summary:
       'We are investigating how CXCL13–Fc affects the trafficking and antitumor function of CXCR5-engineered CD8⁺ T cells.',
     role: 'Core contributor',

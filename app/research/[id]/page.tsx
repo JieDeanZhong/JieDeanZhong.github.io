@@ -13,6 +13,7 @@ import trogenData from '@/data/trogenData'
 import TrogenProject from '@/components/TrogenProject'
 import fjData from '@/data/fjData'
 import FjProject from '@/components/FjProject'
+import PhotoResearchProject from '@/components/PhotoResearchProject'
 import { genPageMetadata } from 'app/seo'
 
 interface ResearchPageProps {
@@ -48,6 +49,15 @@ export async function generateMetadata({ params }: ResearchPageProps) {
     })
   }
 
+  if (entry.photo) {
+    return genPageMetadata({
+      title: entry.listTitle || entry.researchTitle || entry.name,
+      description: entry.summary,
+      image: entry.photo.src,
+      robots: { index: false, follow: false },
+    })
+  }
+
   return genPageMetadata({
     title: entry.researchTitle?.trim() || entry.name,
     description: 'Temporary preview using The Time Machine as placeholder content.',
@@ -61,6 +71,7 @@ export default async function ResearchPage({ params }: ResearchPageProps) {
   if (!entry) notFound()
   if (id === 'trogen') return <TrogenProject />
   if (id === 'fj-gliding') return <FjProject />
+  if (entry.photo) return <PhotoResearchProject entry={entry} photo={entry.photo} />
 
   const placeholder = allBlogs.find((post) => post.slug === 'the-time-machine')
   if (!placeholder) notFound()
