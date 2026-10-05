@@ -1,3 +1,17 @@
+# Dean Jie Zhong
+
+Personal academic website of Dean Jie Zhong, built with Next.js and Contentlayer.
+
+The configured public URL is `https://deanjiezhong.github.io`. The site title, author,
+and URL are defined in `data/siteMetadata.js`.
+
+The source repository is [DeanJieZhong/DeanJieZhong.github.io](https://github.com/DeanJieZhong/DeanJieZhong.github.io).
+Pushes to `main` build and deploy the site through `.github/workflows/pages.yml`.
+Use Yarn 3.6.1, run `yarn lint`, and run `EXPORT=true UNOPTIMIZED=true yarn build`
+before publishing changes.
+
+The original starter documentation follows.
+
 ![tailwind-nextjs-banner](/public/static/images/twitter-card.png)
 
 # Tailwind Nextjs Starter Blog

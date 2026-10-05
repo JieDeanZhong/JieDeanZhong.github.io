@@ -13,6 +13,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
+  applicationName: siteMetadata.title,
   title: {
     default: siteMetadata.title,
     template: `%s | ${siteMetadata.title}`,
@@ -83,7 +84,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           sizes="any"
           href={`${faviconPath}/four-blocks.svg?v=${faviconVersion}`}
         />
-        <link rel="manifest" href={`${faviconPath}/site.webmanifest?v=${faviconVersion}`} />
+        <link rel="manifest" href={`${faviconPath}/site.webmanifest?v=dean-jie-zhong-v1`} />
         <link
           rel="mask-icon"
           href={`${faviconPath}/safari-pinned-tab.svg?v=${faviconVersion}`}

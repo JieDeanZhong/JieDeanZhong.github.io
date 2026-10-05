@@ -1,7 +1,5 @@
 import Image from 'next/image'
-import { genPageMetadata } from 'app/seo'
-
-export const metadata = genPageMetadata({ title: 'About' })
+import siteMetadata from '@/data/siteMetadata'
 
 export default function AboutPage() {
   return (
@@ -23,7 +21,7 @@ export default function AboutPage() {
             {/* Left text */}
             <div className="self-center">
               <h2 className="text-[32px] leading-[1.05] font-semibold tracking-normal text-black md:text-[40px]">
-                Jie Dean Zhong
+                {siteMetadata.author}
               </h2>
 
               <p className="text-[32px] leading-[1.1] font-semibold tracking-normal text-black md:text-[40px]">
@@ -43,7 +41,7 @@ export default function AboutPage() {
             <div className="relative flex min-h-[190px] items-end justify-center sm:min-h-[240px] md:min-h-[300px] lg:min-h-[320px]">
               <Image
                 src="/static/images/upper-body-trans.png"
-                alt="Portrait of Jie Dean Zhong"
+                alt={`Portrait of ${siteMetadata.author}`}
                 width={1024}
                 height={889}
                 className="h-auto w-full max-w-[288px] object-contain sm:max-w-[360px] md:absolute md:bottom-0 md:max-w-[420px] lg:max-w-[460px]"
@@ -58,7 +56,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 gap-x-14 gap-y-10 md:grid-cols-2">
             <div className="space-y-8 text-left text-[18px] leading-[1.65] tracking-normal text-gray-800 md:text-justify md:text-[19px]">
               <p>
-                Jie Dean Zhong is an undergraduate student in Biological Sciences at Xi’an
+                {siteMetadata.author} is an undergraduate student in Biological Sciences at Xi’an
                 Jiaotong-Liverpool University. His academic interests focus on synthetic biology,
                 microbial engineering, and immunology.
               </p>
@@ -73,10 +71,10 @@ export default function AboutPage() {
 
             <div className="space-y-8 text-left text-[18px] leading-[1.65] tracking-normal text-gray-800 md:text-justify md:text-[19px]">
               <p>
-                Beyond laboratory research, Jie Dean is interested in scientific communication,
-                interdisciplinary collaboration, and the long-term development of research-driven
-                academic work. He is building a portfolio centered on experimental biology,
-                problem-oriented design, and future research training.
+                Beyond laboratory research, {siteMetadata.author} is interested in scientific
+                communication, interdisciplinary collaboration, and the long-term development of
+                research-driven academic work. He is building a portfolio centered on experimental
+                biology, problem-oriented design, and future research training.
               </p>
 
               <p>
