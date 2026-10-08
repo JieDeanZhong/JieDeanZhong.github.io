@@ -53,7 +53,7 @@ export default function TrogenProject() {
           <div className="mt-7 space-y-2 text-sm leading-6 sm:text-base sm:leading-7">
             <p>Role: {trogen.role}</p>
             <p>
-              PIs:{' '}
+              Supervisors:{' '}
               {trogen.pis.map((pi, index) => (
                 <Fragment key={pi.name}>
                   {index > 0 && ' and '}

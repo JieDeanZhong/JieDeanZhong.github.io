@@ -49,7 +49,7 @@ export default function FjProject() {
           <div className="mt-7 space-y-2 text-sm leading-6 sm:text-base sm:leading-7">
             <p>Role: {fj.role}</p>
             <p>
-              PI:{' '}
+              Supervisor:{' '}
               <Link href={fj.pi.url} className={linkStyle}>
                 {fj.pi.name}
               </Link>
