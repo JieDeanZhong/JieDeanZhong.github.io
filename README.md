@@ -2,7 +2,7 @@
 
 Personal academic website of Dean Jie Zhong, built with Next.js and Contentlayer.
 
-The configured public URL is `https://deanjiezhong.github.io`. The site title, author,
+The configured public URL is `https://deanjiezhong.com`. The site title, author,
 and URL are defined in `data/siteMetadata.js`.
 
 The source repository is [DeanJieZhong/DeanJieZhong.github.io](https://github.com/DeanJieZhong/DeanJieZhong.github.io).

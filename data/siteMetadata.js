@@ -6,7 +6,7 @@ const siteMetadata = {
   description: 'Personal website of Dean Jie Zhong.',
   language: 'en-us',
   theme: 'light',
-  siteUrl: 'https://deanjiezhong.github.io',
+  siteUrl: 'https://deanjiezhong.com',
   siteRepo: 'https://github.com/DeanJieZhong/DeanJieZhong.github.io',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
