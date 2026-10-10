@@ -1,4 +1,4 @@
-/** @type {import("pliny/config").PlinyConfig } */
+/** @type {import("pliny/config").PlinyConfig & { phone: string, wechat: string }} */
 const siteMetadata = {
   title: 'Dean Jie Zhong',
   author: 'Dean Jie Zhong',
@@ -11,7 +11,9 @@ const siteMetadata = {
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'address@yoursite.com',
+  phone: '+86 15724868119',
+  email: 'amsterdamsterdam@outlook.com',
+  wechat: 'amsterdamsterdam',
   github: 'https://github.com/DeanJieZhong',
   x: 'https://twitter.com/x',
   // twitter: 'https://twitter.com/Twitter',
@@ -19,7 +21,7 @@ const siteMetadata = {
   youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com',
   threads: 'https://www.threads.net',
-  instagram: 'https://www.instagram.com',
+  instagram: 'https://www.instagram.com/deanjiezhong/',
   medium: 'https://medium.com',
   bluesky: 'https://bsky.app/',
   locale: 'en-US',

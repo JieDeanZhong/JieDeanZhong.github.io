@@ -111,11 +111,12 @@ export default function HeaderNavigation({ pathname }: { pathname: string }) {
                         <li key={child.href}>
                           <Link
                             href={child.href}
+                            className={styles.navigationLink}
                             aria-current={pathname === child.href ? 'page' : undefined}
                             onClick={() => setOpenItem(null)}
                             onKeyDown={closeWithEscape}
                           >
-                            {child.title}
+                            <span className={styles.navigationLabel}>{child.title}</span>
                           </Link>
                         </li>
                       ))

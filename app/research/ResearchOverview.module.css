@@ -1,0 +1,34 @@
+.hero {
+  display: grid;
+}
+
+.visual {
+  grid-area: 1 / 1;
+  align-self: start;
+}
+
+.gradient {
+  background: linear-gradient(
+    to bottom,
+    transparent 55%,
+    rgb(0 0 0 / 65%) 72%,
+    rgb(0 0 0 / 92%) 90%,
+    #000 100%
+  );
+}
+
+.intro {
+  position: relative;
+  grid-area: 1 / 1;
+  align-self: end;
+  width: 100%;
+  padding-block: 1.5rem;
+}
+
+@media (max-width: 639px) {
+  .intro {
+    /* Let narrow screens keep the entire photograph above the copy. */
+    grid-area: 2 / 1;
+    padding-top: 0;
+  }
+}

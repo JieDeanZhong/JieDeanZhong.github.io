@@ -82,33 +82,34 @@ export default async function ResearchPage({ params }: ResearchPageProps) {
   })
 
   return (
-    <>
-      <div className="border-b border-gray-200 py-6 break-words dark:border-gray-700">
-        <Link
-          href="/research"
-          className="text-sm text-gray-700 underline underline-offset-4 dark:text-gray-300"
-        >
-          &larr; Back to Research
-        </Link>
-        <p className="mt-4 font-semibold text-gray-900 dark:text-gray-100">
-          {entry.researchTitle?.trim() || entry.name}
-        </p>
-        <p className="mt-2 text-sm leading-6 text-gray-600 dark:text-gray-300">
-          Placeholder page. The Time Machine below is sample content, not a description of this
-          research entry.
-        </p>
-      </div>
-      <PostLayout
-        content={coreContent(placeholder)}
-        authorDetails={authorDetails}
-        backLink={{ href: '/research', label: 'Back to Research' }}
-      >
-        <MDXLayoutRenderer
-          code={placeholder.body.code}
-          components={components}
-          toc={placeholder.toc}
-        />
-      </PostLayout>
-    </>
+    <PostLayout
+      content={coreContent(placeholder)}
+      authorDetails={authorDetails}
+      backLink={{ href: '/research', label: 'Back to Research' }}
+      alignTitleWithContent
+      headerContent={
+        <div className="mb-6 border-b border-gray-200 pb-6 break-words dark:border-gray-700">
+          <Link
+            href="/research"
+            className="text-sm text-gray-700 underline underline-offset-4 dark:text-gray-300"
+          >
+            &larr; Back to Research
+          </Link>
+          <p className="mt-4 font-semibold text-gray-900 dark:text-gray-100">
+            {entry.researchTitle?.trim() || entry.name}
+          </p>
+          <p className="mt-2 text-sm leading-6 text-gray-600 dark:text-gray-300">
+            Placeholder page. The Time Machine below is sample content, not a description of this
+            research entry.
+          </p>
+        </div>
+      }
+    >
+      <MDXLayoutRenderer
+        code={placeholder.body.code}
+        components={components}
+        toc={placeholder.toc}
+      />
+    </PostLayout>
   )
 }

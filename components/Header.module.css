@@ -96,6 +96,7 @@
   color: #fff;
   cursor: pointer;
   text-align: left;
+  text-decoration: none;
 }
 
 .label,
@@ -139,7 +140,6 @@
 }
 
 .dropdown {
-  min-height: 202px;
   padding: 12px 13px;
   border-bottom: 2px solid #1d1d1f;
   background: #fff;
@@ -164,16 +164,35 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
 }
 
-.submenu a:hover,
-.submenu a:focus-visible {
-  text-decoration: underline;
+.navigationLink {
+  text-decoration: none;
 }
 
-.submenu a:focus-visible {
+.label,
+.revealedLabel,
+.navigationLabel {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 0% 1px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition: background-size 150ms ease-out;
+}
+
+.navigationLabel {
+  background-image: linear-gradient(var(--color-gray-500), var(--color-gray-500));
+}
+
+.trigger:is(:hover, :focus-visible) .label,
+.trigger:is(:hover, :focus-visible) ~ .reveal .revealedLabel,
+.navigationLink:is(:hover, :focus-visible) .navigationLabel {
+  background-size: 100% 1px;
+}
+
+.navigationLink:focus-visible {
   outline-color: #000;
   outline-offset: -2px;
 }
@@ -210,7 +229,20 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal {
+  .reveal,
+  .label,
+  .revealedLabel,
+  .navigationLabel {
     transition: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .trigger:is(:hover, :focus-visible) .label,
+  .trigger:is(:hover, :focus-visible) ~ .reveal .revealedLabel,
+  .navigationLink:is(:hover, :focus-visible) .navigationLabel {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
   }
 }

@@ -1,4 +1,4 @@
-export type ScholarId = 'lianjun-zhang' | 'yongtao-zhu' | 'kevin-chan'
+export type ScholarId = 'lianjun-zhang' | 'yongtao-zhu' | 'kevin-chan' | 'john-moraros'
 
 export interface ScholarProfile {
   id: ScholarId
@@ -8,7 +8,7 @@ export interface ScholarProfile {
   institutions: string[]
   emails: string[]
   googleScholarUrl: string
-  institutionalProfileUrl: string
+  institutionalProfileUrl?: string
   card: {
     background: string
     foreground: string
@@ -41,7 +41,7 @@ const scholarsData: Record<ScholarId, ScholarProfile> = {
       institution: 'Suzhou Institute of Systems Medicine, CAMS & PUMC',
     },
     photo: {
-      src: '/static/images/people/lianjun-zhang-cutout.webp',
+      src: '/static/images/people/lianjun-zhang-ps-cutout.webp',
       alt: 'Portrait of Lianjun Zhang',
       width: 1600,
       height: 2172,
@@ -62,7 +62,7 @@ const scholarsData: Record<ScholarId, ScholarProfile> = {
       institution: 'Xi’an Jiaotong-Liverpool University',
     },
     photo: {
-      src: '/static/images/people/yongtao-zhu-cutout.webp',
+      src: '/static/images/people/yongtao-zhu-ps-cutout.webp',
       alt: 'Portrait of Yongtao Zhu',
       width: 1000,
       height: 1075,
@@ -83,10 +83,31 @@ const scholarsData: Record<ScholarId, ScholarProfile> = {
       institution: 'Xi’an Jiaotong-Liverpool University',
     },
     photo: {
-      src: '/static/images/people/kevin-chan-cutout.webp',
+      src: '/static/images/people/kevin-chan-ps-cutout.webp',
       alt: 'Portrait of Kevin Chun Chan',
       width: 1521,
       height: 1863,
+    },
+  },
+  'john-moraros': {
+    id: 'john-moraros',
+    name: 'John Moraros',
+    degree: 'MD, PhD',
+    title: 'Former Dean and Professor',
+    institutions: ['School of Science', 'Xi’an Jiaotong-Liverpool University'],
+    emails: [],
+    googleScholarUrl: 'https://scholar.google.com/citations?hl=en&user=lGXRCNgAAAAJ',
+    // The former institutional profile returns 404; omit it until a working URL is confirmed.
+    card: {
+      background: '#5e5e60',
+      foreground: '#ffffff',
+      institution: 'School of Science, Xi’an Jiaotong-Liverpool University',
+    },
+    photo: {
+      src: '/static/images/people/john-moraros-ps-cutout.webp',
+      alt: 'Portrait of John Moraros',
+      width: 1000,
+      height: 1000,
     },
   },
 }

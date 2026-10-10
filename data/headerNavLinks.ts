@@ -11,10 +11,9 @@ const headerNavLinks: HeaderNavLink[] = [
     href: '/research',
     title: 'Research',
     children: [
-      { href: '/research#research-projects-heading', title: 'Projects' },
-      { href: '/research#perspectives-heading', title: 'Perspectives' },
-      { href: '/research#research-software-heading', title: 'Software' },
-      { href: '/research#advisory-heading', title: 'Advisory' },
+      { href: '/research#ism-heading', title: 'Immunology' },
+      { href: '/research#igem-2025-heading', title: 'iGEM' },
+      { href: '/research#f-johnsoniae-heading', title: 'Motility' },
     ],
   },
   {

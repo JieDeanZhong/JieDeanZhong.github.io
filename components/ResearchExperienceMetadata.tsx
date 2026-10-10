@@ -9,7 +9,7 @@ const linkStyle =
 
 export default function ResearchExperienceMetadata({
   experience,
-  role = experience.role,
+  role,
   className = 'mt-4 space-y-1 text-sm leading-6 text-gray-600 dark:text-gray-300',
   children,
 }: {
@@ -20,14 +20,19 @@ export default function ResearchExperienceMetadata({
 }) {
   return (
     <div className={className}>
-      <p>Role: {role}</p>
+      {role && <p>Role: {role}</p>}
       <p>
         {experience.supervisors.length > 1 ? 'Supervisors: ' : 'Supervisor: '}
         {experience.supervisors.map((supervisor, index) => {
           const label = [supervisor.name, supervisor.degree].filter(Boolean).join(', ')
           return (
             <Fragment key={supervisor.scholarId || supervisor.name}>
-              {index > 0 && ' and '}
+              {index > 0 &&
+                (index === experience.supervisors.length - 1
+                  ? experience.supervisors.length > 2
+                    ? ', and '
+                    : ' and '
+                  : ', ')}
               {supervisor.scholarId ? (
                 <ScholarPopover scholar={scholarsData[supervisor.scholarId]} />
               ) : supervisor.url ? (

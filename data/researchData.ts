@@ -3,11 +3,29 @@ import type { ScholarId } from './scholarsData'
 
 export const researchExperiences = [
   {
+    id: 'ism',
+    title: 'CD8⁺ T Cells & Cancer Immunotherapy',
+    description: 'Research internship in cancer immunology.',
+    italicTitleText: '',
+    supervisors: [
+      {
+        name: 'Lianjun Zhang',
+        degree: 'PhD',
+        url: scholarsData['lianjun-zhang'].institutionalProfileUrl,
+        scholarId: 'lianjun-zhang',
+      },
+    ],
+    affiliations: [
+      {
+        name: 'Suzhou Institute of Systems Medicine, Chinese Academy of Medical Sciences & Peking Union Medical College',
+      },
+    ],
+  },
+  {
     id: 'igem-2025',
     title: 'iGEM',
     description: 'Top 10 undergraduate research at iGEM 2025 and subsequent advisory work.',
     italicTitleText: '',
-    role: 'Research lead · Advisor',
     supervisors: [
       {
         name: 'Yongtao Zhu',
@@ -21,40 +39,19 @@ export const researchExperiences = [
         url: scholarsData['kevin-chan'].institutionalProfileUrl,
         scholarId: 'kevin-chan',
       },
-    ],
-    affiliations: [
       {
-        name: 'XJTLU-Science-China',
-        url: 'https://2025.igem.wiki/xjtlu-science-china/',
-      },
-      { name: 'Xi’an Jiaotong-Liverpool University' },
-    ],
-  },
-  {
-    id: 'ism',
-    title: 'CD8⁺ T Cells & Cancer Immunotherapy',
-    description: 'Research internship in cancer immunology.',
-    italicTitleText: '',
-    role: 'Core contributor',
-    supervisors: [
-      {
-        name: 'Lianjun Zhang',
-        degree: 'PhD',
-        url: scholarsData['lianjun-zhang'].institutionalProfileUrl,
-        scholarId: 'lianjun-zhang',
+        name: 'John Moraros',
+        degree: 'MD, PhD',
+        scholarId: 'john-moraros',
       },
     ],
-    affiliations: [
-      { name: 'Suzhou Institute of Systems Medicine', url: 'https://www.ismsz.cn/' },
-      { name: 'Chinese Academy of Medical Sciences & Peking Union Medical College' },
-    ],
+    affiliations: [{ name: 'Xi’an Jiaotong-Liverpool University' }],
   },
   {
     id: 'f-johnsoniae',
-    title: 'Flavobacterium johnsoniae Motility Mechanisms',
+    title: 'Motility Mechanisms in Flavobacterium johnsoniae',
     description: 'Bacterial gliding, surface interactions, and microscopy workflows.',
     italicTitleText: 'Flavobacterium johnsoniae',
-    role: 'Research lead',
     supervisors: [
       {
         name: 'Yongtao Zhu',
@@ -71,7 +68,7 @@ export type ResearchExperience = (typeof researchExperiences)[number]['id']
 
 export const researchTypes = {
   project: 'Research',
-  perspective: 'Comment',
+  perspective: 'Commentary',
   software: 'Development',
   advisory: 'Advisory',
 } as const
@@ -100,7 +97,6 @@ export interface ResearchExperienceDetails {
   title: string
   description: string
   italicTitleText?: string
-  role: string
   supervisors: readonly ResearchSupervisor[]
   affiliations: readonly ResearchAffiliation[]
 }
@@ -110,6 +106,7 @@ export interface ResearchPhoto {
   width: number
   height: number
   alt: string
+  titlePlacement?: 'overlay' | 'lower'
 }
 
 export interface ResearchEntry {
@@ -124,8 +121,10 @@ export interface ResearchEntry {
   hasDetailPage?: boolean
   // List-specific presentation leaves existing detail-page titles unchanged.
   listTitle?: string
+  listSummary?: string
   italicTitleText?: string
   articleType?: string
+  journal?: string
   summary?: string
   photo?: ResearchPhoto
   role?: string
@@ -153,6 +152,8 @@ const researchData: ResearchEntry[] = [
     level: 'primary',
     name: 'TroGen',
     listTitle: 'TroGen: A commensal bacterial platform for intracellular drug delivery in TNBC',
+    listSummary:
+      'We engineered commensal bacteria and demonstrated their entry into TNBC cells in vitro, laying the groundwork for intracellular drug delivery.',
     summary:
       'A Top 10 undergraduate project at iGEM 2025. We engineered commensal bacteria and demonstrated their entry into TNBC cells in vitro, laying the groundwork for intracellular drug delivery.',
     role: 'Research lead',
@@ -226,9 +227,13 @@ const researchData: ResearchEntry[] = [
     experience: 'ism',
     type: 'perspective',
     level: 'primary',
-    name: 'Spotlight',
+    name: 'Genome-wide human T cell screens: barriers and design',
     articleType: 'Spotlight',
-    status: 'Submitted',
+    journal: 'Trends in Cancer',
+    summary:
+      'A commentary on future paradigms for T cell screening, accepted by Trends in Cancer (IF 21.6).',
+    role: 'Co-first author',
+    status: 'Accepted',
     participationPeriod: 'Aug–Sep 2026',
   },
   {
@@ -238,6 +243,7 @@ const researchData: ResearchEntry[] = [
     type: 'advisory',
     level: 'supporting',
     name: 'DogmaOS',
+    listTitle: 'Xi’an Jiaotong-Liverpool University',
     role: 'Advisor',
     eventPeriod: 'iGEM 2026',
   },
@@ -248,6 +254,14 @@ const researchData: ResearchEntry[] = [
     type: 'advisory',
     level: 'supporting',
     name: 'FLAME',
+    listTitle: 'Soochow University',
+    photo: {
+      src: '/static/images/research/soochow-university/icpi.jpg',
+      width: 5992,
+      height: 2247,
+      alt: 'Group photo at the International College of Pharmaceutical Innovation, Soochow University.',
+      titlePlacement: 'lower',
+    },
     role: 'Advisor',
     eventPeriod: 'iGEM 2026',
   },
@@ -258,6 +272,7 @@ const researchData: ResearchEntry[] = [
     type: 'advisory',
     level: 'supporting',
     name: 'Bifidobacterium longum elicits anti-tumor immunity in pancreatic cancer',
+    listTitle: 'Zhejiang University-University of Edinburgh Institute',
     role: 'Advisor',
     eventPeriod: 'iGEM 2026',
   },

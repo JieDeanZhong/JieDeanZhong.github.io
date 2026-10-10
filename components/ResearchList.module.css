@@ -1,0 +1,68 @@
+.experience {
+  /* Card padding + marker column + the existing project-list indent. */
+  --hover-inset-start: calc(1rem + 2.25rem + 0.625rem);
+  --hover-inset-end: 1rem;
+  --card-bottom-padding: 1.75rem;
+}
+
+.mainProject,
+.compactLink {
+  position: relative;
+}
+
+.expandedLink::after {
+  /* Preserve the visible layout while making the full grey width interactive. */
+  content: '';
+  position: absolute;
+  inset-block: 0;
+  inset-inline: calc(-1 * var(--hover-inset-start)) calc(-1 * var(--hover-inset-end));
+}
+
+.mainProject:last-child .expandedLink::after {
+  inset-block-end: calc(-1 * var(--card-bottom-padding));
+}
+
+@media (min-width: 640px) {
+  .experience {
+    --hover-inset-start: calc(1.5rem + 3rem + 1.25rem);
+    --hover-inset-end: 1.5rem;
+    --card-bottom-padding: 2.25rem;
+  }
+}
+
+.projectLink {
+  text-decoration: none;
+}
+
+.projectName {
+  /* Clone the underline onto each wrapped text fragment, never the full row. */
+  background-image: linear-gradient(var(--color-gray-500), var(--color-gray-500));
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 0% 1px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition: background-size 150ms ease-out;
+}
+
+.projectLink:is(:hover, :focus-visible) .projectName {
+  background-size: 100% 1px;
+}
+
+:global(.dark) .projectName {
+  background-image: linear-gradient(var(--color-gray-400), var(--color-gray-400));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .projectName {
+    transition: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .projectLink:is(:hover, :focus-visible) .projectName {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+  }
+}

@@ -38,7 +38,13 @@ export default function PhotoResearchProject({
               className={`${styles.gradient} pointer-events-none absolute inset-0`}
             />
           </div>
-          <div className="relative -mt-6 pb-6 sm:absolute sm:inset-x-0 sm:bottom-0 sm:mt-0 sm:pb-10 lg:pb-14">
+          <div
+            className={
+              photo.titlePlacement === 'lower'
+                ? 'relative -mt-2 pb-6 sm:-mt-8 sm:pb-10 lg:pb-14'
+                : 'relative -mt-6 pb-6 sm:absolute sm:inset-x-0 sm:bottom-0 sm:mt-0 sm:pb-10 lg:pb-14'
+            }
+          >
             <div className={contentWidth}>
               <h1
                 id="project-title"

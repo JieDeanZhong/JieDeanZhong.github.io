@@ -1,0 +1,54 @@
+{
+  "verifiedNoHorizontalOverflow": true,
+  "zoom": 1.3,
+  "captures": [
+    {
+      "name": "framing-john-desktop",
+      "x": 256.153839,
+      "y": 521.538452,
+      "width": 640,
+      "height": 239.537262,
+      "viewport": [1440, 1000]
+    },
+    {
+      "name": "framing-yongtao-desktop",
+      "x": 256.153839,
+      "y": 521.538452,
+      "width": 640,
+      "height": 239.537262,
+      "viewport": [1440, 1000]
+    },
+    {
+      "name": "framing-lianjun-desktop",
+      "x": 256.153839,
+      "y": 522.307678,
+      "width": 640,
+      "height": 239.537262,
+      "viewport": [1440, 1000]
+    },
+    {
+      "name": "framing-kevin-desktop",
+      "x": 256.153839,
+      "y": 521.538452,
+      "width": 640,
+      "height": 239.537262,
+      "viewport": [1440, 1000]
+    },
+    {
+      "name": "framing-john-mobile-320",
+      "x": 16.153847,
+      "y": 120.769234,
+      "width": 287.99881,
+      "height": 283.533661,
+      "viewport": [320, 760]
+    },
+    {
+      "name": "framing-lianjun-mobile-320",
+      "x": 16.153847,
+      "y": 402.307709,
+      "width": 287.99881,
+      "height": 283.533661,
+      "viewport": [320, 760]
+    }
+  ]
+}

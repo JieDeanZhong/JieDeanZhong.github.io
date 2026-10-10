@@ -17,7 +17,12 @@ const Header = () => {
     <header className={`${styles.header} ${siteMetadata.stickyNav ? styles.sticky : ''}`}>
       <div className={styles.background} aria-hidden="true" />
 
-      <Link href="/" aria-label={`${siteMetadata.headerTitle} — Home`} className={styles.home}>
+      <Link
+        id="site-home"
+        href="/"
+        aria-label={`${siteMetadata.headerTitle} — Home`}
+        className={styles.home}
+      >
         <svg viewBox="0 0 126 24" className={styles.logo} aria-hidden="true" focusable="false">
           <path
             fill="currentColor"

@@ -4,6 +4,7 @@ import { Dialog, DialogPanel, DialogTitle } from '@headlessui/react'
 import { useEffect, useState } from 'react'
 import Link from './Link'
 import headerNavLinks from '@/data/headerNavLinks'
+import styles from './Header.module.css'
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false)
@@ -65,11 +66,11 @@ const MobileNav = () => {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="flex min-h-11 items-center gap-3 text-xl font-bold"
+                    className={`${styles.navigationLink} flex min-h-11 items-center gap-3 text-xl font-bold`}
                     onClick={() => setNavShow(false)}
                   >
                     <span className="h-2 w-2 self-start bg-black" aria-hidden="true" />
-                    {link.title}
+                    <span className={styles.navigationLabel}>{link.title}</span>
                   </Link>
                   {Boolean(link.children?.length) && (
                     <ul className="ml-5">
@@ -77,10 +78,10 @@ const MobileNav = () => {
                         <li key={child.href}>
                           <Link
                             href={child.href}
-                            className="block py-3 text-sm text-black hover:underline"
+                            className={`${styles.navigationLink} block py-3 text-sm text-black`}
                             onClick={() => setNavShow(false)}
                           >
-                            {child.title}
+                            <span className={styles.navigationLabel}>{child.title}</span>
                           </Link>
                         </li>
                       ))}

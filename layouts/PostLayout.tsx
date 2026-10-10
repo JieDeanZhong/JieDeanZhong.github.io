@@ -27,6 +27,8 @@ interface LayoutProps {
   next?: { path: string; title: string }
   prev?: { path: string; title: string }
   backLink?: { href: string; label: string }
+  headerContent?: ReactNode
+  alignTitleWithContent?: boolean
   children: ReactNode
 }
 
@@ -36,6 +38,8 @@ export default function PostLayout({
   next,
   prev,
   backLink,
+  headerContent,
+  alignTitleWithContent = false,
   children,
 }: LayoutProps) {
   const { filePath, path, slug, date, title, tags } = content
@@ -46,8 +50,11 @@ export default function PostLayout({
       <ScrollTopAndComment />
       <article>
         <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
-          <header className="pt-6 xl:pb-6">
-            <div className="space-y-1 text-center">
+          <header
+            className={`pt-6 xl:pb-6 ${alignTitleWithContent ? 'xl:ml-[calc((100%+1.5rem)/4)]' : ''}`}
+          >
+            {headerContent}
+            <div className={`space-y-1 ${alignTitleWithContent ? 'text-left' : 'text-center'}`}>
               <dl className="space-y-10">
                 <div>
                   <dt className="sr-only">Published on</dt>
